@@ -1,8 +1,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdanl: <http://data.bibliotheken.nl/rdanl#> .
-@prefix rdanli: <http://rdaregistry.info/termList/ModeIssue/> .
-@prefix rdanlt: <http://rdaregistry.info/termList/rdanlediaType/> .
+@prefix rdami: <http://rdaregistry.info/termList/ModeIssue/> .
+@prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
 @prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> . 
 @prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> . 
 
