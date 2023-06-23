@@ -1,0 +1,97 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdanl: <http://data.bibliotheken.nl/rdanl#> .
+@prefix rdanli: <http://rdaregistry.info/termList/ModeIssue/> .
+@prefix rdanlt: <http://rdaregistry.info/termList/rdanlediaType/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> . 
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> . 
+
+### Werk "Aan den weg der vreugde":
+<http://data.bibliotheken.nl/id/w/1> # fictieve Werk-IRI
+	a rdanl:Work ;
+	rdanl:titleOfWork "Aan den weg der vreugde" ;
+	rdanl:variantTitleOfWork "Een vrouw van het noorden" ; 
+	rdanl:authorAgent <http://data.bibliotheken.nl/id/a/1> ;
+	rdanl:relatedPersonaOfWork <http://data.bibliotheken.nl/id/n/1> ;	
+	rdanl:representativeExpression <http://data.bibliotheken.nl/id/e/1> ; 											
+	rdanl:expressionOfWork <http://data.bibliotheken.nl/id/e/1> ; 
+	rdanl:categoryOfWork <http://data.bibliotheken.nl/id/thes/p31866285X> ; 
+	rdanl:extensionPlan "static plan" ; 
+	rdanl:dateOfWork "1908"	.
+
+### Agent "Couperus":
+<http://data.bibliotheken.nl/id/a/1> # fictieve Agent-IRI
+	a rdanl:Person ; 
+	rdanl:realIdentityOfPerson <http://data.bibliotheken.nl/id/n/1> ; 
+	rdanl:professionOrOccupation "letterkundige" ; 
+	rdanl:preferredNameOfPerson "Louis Couperus" ;	
+	rdanl:surname	[ 
+		a rdanl:Nomen ;	
+		rdanl:nomenString "Couperus" ;	
+		rdanl:appelationOfrdanlntityOf <http://data.bibliotheken.nl/id/a/1> ; 
+		rdanl:languageOfNomen "nl" 
+	] ;
+	rdanl:givenName [
+		a rdanl:Nomen ;	
+		rdanl:nomenString "Louis" ;	
+		rdanl:appelationOfrdanlntityOf <http://data.bibliotheken.nl/id/a/1> ;
+		rdanl:languageOfNomen "nl" ;
+		rdanl:equivalentTo [
+			a rdanl:Nomen ;	
+			rdanl:nomenString "Луис"
+		]
+	] ;
+	rdanl:dateOfBirth "1863" ;
+	rdanl:dateOfDeath "1923" ;
+	rdanl:countryAssociatedWithPerson [
+		a rdanl:Place ;	
+		rdanl:identifierForRDAEntity "NL" 
+	] ;
+	rdanl:biographicalInformation "Med. NLMD/C 383" ; 
+	rdanl:biographicalInformation "literator en feuilletonnist (m.n. in dagblad \"Het Vaderland\", te Den Haag)"	;
+	rdanl:biographicalInformation "http://dbnl-srv-p200.dmz.kb.nl/auteurs/auteur.php?id=coup002" .
+
+### Nomen(-cluster) als persona "Couperus": 
+<http://data.bibliotheken.nl/id/n/1> # fictieve IRI
+	a rdanl:Nomen ;
+	rdanl:nameOfRDAEntityOf <http://data.bibliotheken.nl/id/a/1> ;
+	rdanl:nomenString	"Couperus, Louis (1863 - 1923)" ;
+	rdanl:equivalentTo	"Couperus, Louis", "Kūpīras, Lūʾī" ,
+		"Kuperjus, Lui", "Couperus, Louis Marie Anne" , " Kouperus, Luis" , "Kuperus, Lui", "Kouperusas, Lui Mari Anė" ,
+		"Kūpīris, Lūʾī" , "Couperus, Luigi", "Couperus, L." ;
+	rdanl:identifierForRDAEntity 	"ISNI: 0000000110471568" ;
+    rdanl:identifierForRDAEntity "http://data.bibliotheken.nl/id/thes/p068435061" . 
+
+# Expresssion:
+<http://data.bibliotheken.nl/id/e/1> # fictieve Expression-IRI	
+	a rdanl:Expression ;
+	rdanl:titleOfExpression "Een vrouw van het noorden" ;
+	rdanl:contentType "text" ;
+	rdanl:languageOfExpression "nl" ;
+	rdanl:workExpressed <http://data.bibliotheken.nl/id/w/1> ;
+	rdanl:manifestationOfExpression <http://data.bibliotheken.nl/id/m/1> .
+
+# Manifestation:	
+<http://data.bibliotheken.nl/id/m/1> # fictieve Manifestation-IRI
+    a rdanl:Manifestation ;
+	rdanl:titleProper "Een vrouw van het noorden" ;
+	rdanl:identifierForRDAEntity "ISBN: 9025499678" ;
+	rdanl:expressionManifested <http://data.bibliotheken.nl/id/e/1> ; 
+    rdanl:carrierType rdact:1049 ;
+    rdanl:mediaType rdanlt:1007 ;
+    rdanl:modeOfIssuance rdanli:1001 ;
+	rdanl:designationOfEdition "2e dr"@nl ;
+    rdanl:dateOfPublication "1999" ;
+    rdanl:publisherAgent [ 
+        a rdanl:Agent ; 
+        rdanl:nameOfAgent "Pandora" ;
+    ] ;
+	rdanl:placeOfPublication [
+		a rdanl:Place ;	
+		rdanl:nameOfPlace "Amsterdam"@nl;
+		rdanl:partOfPlace [
+			a rdanl:Place ;
+			rdanl:identifierForRDAEntity "NL"
+		]
+	] .
+	

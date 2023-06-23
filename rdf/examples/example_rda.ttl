@@ -1,0 +1,115 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdaa: <http://rdaregistry.info/Elements/a/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdami: <http://rdaregistry.info/termList/ModeIssue/> .
+@prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> . 
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> . 
+
+### Werk "Aan den weg der vreugde":
+<http://data.bibliotheken.nl/id/w/1>						        # fictieve Werk-IRI
+	a rdac:C10001 ;             									# dit is een Work 
+	rdaw:P10088 "Aan den weg der vreugde" ;							# titleOfWork - de oorspronkelijke titel
+	rdaw:P10086 "Een vrouw van het noorden" ; 						# variantTitleOfWork
+
+	rdaw:P10061	<http://data.bibliotheken.nl/id/a/1> ;				# authorAgent 
+	rdaw:P10318 <http://data.bibliotheken.nl/id/n/1> ;				# relatedNomenOfWork 
+	rdaw:P10346 <http://data.bibliotheken.nl/id/e/1> ; 				# representativeExpression												
+	rdaw:P10078 <http://data.bibliotheken.nl/id/e/1> ; 				# expressionOfWork
+
+    ### De Brinkman-categorie "romans en novellen ; oorspr. - Nederlands" past niet in de RDA benadering, dit is wel zuiver:
+	rdaw:P10004 <http://data.bibliotheken.nl/id/thes/p31866285X> ; 	# categoryOfWork Brinkman:"Romans en novellen"
+
+	rdaw:P10365 "static plan" ;  # extensionPlan rdae, een monografie
+	rdaw:P010219 "1908"	.											# dateOfWork 1908 eenvoudige literal
+
+### Agent "Couperus" :
+<http://data.bibliotheken.nl/id/a/1> 	                            # fictieve Agent-IRI
+	a rdac:C10004 ; 											    # a Person
+	rdaa:P50429 <http://data.bibliotheken.nl/id/n/1> ; 			    # "real identity of person"
+	rdaa:P50104 "letterkundige" ;								    # "profession or occupation"
+	rdaa:P50117 "Louis Couperus" ;								    # "has preferred name of person" 
+	rdaa:P50291	[												    # "surname" ; als Nomen-entiteit
+		a rdac:C10012 ;												# a Nomen
+		rdan:P80068 "Couperus" ;								   	    # "has nomen string"
+		rdan:P80112 <http://data.bibliotheken.nl/id/a/1> ;			    # relatie terug is verplicht
+		rdan:P80066 "nl" 											    #  "language of Nomen" ; IETF BCP 47
+	] ;
+	rdaa:P50292 [												# "given name"; als Nomen-entiteit
+		a rdac:C10012 ;												# a Nomen
+		rdan:P80068 "Louis" ;										# "has nomen string"
+		rdan:P80112 <http://data.bibliotheken.nl/id/a/1> ;			# relatie terug is verplicht
+		rdan:P80066 "nl" ;											# "language of Nomen" ; IETF BCP 47
+		rdan:P80113 [												# "equivalent to"
+			a rdac:C10012 ;												# a Nomen
+			rdan:P80068 "Луис"  										# "has nomen string"
+		]
+	] ;
+	rdaa:P50121 "1863" ;										# "date of birth"
+	rdaa:P50120 "1923" ;										# "date of death"
+	rdaa:P50097 [												# "country associated with person" 
+		a rdac:C10009 ;												# a place
+		rdax:P00016 "NL"											# "has identifier for RDA Entity" ; ISO 3166-1 alpha-2 
+	] ;
+	rdaa:P50113 "Med. NLMD/C 383" ; 							# "biographical information"
+	rdaa:P50113 "literator en feuilletonnist (m.n. in dagblad \"Het Vaderland\", te Den Haag)"	;
+	rdaa:P50113 "http://dbnl-srv-p200.dmz.kb.nl/auteurs/auteur.php?id=coup002" .
+
+### Nomen(-cluster) als persona "Couperus": 
+<http://data.bibliotheken.nl/id/n/1>                            # fictieve IRI
+	a rdac:C10012 ;												# a Nomen
+	rdan:P80057 <http://data.bibliotheken.nl/id/a/1> ;			# "is name of RDA entity of" ;  relatie
+	rdan:P80068	"Couperus, Louis (1863 - 1923)" ;				# "has nomen string"
+	rdan:P80113	"Couperus, Louis", "Kūpīras, Lūʾī" ,			# "equivalent to" ; eventueel ook als Nomen-entiteiten.
+		"Kuperjus, Lui", "Couperus, Louis Marie Anne" , " Kouperus, Luis" , "Kuperus, Lui", "Kouperusas, Lui Mari Anė" ,
+		"Kūpīris, Lūʾī" , "Couperus, Luigi", "Couperus, L." ;
+	rdax:P00018 	"ISNI: 0000000110471568" ;		            # "identifier for RDA Entity"
+    rdax:P00018 "http://data.bibliotheken.nl/id/thes/p068435061" . 
+
+# Expresssion	
+<http://data.bibliotheken.nl/id/e/1>							# fictieve Expression-IRI	
+	a rdac:C10006 ;												# dit is een Expression- maken we altijd expliciet
+	rdae:P20312 "Een vrouw van het noorden" ;					# "has title of expression"
+	rdae:P20001 "text"	;										# contentType , hier praktisch gekozen voor literal, volgens rdaco
+	rdae:P20006 "nl" ;											# languageOfExpression "nl" ; taalcode volgens IETF BPC 47
+	rdae:P20231 <http://data.bibliotheken.nl/id/w/1> ;			# "has work expressed"
+	rdae:P20059 <http://data.bibliotheken.nl/id/m/1> .			# "manifestion of Expression"
+
+
+# Manifestation		
+<http://data.bibliotheken.nl/id/m/1> 							# fictieve Manifestation-IRI
+    a rdac:C10007 ;  											# a Manifestation
+	rdam:P30156 "Een vrouw van het noorden" ;					# "title proper"
+	rdax:P00018 "ISBN: 9025499678" ;						 	# "identifier for entity" - prefix-constructie
+    	
+	rdam:P30139 <http://data.bibliotheken.nl/id/e/1> ; 			# "expression manifested" 
+
+    rdam:P30001 rdact:1049 ; 									# "carrierType" "volume"
+    rdam:P30002 rdamt:1007 ; 									# "mediaType" "unmediated"
+    rdam:P30003 rdami:1001 ; 									# "modeOfIssuance" "single unit"
+	
+	rdam:P30133 "2e dr"@nl ;									# "designationOfEdition"
+    rdam:P30011 "1999" ;										# "dateOfPublication"
+
+    rdam:P30083 [                                               # "has publisher agent"
+        a rdac:C10002 ;                                             # an Agent
+        rdaa:P50385 "Pandora" ;									# "has name of Agent"
+
+    ] ;
+	rdam:P30088 [												# "place of publication"
+		a rdac:C10009 ;												# a place
+		rdap:P70001 "Amsterdam"@nl;									# "has name of place"
+		rdap:P70032 [												# "is part of place" 
+			a rdac:C10009 ;												# a place
+			rdax:P00018 "NL"											# "has identifier for entity" ; ISO 3166-1 alpha-2 
+		]
+	] .
+	
+	

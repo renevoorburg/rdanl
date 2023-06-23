@@ -1,0 +1,374 @@
+@base <http://data.bibliotheken.nl/rdanl> . 
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ns0: <http://purl.org/vocab/vann/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdaa: <http://rdaregistry.info/Elements/a/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdami: <http://rdaregistry.info/termList/ModeIssue/> .
+@prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> . 
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> . 
+
+<#>
+  a owl:Ontology ;
+  dc11:title "RDANL, een toepassingsprofiel van RDA."@en;
+  dc11:description "RDANL, een toepassingsprofiel van RDA. "@en ;
+  ns0:preferredNamespacePrefix "rdanl" ;
+  dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@en ;
+  cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  owl:versionInfo "v0.0.1" ;
+  dc11:modified "2023-06-23" .
+
+# Classes:
+
+<#Agent>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10002>, <#Entity> ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:label "agent"@en, "agent"@fr, "Agente"@es, "actor"@nl, "agente"@it, "φορέας"@el, "agent"@da, "tác nhân"@vi, "Akteur"@de, "agent"@ca, "ágens"@hu, "toimija"@fi, "agent"@no, "وكيل"@ar, "tegija"@et, "aģents"@lv ;
+    skos:definition "An entity who is capable of deliberate actions, of being granted rights, and of being held accountable for its actions."@en, "Entité qui est à même d’agir de son propre chef, de se voir accorder des droits et d’être tenue pour responsable de ses actions."@fr, "Una persona, familia, o entidad corporativa."@es, "Een entiteit die in staat is om doelbewust te handelen, rechten verleend te krijgen en verantwoordelijk te worden gehouden voor diens handelen."@nl, "Una persona, famiglia o ente."@it, "Ένα φυσικό πρόσωπο, οικογένεια ή συλλογικό όργανο."@el, "Entiteetti, joka kykenee tarkoituksellisiin toimintoihin, jolle voidaan myöntää oikeuksia ja joka on vastuussa toimistaan."@fi, "Entitet, der er i stand til bevidste handlinger, tildeles rettigheder og kan stå til ansvar for sine handlinger."@da, "Một cá nhân, gia đình, hoặc tập thể."@vi, "Eine Entität, die in der Lage ist, bewusst zu handeln, Rechte zu erhalten und für Handlungen zur Rechenschaft gezogen zu werden."@de, "Entitat que Ã©s capaÃ§ de realitzar accions deliberades, de rebre drets i de retre comptes de les seves accions."@ca, "Egy személy,  család vagy testület."@hu, "En person, familie eller korporasjon."@no, "كيان قادر على القيام بأفعال متعمدة، وأن يحصل على حقوق، ويخضع للمساءلة عن أفعاله."@ar, "Üks isik või mitu isikut, kes on võimelised tegutsema üksusena."@et, "Persona, divas vai vairākas personas, kas spēj darboties kā vienība."@lv ;
+    skos:scopeNote "An agent includes a collective agent and a person."@en, "Toimija kattaa yhteistoimijan ja henkilön."@fi, "Een actor omvat een collectieve actor en een persoon."@nl, "Aģenti ir grupas un personas."@lv, "Un agent comprend un agent collectif et une personne."@fr, "وكيل تشمل وكيلا جماعيا وشخصا"@ar, "Agent omfatter en kollektiv agent og en person."@da, "Darunter fallen gemeinschaftliche Akteure und Personen."@de, "Agent inclou un agent colÂ·lectiu i una persona."@ca .
+
+<#CollectiveAgent>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10011>,  <#Agent> ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:label "collective agent"@en, "συλλογικός φορέας"@el, "collectieve actor"@nl, "kollektiv agent"@da, "tác nhân tập thể"@vi, "Gemeinschaftlicher Akteur"@de, "agent col·lectiu"@ca, "agent collectif"@fr, "kollektív ágens"@hu, "yhteistoimija"@fi, "kollektiv agent"@no, "وكيل جماعي"@ar, "kollektiiv"@et, "agente collettivo"@it, "grupa"@lv ;
+    skos:definition "An agent who is a gathering or organization of two or more persons that bears a particular name and that is capable of acting as a unit."@en, "Μια συνένωση ή οργανισμός φυσικών προσώπων που φέρουν ένα συγκεκριμένο όνομα και δύνανται να δρουν ως ομάδα."@el, "Toimija, joka on useamman kuin yhden henkilön kokoontuminen tai organisaatio, jolla on tietty nimi ja joka on kykenevä toimimaan yksikkönä."@fi, "Een actor die is een bijeenkomst of organisatie van twee of meer personen dat een specifieke naam draagt en dat in staat is om op te treden als een eenheid."@nl, "Agent, som er en forsamling eller organisation af to eller felere personer med et bestemt namn, der kan agere som en enhed."@da, "Một tập hợp hoặc tổ chức của các cá nhân có tên riêng và có thể hoạt động như là một đơn vị."@vi, "Ein Akteur, bei dem es sich um eine Zusammenkunft oder eine Organisation von zwei oder mehreren Personen handelt, die der einen bestimmten Namen trägt und imstande ist, als Einheit zu handeln."@de, "Agent que Ã©s una reuniÃ³ o organitzaciÃ³ de dues o mÃ©s persones que porta un nom concret i que Ã©s capaÃ§ dâ€™actuar com una unitat."@ca, "Agent qui est un groupement ou une association de deux ou plusieurs personnes portant un nom particulier et disposant de la faculté d’agir collectivement."@fr, "Személyek csoportosulása vagy szervezete, amely saját névvel rendelkezik és egy egységként képes cselekedni."@hu, "En samling av eller organisasjon av personer som har et eget navn og som er i stand til å opptre som en enhet."@no, "وكيل عبارة عن تجمع أو تنظيم من شخصين أو أكثر يحملون اسما محددا ويمكنهم التعامل كوحدة ."@ar, "Isikute rühm või organisatsioon, millel on kindel nimi ja mis on võimeline tegutsema üksusena."@et, "Gruppo o organizzazione di persone contraddistinto da un nome specifico e in grado di agire come un'unità "@it, "Personu kopums vai organizācija, kas izmanto īpašu nosaukumu un darbojas kā vienība."@lv .
+ 
+<#CorporateBody>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10005>, <#CollectiveAgent> ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:label "corporate body"@en, "collectivité"@fr, "Entidad corporativa"@es, "corporatie"@nl, "ente"@it, "Institution"@sv, "συλλογικό όργανο"@el, "korporation"@da, "tập thể"@vi, "Körperschaft"@de, "entitat corporativa"@ca, "testület"@hu, "yhteisö"@fi, "korporasjon"@no, "هيئة"@ar, "asutus"@et, "institūcija"@lv ;
+    skos:definition "A collective agent who is composed of persons who are organized for a common purpose or activity."@en, "Agent collectif qui est composé de personnes organisées dans un but commun ou pour une activité commune."@fr, "Una organización o grupo de personas y/o organizaciones que se identifica mediante un nombre particular y que actúa o puede actuar, como una unidad."@es, "Een collectieve actor die bestaat uit personen die georganiseerd zijn voor een gezamenlijk doel of activiteit."@nl, "Organizzazione o gruppo di persone e/o organizzazioni identificato da un particolare nome, che agisce, o può agire, come un'unità."@it, "Ένας οργανισμός ή ομάδα προσώπων ή/και οργανισμών, η οποία ταυτίζεται από ένα συγκεκριμένο όνομα, το οποίο δρα ή μπορεί να δρα ως ομάδα."@el, "Yhteistoimija, joka muodostuu henkilöistä, jotka ovat järjestäytyneet yhteistä päämäärää tai toimintaa varten."@fi, "Kollektiv agent, som er sammensat af personer, som er organiseret for et fælles formål."@da, "Một tổ chức hoặc nhóm cá nhân và/hoặc các tổ chức được nhận dạng bằng tên cụ thể và hoạt động, hoặc có thể hoạt động, như một đơn vị."@vi, "Ein gemeinschaftlicher Akteur, der sich aus Personen zusammensetzt, die für einen gemeinsamen Zweck oder eine gemeinsame Tätigkeit organisiert sind."@de, "Agent colÂ·lectiu que es composa de persones que estan organitzades per a un propÃ²sit o activitat comÃº."@ca, "Egy szervezet vagy személyek és/vagy szervezetek csoportja, amelyet egy adott névvel azonosítanak és amely egységként cselekszik vagy cselekedhet."@hu, "En organisasjon eller gruppe av personer og/eller organisasjoner som har et bestemt navn og som opptrer eller kan opptre som en enhet."@no, "وكيل جماعي يتألف من أشخاص منظمين لتحقيق غرض أو نشاط مشترك"@ar, "Organisatsioon või isikute või organisatsioonide rühm, millel on identifitseeriv nimi ja mis on võimeline tegutsema üksusena."@et, "Organizācija vai personu grupa, kas identificējama pēc īpaša nosaukuma un kas darbojas vai var darboties kā patstāvīga vienība. (ISBD)."@lv .
+
+<#Family>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10008>, <#CollectiveAgent> ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:label "family"@en, "famille"@fr, "Familia"@es, "familie"@nl, "famiglia"@it, "οικογένεια"@el, "familie"@da, "gia đình"@vi, "Familie"@de, "família"@ca, "család"@hu, "suku"@fi, "familie"@no, "عائلة"@ar, "perekond"@et, "dzimta/ģimene"@lv ;
+    skos:definition "A collective agent who is composed of persons who are related by birth, marriage, adoption, civil union, or similar legal status, or who otherwise present themselves as a family."@en, "Agent collectif qui est composé de personnes liées par la naissance, le mariage, l’adoption, l’union civile ou tout autre statut légal de même ordre, ou se présentant elles-mêmes pour toute autre raison comme une famille."@fr, "Dos o más personas relacionadas por nacimiento, matrimonio, adopción, unión civil o un estado legal similar; o quienes se presentan a sí mismos como una familia."@es, "Een collectieve actor die bestaat uit personen die verwant zijn door geboorte, huwelijk, adoptie, burgerlijk partnerschap of vergelijkbare juridische status, of die zich anderszins presenteren als een familie."@nl, "Due o più persone legate da nascita, matrimonio, adozione, unione civile o simile status giuridico, o che si presentano come una famiglia."@it, "Δύο ή περισσότερα πρόσωπα με σχέσεις όπως γέννησης, γάμου, υιοθεσίας, πολιτικής ένωσης ή παρόμοιου νομικού καθεστώτος ή άλλης περίπτωσης στην οποία εμφανίζονται ως οικογένεια."@el, "Yhteistoimija, joka muodostuu henkilöistä, jotka ovat suhteessa toisiinsa syntymän, avioliiton, adoption, rekisteröidyn parisuhteen tai vastaavan oikeudellisen aseman kautta tai jotka muuten esiintyvät perheenä."@fi, "Kollektiv agent, som er sammensat af personer, der er beslægtede via fødsel, ægteskab, adoption, registreret partnerskab eller lignende juridisk status, eller som på anden vis præsenterer sig selv som en familie."@da, "Hai hoặc nhiều cá nhân liên quan theo dòng dõi, hôn nhân, nghĩa dưỡng, kết hợp dân sự, hoặc địa vị pháp lý tương tự, hoặc những người mà chính họ thể hiện theo cách khác như một gia đình."@vi, "Ein gemeinschaftlicher Akteur, der sich aus Personen zusammensetzt, die aufgrund von Geburt, Eheschließung, Adoption, eingetragene Lebenspartnerschaft oder einen ähnlichen Rechtsstatus miteinander in Beziehung stehen oder sich in anderer Form als Familie präsentieren."@de, "Agent colÂ·lectiu que es composa de persones que estan relacionades pel naixement, el matrimoni, lâ€™adopciÃ³, la uniÃ³ civil o qualsevol altre estat legal similar o que altrament es presenten com una famÃ­lia."@ca, "Két vagy több személy, akik kapcsolatban állnak születés, házasság, örökbefogadás, élettársi kapcsolat vagy hasonló jogi státusz révén, vagy egyéb módon családként jelennek meg."@hu, "To eller flere personer som er beslektet ved fødsel, ekteskap, adopsjon, partnerskap, samboerskap eller annen juridisk status, eller som på annen måte presenterer seg som en familie."@no, "وكيل جماعي يتألف من أشخاص يربطهم ميلاد أو زواج أو تبني أو زواج مدني أو أي وضع قانوني آخر، أو يقدمون أنفسهم كعائلة."@ar, "Isikud, kes on omavahel seotud sünni, abielu, lapsendamise, kooselu või muu õigusliku aluse põhjal või esitlevad ennast muul viisil perekonnana."@et, "Divas vai vairākas personas, kuru radniecību nosaka piedzimšana, laulības, adopcija, civila savienība vai līdzīgs juridisks statuss."@lv .
+
+<#Expression>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10006>, <#Entity> ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:label "expression"@en, "expression"@fr, "Expresión"@es, "expressie"@nl, "espressione"@it, "Uttryck"@sv, "έκφραση"@el, "udtryk"@da, "biểu hiện"@vi, "Expression"@de, "expressió"@ca, "kifejezési forma"@hu, "ekspressio"@fi, "uttrykk"@no, "تعبيرة"@ar, "väljendus"@et, "izteiksme"@lv ;
+    skos:definition "An intellectual or artistic realization of a work in the form of alpha-numeric, musical or choreographic notation, sound, image, object, movement, etc., or any combination of such forms."@en, "Réalisation intellectuelle ou artistique d’une œuvre sous forme de notation alphanumérique, musicale ou chorégraphique, de son, d’image, d’objet, de mouvement, etc. ou de toute combinaison de ces formes."@fr, "La realización intelectual o artística de una obra en la forma de notaciones alfanumérica, musical o coreográfica, de sonido, imagen, objeto, movimiento, etc. o de cualquier combinación de tales formas."@es, "Een intellectuele of artistieke realisatie van een werk in de vorm van alfanumerieke, muzikale of choreografische notatie, geluid, beeld, object, beweging etc., of een combinatie van dergelijke vormen."@nl, "Realizzazione intellettuale o artistica di un'opera in forma di notazione alfanumerica, musicale o coreografica, suono, immagine, oggetto, movimento, etc. o in una qualsiasi combinazione di queste forme."@it, "Ένα πνευματικό περιεχόμενο ή μια καλλιτεχνική πραγμάτωση/υλοποίηση ενός έργου στη μορφή αλφαβητικής, αλφαριθμητικής, αριθμητικής ή χορογραφικής σημειογραφίας, ήχου, εικόνας, αντικειμένου, κίνησης κ.λπ. ή οποιοσδήποτε συνδυασμός αυτών των μορφών."@el, "Teoksen tiedollinen tai taiteellinen aakkosnumeerinen toteutus, joka voi olla muodoltaan aakkosnumeerinen, musiikkinuotinnos, tanssinotaatio, ääntä, kuva, esine, liikettä tms. tai mikä tahansa tällaisten muotojen yhdistelmä."@fi, "Den intellektuelle eller kunstneriske virkeliggørelse af et værk i form af alfanumerisk, musik- eller koreografinotation, en lyd, et billede, en genstand, en bevægelse etc., eller enhver kombination af sådanne former."@da, "Một thể hiện trí tuệ hoặc nghệ thuật của tác phẩm trong hình thái chữ cái-chữ số, ký hiệu âm nhạc hoặc nghệ thuật bố trí, âm thanh, hình ảnh, vật thể, động thái, vv..., hoặc tổ hợp bất kỳ của các hình thái đó."@vi, "Eine intellektuelle oder künstlerische Realisierung eines Werks in Form einer alphanumerischen, musikalischen oder choreografischen Notation, in Form von Ton, Bild, Gegenstand, Bewegung und so weiter oder einer Kombination solcher Formen."@de, "Realització intel·lectual o artística d’una obra en la forma de notació alfanumèrica, musical o coreogràfica, de so, d’imatge, d’objecte, de moviment, etc., o de qualsevol combinació d’aquestes formes."@ca, "Egy mű szellemi vagy művészi megvalósulása alfanumerikus, zenei vagy koreográfiai lejegyzés, hang, kép, tárgy, mozgás stb. formájában, vagy ezen formák bármilyen kombinációjával."@hu, "En intellektuell eller kunstnerisk realisering av et verk i form av alfanumerisk, musikalsk eller koreografisk notasjon, lyd, bilde, gjenstand, bevegelse etc., eller enhver kombinasjon av slike former."@no, "تحقق عمل فكري أو فني في شكل تدوين (هجائي - رقمي)، أو موسيقي، أو تعبير راقص، أو صوتي، أو صورة، أو كائن، أو حركة، إلخ. أو أي توليفة من هذه الأشكال."@ar, "Teose intellektuaalne või kunstiline realisatsioon tähtnumbrilise, muusikalise või koreograafilise notatsioonina, helina, pildina, esemena, liikumisena vms vormis või nende kombinatsioonina."@et, "Darba intelektuāla vai mākslinieciska īstenošana burtu - ciparu, mūzikas vai horeogrāfijas, skaņu un attēlu, priekšmetu, kustību, utt., pierakstu veidā vai citās šo veidu kombinācijās. (FRBR)."@lv .
+  
+<#Manifestation>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10007>, <#Entity> ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:label "manifestation"@en, "manifestation"@fr, "Manifestación"@es, "manifestatie"@nl, "manifestazione"@it, "Manifestation"@sv, "εκδήλωση"@el, "manifestation"@da, "biểu thị"@vi, "Manifestation"@de, "manifestació"@ca, "megjelenési forma"@hu, "manifestaatio"@fi, "manifestasjon"@no, "تجسيدة"@ar, "kehastus"@et, "manifestācija"@lv ;
+    skos:definition "A physical embodiment of an expression of a work."@en, "Matérialisation d’une expression d’une œuvre."@fr, "La materialización física de una expresión de una obra."@es, "Een fysieke belichaming van een expressie van een werk."@nl, "Materializzazione fisica di un'espressione di un'opera."@it, "Μια φυσική ενσωμάτωση/υλοποίηση της έκφρασης ενός έργου."@el, "Teoksen ekspression fyysinen ilmentymä."@fi, "Fysisk realisering af et udtryk."@da, "Một thể hiện vật lý của một biểu hiện của tác phẩm."@vi, "Eine physische Verkörperung einer Expression eines Werks."@de, "Materialització física d’una expressió d’una obra."@ca, "Egy mű kifejezési formájának fizikai megtestesülése."@hu, "En konkret utforming av et uttrykk av et verk."@no, "تجسيد مادي لتعبيرة عن عمل."@ar, "Teose väljenduse materiaalne teostus."@et, "Darba izteiksmes fiziskais iemiesojums.(FRBR)."@lv .
+
+<#Nomen>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10012>, <#Entity> ;
+    rdfs:isDefinedBy <#> ;  
+    rdfs:label "nomen"@en, "όνομα"@el, "nomen"@nl, "nomen"@da, "danh pháp"@vi, "nomen"@ca, "nomen"@fr, "nomen"@hu, "nomen"@fi, "nomen"@no, "Nomen"@de, "تسمية"@ar, "nomen"@et, "nomen"@it, "nomens"@lv ;
+    skos:definition "A label for any RDA entity except a nomen."@en, "Ένας προσδιορισμός που αναφέρεται σε μια οντότητα RDA."@el, "Nimike mille tahansa RDA-entiteetille nomenia lukuun ottamatta"@fi, "Een aanduiding voor enige RDA-entiteit behalve een nomen."@nl, "Betegnelse for enhver RDA-entitet, undtaget et nomen."@da, "Một định danh đề cập tới một thực thể RDA."@vi, "Etiqueta per a qualsevol entitat RDA excepte un nomen."@ca, "Étiquette pour toute entité RDA à l’exception d’un nomen."@fr, "Egy megnevezés, amely egy RDA-entitásra utal."@hu, "En betegnelse som henviser til en RDA-entitet."@no, "Ein Label für eine beliebige RDA-Entität. Nomen selbst sind davon ausgenommen."@de, "وسم لأي كيان \"وام\" باستثناء التسمية."@ar, "Tähistus, mis osutab RDA olemile."@et, "Designazione che si riferisce a un'entità RDA"@it, "Apzīmējums, kas attiecas uz RDA entīti."@lv ;
+    skos:scopeNote "A nomen includes a name, title, access point, or identifier."@en, "Ένας προσδιορισμός περιλαμβάνει ένα όνομα, έναν τίτλο, ένα σημείο πρόσβασης, ένα αναγνωριστικό και κώδικες θεματικής ταξινόμησης και επικεφαλίδες."@el, "Nimike kattaa nimen, nimekkeen, hakutiedon ja tunnisteen."@fi, "Una etiqueta inclou un nom, un tÃ­tol, un punt dâ€™accÃ©s o un identificador."@ca, "Un nomen comprend un nom, un titre, un point d’accès ou un identifiant."@fr, "Egy megnevezés magába foglal egy nevet, címet, hozzáférési pontot, azonosítót, valamint osztályozási jelzeteket és tárgyszavakat."@hu, "En betegnelse inkluderer navn, tittel, søkeinngang, identifikator og emneklassifiseringskoder og -termer."@no, "Darunter fallen Namen, Titel, Sucheinstiege oder Identifikatoren."@de, "Een aanduiding omvat een naam, titel, ingang of identificatie."@nl, "أداة تعريف قد تكون اسما، أو لقبا، أو نقطة وصول، أو معرِّف."@ar, "Betegnelse omfatter et navn, en titel, en søgeindgang, eller en identifikator."@da, "Tähistused on nimi, pealkiri, otsielement, identifikaator ning liigiindeksid ja märksõnad."@et, "Una designazione comprende un nome, un titolo, un punto d'accesso, un identificatore e codici di classificazioni e intestazioni per soggetto"@it, "Apzīmējums ietver vārdu, nosaukumu, piekļuves punktu, identifikatoru un priekšmetu klasifikācijas kodus."@lv .
+  
+<#Item>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10003>, <#Entity> ;
+    rdfs:isDefinedBy <#> ;  
+    rdfs:label "item"@en, "item"@fr, "Ítem"@es, "item"@nl, "item"@it, "Exemplar"@sv, "αντίτυπο"@el, "eksemplar"@da, "bản"@vi, "Exemplar"@de, "ítem"@ca, "példány"@hu, "kappale"@fi, "eksemplar"@no, "مفردة"@ar, "eksemplar"@et, "vienība"@lv ;
+    skos:definition "A single exemplar or instance of a manifestation."@en, "Instance ou exemplaire isolé d’une manifestation."@fr, "Un ejemplar individual o una instancia de una manifestación."@es, "Een enkel exemplaar of instantie van een manifestatie."@nl, "Singolo esemplare o istanza di una manifestazione."@it, "Ένα μεμονωμένο παράδειγμα ή στιγμιότυπο μιας εκδήλωσης."@el, "Manifestaation yksittäinen toteutuma tai tapaus."@fi, "Enkelt forekomst af en manifestation."@da, "Một mẫu hoặc trường hợp đơn lẻ của biểu thị."@vi, "Ein einzelnes Exemplar oder ein Beispiel einer Manifestation."@de, "Exemplar sol o ocurrència d’una manifestació."@ca, "Egy megjelenési forma egyetlen példánya vagy előfordulása."@hu, "En enkelt forekomst av en manifestasjon."@no, "نموذج مفرد أو مثال لتجسيدة."@ar, "Üksikobjekt või kehastuse üksikjuht."@et, "Manifestācijas atsevišķs eksemplārs vai instance."@lv .
+
+<#Person>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10004>, <#Agent> ;
+    rdfs:isDefinedBy <#> ; 
+    rdfs:label "person"@en, "personne"@fr, "Persona"@es, "persoon"@nl, "persona"@it, "Person"@sv, "φυσικό πρόσωπο"@el, "person"@da, "cá nhân"@vi, "Person"@de, "persona"@ca, "személy"@hu, "henkilö"@fi, "person"@no, "شخص"@ar, "isik"@et, "persona"@lv ;
+    skos:definition "An agent who is an individual human being who lives or is assumed to have lived."@en, "Agent qui est un être humain individuel qui vit ou est réputé avoir vécu."@fr, "Un individuo o una identidad establecida por un individuo, ya sea solo o en colaboración con uno o más individuos."@es, "Een actor die is een individueel mens die leeft of waarvan aangenomen wordt dat deze geleefd heeft."@nl, "Individuo o identità stabilita da un individuo (da solo o in collaborazione con altri individui)."@it, "Ένα πρόσωπο ή ταυτότητα καθιερωμένη από πρόσωπο είτε μόνο του είτε σε συνεργασία με ένα ή περισσότερα πρόσωπα."@el, "Toimija, joka on ihmisyksilö, joka on elossa tai jonka oletetaan olleen elossa."@fi, "Agent som er et individuelt menneske, som lever eller antages at have levet."@da, "Một cá thể hoặc một nhận dạng được tạo ra bởi một cá thể, hoặc một mình hoặc kết hợp với một hoặc nhiều hơn cá thể khác."@vi, "Ein Akteur, bei dem es sich um ein individuelles menschliches Wesen handelt, das lebt oder von dem man annimmt, dass es gelebt hat."@de, "Agent que Ã©s un Ã©sser humÃ  individual que viu o se suposa que ha viscut."@ca, "Egyedi emberi lény, aki él, vagy vélhetően létezett."@hu, "Et menneskelig individ som lever eller som antas å ha levd."@no, "وكيل هو إنسان فرد يعيش أو يُفترض أنه قد عاش."@ar, "Individuaalne inimene, kes elab või on oletamisi kunagi elanud."@et, "Cilvēks, kurš dzīvo vai tiek pieņemts, ka viņš ir dzīvojis."@lv .  
+
+<#Place>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10009>, <#Entity> ;
+    rdfs:isDefinedBy <#> ; 
+    rdfs:label "place"@en, "plaats"@nl, "luogo"@it, "τόπος"@el, "sted"@da, "địa điểm"@vi, "lloc"@ca, "lieu"@fr, "hely"@hu, "paikka"@fi, "sted"@no, "Geografikum"@de, "مكان"@ar, "koht"@et, "vieta"@lv ;
+    skos:definition "A given extent of space."@en, "Een bepaalde mate van ruimte."@nl, "Ubicazione identificata da un nome."@it, "Μια δεδομένη χωρική έκταση."@el, "Tilan tietty laajuus."@fi, "Givet omfang af rum."@da, "Một quy mô được nêu ra của không gian."@vi, "Eine definierte Ausdehnung eines Raums."@de, "Extensió d’espai determinada."@ca, "Portion d’espace déterminée."@fr, "A tér egy adott kiterjedése."@hu, "Et bestemt omfang i rom."@no, "حيز مكاني معين."@ar, "Teatud kindel ruumiulatus."@et, "Noteikta telpa."@lv .
+ 
+<#Entity>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10013> ;
+    rdfs:isDefinedBy <#> ; 
+    rdfs:label "RDA entity"@en, "RDA οντότητα"@el, "RDA-entiteit"@nl, "RDA-entitet"@da, "thực thể RDA"@vi, "entitat RDA"@ca, "entité RDA"@fr, "RDA entitás"@hu, "RDA-entiteetti"@fi, "RDA-entitet"@no, "RDA-Entität"@de, "كيان \"وام\""@ar, "RDA olem"@et, "entità RDA"@it, "RDA entīte"@lv ;
+    skos:definition "An abstract class of key conceptual objects in the universe of human discourse that are a focus of interest to users of RDA metadata in a system for resource discovery."@en, "Μια αφηρημένη τάξη σημαντικών εννοιολογικών αντικειμένων στο σύμπαν του ανθρώπινου λόγου, τα οποία αποτελούν εστία ενδιαφέροντος για τους χρήστες των RDA μεταδεδομένων στα πληροφοριακά συστήματα των βιβλιοθηκών."@el, "Ihmisdiskurssin keskeisten käsitteellisten objektien abstrakti luokka, joka on RDA:n metatietojen käyttäjien kiinnostuksen kohde hakujärjestelmässä."@fi, "Een abstracte klasse van de belangrijkste conceptuele objecten in de wereld van het menselijk vertoog dat van belang is voor gebruikers van RDA-metadata in een systeem voor het ontdekken van resources."@nl, "Abstrakt klasse af begrebsmæssige nøglekomponenter af interesse for brugere af RDA-metadata i et system til ressourcesøgning."@da, "Một lớp trừu tượng của các đối tượng khái niệm chủ yếu của nhân loại được người dùng siêu dữ liệu RDA tập trung chú ý trong các hệ thống thông tin thư viện."@vi, "Classe abstracta dels objectes conceptuals clau en lâ€™univers del discurs humÃ  que sÃ³n un centre dâ€™interÃ¨s per als usuaris de les metadades RDA en un sistema per a la descoberta de recursos."@ca, "Classe abstraite d’objets conceptuels fondamentaux dans l’univers du discours humain qui constituent un centre d’intérêt pour les utilisateurs de métadonnées RDA dans un système de découverte de ressources."@fr, "A tárgyalási univerzum kulcsfogalmi objektumainak elvont osztálya, amely az RDA-metaadathasználók érdeklődésének középpontjában áll a forráskereső rendszerek használata során."@hu, "En abstrakt klasse med konseptuelle nøkkelobjekter innenfor menneskelig diskurs som er i fokus for brukere av RDA-metadata i sluttbrukertjenester."@no, "Eine abstrakte Klasse wichtiger konzeptioneller Entitäten in der Gesamtheit des menschlichen Diskursuniversums, die für Benutzende von RDA-Metadaten in einem System zum Auffinden von Ressourcen von Interesse ist."@de, "فئة مجردة من كائنات مفاهيمية رئيسية في عالم الخطاب البشري، هي محور اهتمام مستخدمي ميتاداتا \"وام\" في نظام لاكتشاف المصادر."@ar, "Inimühiskonna diskursuse olulisimate mõisteliste objektide abstraktne klass, mis on ressursside leidmise süsteemis RDA metaandmete kasutajate huvikeskmes."@et, "Classe astratta di oggetti concettuali chiave nel'universo del discorso umano che è focus di interesse per gli utenti di metadati RDA in un sistema per la scoperta delle risorse"@it, "Galveno konceptuālo objektu vispārēja klase, kas interesē RDA metadatu lietotājus bibliotēku informācijas sistēmās."@lv ;
+    skos:scopeNote "An RDA entity includes an agent, collective agent, corporate body, expression, family, item, manifestation, nomen, person, place, timespan, and work."@en, "Μια οντότητα RDA περιλαμβάνει έναν φορέα, έναν συλλογικό φορέα, μια έκφραση, μια οικογένεια, ένα αντίτυπο, μια εκδήλωση, ένα όνομα, ένα φυσικό πρόσωπο, έναν τόπο, ένα χρονικό διάστημα και ένα έργο."@el, "RDA-entiteetti kattaa toimijan, yhteistoimijan, yhteisön, ekspression, suvun, kappaleen, manifestaation, nomenin, henkilön, paikan, ajanjakson ja teoksen."@fi, "Una entitat RDA inclou un agent, un agent col·lectiu, una entitat corporativa, una expressió, una família, un ítem, una manifestació, un nomen, una persona, un lloc, un interval de temps i una obra."@ca, "Une entité RDA comprend un agent, un agent collectif, une collectivité, une expression, une famille, un item, un laps de temps, un lieu, une manifestation, un nomen, une œuvre et une personne."@fr, "Egy RDA entitás magába foglal egy ágenst, egy kollektív ágenst, testületet, kifejezési formát, családot, példányt, megjelenési formát, noment, személyt, helyet, időtartamot és művet."@hu, "En RDA-entitet inkluderer agent, fellesagent, korporasjon, uttrykk, familie, eksemplar, manifestasjon, nomen, person, sted, tidsrom og verk."@no, "Darunter fallen Akteure, Exemplare, Expressionen, Familien, gemeinschaftliche Akteure, Geografika, Körperschaften, Manifestationen, Nomen, Personen, Werke und Zeiträume."@de, "Een RDA-entiteit omvat een actor, collectieve actor, corporatie, expressie, familie, item, manifestatie, nomen, persoon, plaats, tijdspanne en werk."@nl, "كيان \"وام\" يشمل وكيلا، ووكيلا جماعيا، وهيئة، وتعبيرة، وعائلة، ومفردة، وتجسيدة، وتسمية، وشخص، ومكان، وفترة زمنية، وعمل."@ar, "RDA-entitet omfatter en agent, kollektiv agent, korporation, et udtryk, en familie, et eksemplar, en manifestation, et nomen, en person, et sted, en tidsperiode og et værk."@da, "RDA olemid on tegija, kollektiiv, asutus, väljendus, perekond, eksemplar, kehastus, nomen, isik, koht, ajavahemik ja teos."@et, "Un'entità RDA comprende arco di tempo, agente, agente collettivo, ente, espressione, famiglia, item, luogo, manifestazione, nomen, opera e persona."@it, "RDA entīte ietver aģentu, grupu, institūciju, izteiksmi, dzimtu/ģimeni, vienību, manifestāciju, nomenu, personu, vietu, laikposmu un darbu."@lv .
+
+<#Timespan>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10010>, <#Entity> ;
+    rdfs:isDefinedBy <#> ; 
+    rdfs:label "timespan"@en, "χρονικό διάστημα"@el, "tijdspanne"@nl, "tidsperiode"@da, "khoảng thời gian"@vi, "interval de temps"@ca, "laps de temps"@fr, "időtartam"@hu, "ajanjakso"@fi, "tidsrom"@no, "Zeitraum"@de, "فترة زمنية"@ar, "ajavahemik"@et, "arco di tempo"@it, "laikposms"@lv ;
+    skos:definition "A finite period of time."@en, "Μια χρονική έκταση με αρχή, τέλος και διάρκεια."@el, "Ajan rajallinen jakso."@fi, "Een eindige periode van tijd."@nl, "Begrænset tidsrum"@da, "Một quy mô thời gian có bắt đầu, kết thúc và khoảng thời gian."@vi, "PerÃ­ode de temps finit."@ca, "Période de temps déterminée."@fr, "Időbeli kiterjedés, aminek van kezdete, vége és hossza."@hu, "Et omfang av tid med en begynnelse, varighet og slutt."@no, "Eine definierte Zeitangabe."@de, "فترة زمنية محددة"@ar, "Ajaline ulatus, millel on algus, lõpp ja kestus."@et, "Estensione temporale che a un'inizio, una fine e una durata"@it, "Laika apjoms, kuram ir sākums, beigas un ilgums."@lv ;
+    skos:altLabel "time-span"@en, "ajanjakso"@fi, "فترة زمنية"@ar, "tidsforløb"@da .
+
+<#Work>
+    a owl:Class ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10001>, <#Entity> ;
+    rdfs:isDefinedBy <#> ; 
+    rdfs:label "work"@en, "œuvre"@fr, "Obra"@es, "werk"@nl, "opera"@it, "Verk"@sv, "έργο"@el, "værk"@da, "tác phẩm"@vi, "Werk"@de, "obra"@ca, "mű"@hu, "teos"@fi, "verk"@no, "عمل"@ar, "teos"@et, "darbs"@lv ;
+    skos:definition "A distinct intellectual or artistic creation, that is, the intellectual or artistic content."@en, "Création intellectuelle ou artistique déterminée, c’est-à-dire le contenu intellectuel ou artistique."@fr, "Una creación intelectual o artística distintiva, i.e., el contenido intelectual o artístico."@es, "Een onderscheidbare intellectuele of artistieke creatie, dit wil zeggen, de intellectuele of artistieke content."@nl, "Creazione intellettuale o artistica distinta, cioè il contenuto artistico o intellettuale."@it, "Μια διακριτή διανοητική/πνευματική ή καλλιτεχνική δημιουργία, δηλαδή το πνευματικό ή καλλιτεχνικό περιεχόμενο."@el, "Itsenäinen tiedollinen tai taiteellinen luomus eli tiedollinen tai taiteellinen sisältö."@fi, "Selvstændig intellektuel eller kunstnerisk frembringelse, fx det intellektuelle eller kunstneriske indhold."@da, "Một sáng tạo nghệ thuật hoặc trí tuệ riêng biệt, nghĩa là, nội dung nghệ thuật hoặc trí tuệ."@vi, "Eine individuelle intellektuelle oder künstlerische Schöpfung, das heißt der intellektuelle oder künstlerische Inhalt."@de, "Creació intel·lectual o artística distinta, és a dir, el contingut intel·lectual o artístic."@ca, "Önálló szellemi vagy művészi alkotás, azaz a szellemi vagy művészi tartalom."@hu, "Et distinkt intellektuell eller kunstnerisk arbeid (dvs. det intellektuelle eller kunstneriske innholdet)."@no, "ابداع فكري أو فني متميز، وما يمثل محتوى فكري أو فني ."@ar, "Piiritletud intellektuaalne või kunstilooming, s.o intellektuaalne või kunstiline sisu."@et, "Atšķirīgs intelektuālas vai mākslinieciskas jaunrades veikums (FRBR)."@lv .
+
+# properties W:
+
+<#titleOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10088 .
+
+<#variantTitleOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+	rdfs:subPropertyOf rdaw:P10086 .
+
+<#authorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10061 .
+
+<#relatedNomenOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10318 . 
+
+<#relatedPersonaOfWork> 
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf <#relatedNomenOfWork> ;
+    rdfs:comment "Dit kenmerk wordt gebruikt om een Work te verbinden met de Nomen van een Agent (typisch een Person) die als de centrale Nomen in een Nomen-cluster staat voor de met dit werk geassocieerde Persona."@nl .
+
+<#representativeExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10346 . 
+
+<#expressionOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10078 . 
+
+<#categoryOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10004 . 
+
+<#extensionPlan>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10365 . 
+
+<#dateOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P010219 . 
+
+# properties A:
+
+<#realIdentityOfPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50429 . 
+
+<#alternateIdentityOfPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50428 . 
+
+<#professionOrOccupation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50104 . 
+
+<#preferredNameOfPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50117 .     
+
+ <#nameOfAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50385 .     
+   
+<#surname>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50291 .  
+
+<#givenName>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50292  .  
+
+<#dateOfBirth>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50121  ;
+    rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl . 
+
+<#dateOfDeath>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50120  ;
+    rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl .
+
+<#countryAssociatedWithPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50097  ;
+    rdfs:comment "Een waarde volgens ISO 3166-1 alpha-2 is een geschikte keuze."@nl .
+
+<#biographicalInformation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50113  ;
+    rdfs:comment "Dit is een restcategorie voor kenmerken, gestructureerd of ongestructureerd. Overweeg het aanmaken van een subproperty van een passende property om te kunnen selecteren op specifieke kenmerken,"@nl .    
+
+# properties N:
+
+<#nomenString>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdan:P80068 .   
+
+<#appelationOfRDAEntityOf>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdan:P80112 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Als er een Nomen entiteit aangemaakt is dan zal het type van de bijbehorende entiteit ook vastgelegd zijn. Hier kan daarom met de meest generieke relatie volstaan worden."@nl .       
+
+<#nameOfRDAEntityOf>
+    a  rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdan:P80161 .
+
+<#equivalentTo>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdan:P80113 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Let op, anders dan naam suggereert, enkel om Nomens aan elkaar te verbinden."@nl .       
+
+<#languageOfNomen>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdan:P80066 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Een taalcode volgens IETF BCP 47 is een geschikte waarde."@nl .      
+
+# properties X:
+
+<#identifierForRDAEntity>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdax:P00018 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Het is wenselijk om identifiers van een prefix te voorzoen zodat context of domein helder wordt, bijvoorbeeld met ISBN: of PPN: "@nl .
+
+# properties E:
+
+<#titleOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20312 .
+
+<#contentType>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdae:P20001 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Hanteer waarden volgens  <http://rdaregistry.info/termList/RDAContentType/> . Een gangbare waarde is \"text\"."@nl .
+
+ <#languageOfExpression>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdae:P20006 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Een taalcode volgens IETF BCP 47 is een geschikte waarde."@nl .   
+
+ <#workExpressed>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:20231  . 
+
+ <#manifestationOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20059   .       
+
+# properties M:
+
+ <#titleProper>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30156 .   
+
+ <#expressionManifested>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30139 .   
+
+<#carrierType>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30001 ;
+    rdfs:comment "Hanteer waarden volgens  <http://rdaregistry.info/termList/RDACarrierType/> . Een voorbeeldwaarde is \"volume\"."@nl .        
+
+<#mediaType>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30002 ;
+    rdfs:comment "Hanteer waarden volgens <http://rdaregistry.info/termList/RDAMediaType/>  . Een voorbeeldwaarde is \"unmediated\"."@nl .    
+
+<#modeOfIssuance>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30003 ;
+    rdfs:comment "Hanteer waarden volgens <http://rdaregistry.info/termList/ModeIssue/>  . Een voorbeeldwaarde is \"single unit\"."@nl .     
+
+<#designationOfEdition>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30133 .   
+
+ <#publisherAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30083 .
+
+<#dateOfPublication>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30011 ;
+    rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl .  
+
+ <#placeOfPublication>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:30088 .      
+
+# properties P:
+
+ <#nameOfPlace>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdap:P70001 .  
+
+ <#partOfPlace>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdap:P70032 .  
+
+
