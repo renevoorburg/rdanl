@@ -28,13 +28,13 @@
 	rdanl:surname	[ 
 		a rdanl:Nomen ;	
 		rdanl:nomenString "Couperus" ;	
-		rdanl:appelationOfrdanlntityOf <http://data.bibliotheken.nl/id/a/1> ; 
+		rdanl:appelationOfRDAEntityOf <http://data.bibliotheken.nl/id/a/1> ; 
 		rdanl:languageOfNomen "nl" 
 	] ;
 	rdanl:givenName [
 		a rdanl:Nomen ;	
 		rdanl:nomenString "Louis" ;	
-		rdanl:appelationOfrdanlntityOf <http://data.bibliotheken.nl/id/a/1> ;
+		rdanl:appelationOfRDAEntityOf <http://data.bibliotheken.nl/id/a/1> ;
 		rdanl:languageOfNomen "nl" ;
 		rdanl:equivalentTo [
 			a rdanl:Nomen ;	
@@ -74,24 +74,24 @@
 # Manifestation:	
 <http://data.bibliotheken.nl/id/m/1> # fictieve Manifestation-IRI
     a rdanl:Manifestation ;
-	rdanl:titleProper "Een vrouw van het noorden" ;
-	rdanl:identifierForRDAEntity "ISBN: 9025499678" ;
-	rdanl:expressionManifested <http://data.bibliotheken.nl/id/e/1> ; 
+    rdanl:titleProper "Een vrouw van het noorden" ;
+    rdanl:identifierForRDAEntity "ISBN: 9025499678" ;
+    rdanl:expressionManifested <http://data.bibliotheken.nl/id/e/1> ; 
     rdanl:carrierType rdact:1049 ;
     rdanl:mediaType rdanlt:1007 ;
     rdanl:modeOfIssuance rdanli:1001 ;
-	rdanl:designationOfEdition "2e dr"@nl ;
+    rdanl:designationOfEdition "2e dr"@nl ;
     rdanl:dateOfPublication "1999" ;
     rdanl:publisherAgent [ 
         a rdanl:Agent ; 
         rdanl:nameOfAgent "Pandora" ;
     ] ;
-	rdanl:placeOfPublication [
-		a rdanl:Place ;	
-		rdanl:nameOfPlace "Amsterdam"@nl;
-		rdanl:partOfPlace [
-			a rdanl:Place ;
-			rdanl:identifierForRDAEntity "NL"
-		]
-	] .
+    rdanl:placeOfPublication [
+	    a rdanl:Place ;	
+	    rdanl:nameOfPlace "Amsterdam"@nl;
+	    rdanl:partOfPlace [
+		    a rdanl:Place ;
+		    rdanl:identifierForRDAEntity "NL"
+	    ]
+    ] .
 	
