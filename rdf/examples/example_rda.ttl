@@ -101,7 +101,6 @@
     rdam:P30083 [                                               # "has publisher agent"
         a rdac:C10002 ;                                             # an Agent
         rdaa:P50385 "Pandora" ;                                     # "has name of Agent"
-
     ] ;
     rdam:P30088 [                                               # "place of publication"
         a rdac:C10009 ;                                             # a place
