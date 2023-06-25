@@ -363,7 +363,36 @@
 <#summarizationOfContent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae::P20069 .       
+    rdfs:subPropertyOf rdae::P20069 . 
+
+<#dateOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20214 ;
+    rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl . 
+
+<#creatorAgentOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae::P20053 ;
+    rdfs:comment "Hanteeer waar mogelijke subproperties met een specifieke rol."@nl .
+
+<#translatorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20037 . 
+
+<#reviserAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20327 . 
+
+<#contributorAgentToAmalgamation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20328 . 
+
+    # welke subproperties nog meer?
 
 # properties M:
 

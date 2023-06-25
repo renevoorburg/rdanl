@@ -68,6 +68,7 @@
 	rdanl:titleOfExpression "Een vrouw van het noorden" ;
 	rdanl:contentType "text" ;
 	rdanl:languageOfExpression "nl" ;
+    rdanl:dateOfExpression "1908" ; 
 	rdanl:workExpressed <http://data.bibliotheken.nl/id/w/1> ;
 	rdanl:manifestationOfExpression <http://data.bibliotheken.nl/id/m/1> .
 
@@ -78,8 +79,8 @@
     rdanl:identifierForRDAEntity "ISBN: 9025499678" ;
     rdanl:expressionManifested <http://data.bibliotheken.nl/id/e/1> ; 
     rdanl:carrierType rdact:1049 ;
-    rdanl:mediaType rdanlt:1007 ;
-    rdanl:modeOfIssuance rdanli:1001 ;
+    rdanl:mediaType rdamt:1007 ;
+    rdanl:modeOfIssuance rdami:1001 ;
     rdanl:designationOfEdition "2e dr"@nl ;
     rdanl:dateOfPublication "1999" ;
     rdanl:publisherAgent [ 

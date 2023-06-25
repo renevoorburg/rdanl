@@ -79,6 +79,7 @@
     rdae:P20312 "Een vrouw van het noorden" ;                   # "has title of expression"
     rdae:P20001 "text"    ;                                     # contentType , hier praktisch gekozen voor literal, volgens rdaco
     rdae:P20006 "nl" ;                                          # languageOfExpression "nl" ; taalcode volgens IETF BPC 47
+    rdae:P20214 "1908" ;                                        # dateOfExpression
     rdae:P20231 <http://data.bibliotheken.nl/id/w/1> ;          # "has work expressed"
     rdae:P20059 <http://data.bibliotheken.nl/id/m/1> .          # "manifestion of Expression"
 
