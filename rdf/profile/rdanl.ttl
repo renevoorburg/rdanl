@@ -150,7 +150,8 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10061 ;
     rdfs:comment "Te gebruiken ipv creatorAgentOfWork indien het een tekstueel werk betreft."@nl .
-
+    # welke subproperties toe te voegen?
+    
 <#relatedNomenOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
@@ -217,6 +218,7 @@
     rdfs:subPropertyOf rdaw:P10198 ;
     rdfs:seeAlso <#relatedRDAEntityOfRDAEntity> ;
     rdfs:comment "Te gebruiken in de context van een record. Gebruik in een RDF-context waarin entiteiten standaard van een klasse voorzien zijn de generieke property relatedRDAEntityOfRDAEntity."@nl . 
+    # welke subproperties toe te voegen?
 
 # properties A:
 
