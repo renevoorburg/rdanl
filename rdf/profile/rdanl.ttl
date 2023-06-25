@@ -180,6 +180,37 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P010219 . 
 
+<#identifierForWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10002 ;
+    rdfs:seeAlso <#identifierForRDAEntity> ;
+    rdfs:comment "Te gebruiken in de context van een record. Gebruik in een RDF-context waarin entiteiten standaard van een klasse voorzien zijn de generieke property identifierForRDAEntity. "@nl . 
+
+<#noteOnWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10330 . 
+
+ <#subject>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10256 . 
+
+ <#languageOfRepresentativeExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10353 ;
+    rdfs:seeAlso <#representativeExpression> ;
+    rdfs:comment "Doorgaans zal de voorkeur verdien een representative expression te koppelen en daar de taal aan te geven. Als dat geen nogelijkheid is dan is dit kenmerk een goede keuze. Waardes conform IETF BCP 47 zijn een goede keuze."@nl .           
+
+ <#relatedWorkOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10198 ;
+    rdfs:seeAlso <#relatedRDAEntityOfRDAEntity> ;
+    rdfs:comment "Te gebruiken in de context van een record. Gebruik in een RDF-context waarin entiteiten standaard van een klasse voorzien zijn de generieke property relatedRDAEntityOfRDAEntity."@nl . 
+
 # properties A:
 
 <#realIdentityOfPerson>
@@ -272,6 +303,12 @@
     rdfs:comment "Een taalcode volgens IETF BCP 47 is een geschikte waarde."@nl .      
 
 # properties X:
+
+<#relatedRDAEntityOfRDAEntity>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdax:P00001 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Gebruik een zo specifiek mogelijke related-property tenzij in een RDF-content waarin alle entiteiten van een type aanduding voorzien zijn."@nl .
 
 <#identifierForRDAEntity>
     a rdf:Property ;
