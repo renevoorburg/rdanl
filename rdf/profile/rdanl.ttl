@@ -339,42 +339,40 @@
     rdfs:isDefinedBy <#> ;
     rdfs:comment "Hanteer waarden volgens  <http://rdaregistry.info/termList/RDAContentType/> . Een gangbare waarde is \"text\"."@nl .
 
- <#languageOfExpression>
+<#languageOfExpression>
     a rdf:Property ;
     rdfs:subPropertyOf rdae:P20006 ;
     rdfs:isDefinedBy <#> ;
     rdfs:comment "Een taalcode volgens IETF BCP 47 is een geschikte waarde."@nl .   
 
- <#workExpressed>
+<#workExpressed>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:20231 . 
 
- <#manifestationOfExpression>
+<#manifestationOfExpression>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:P20059 . 
 
-  <#noteOnExpression>
+<#noteOnExpression>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:P20071 . 
 
-  <#summarizationOfContent>
+<#summarizationOfContent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae::P20069 .       
 
-
-
 # properties M:
 
- <#titleProper>
+<#titleProper>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30156 .   
 
- <#expressionManifested>
+<#expressionManifested>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30139 .   
@@ -402,7 +400,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30133 .   
 
- <#publisherAgent>
+<#publisherAgent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30083 .
@@ -413,21 +411,19 @@
     rdfs:subPropertyOf rdam:P30011 ;
     rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl .  
 
- <#placeOfPublication>
+<#placeOfPublication>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:30088 .      
 
 # properties P:
 
- <#nameOfPlace>
+<#nameOfPlace>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdap:P70001 .  
 
- <#partOfPlace>
+<#partOfPlace>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdap:P70032 .  
-
-
