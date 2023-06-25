@@ -144,12 +144,12 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10065 ;
     rdfs:seeAlso <#authorAgent> ;
-    rdfs:comment "Gebruik een specifieker rol waar mogelijk."@nl .
+    rdfs:comment "Gebruik een specifiekere rol waar mogelijk."@nl .
 
 <#authorAgent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P10061 ;
+    rdfs:subPropertyOf rdaw:P10061 , <#creatorAgentOfWork> ;
     rdfs:comment "Te gebruiken ipv creatorAgentOfWork indien het een tekstueel werk betreft."@nl .
     # welke subproperties toe te voegen?
 
@@ -167,6 +167,7 @@
 <#representativeExpression>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
+    owl:inverseOf <#representativeExpressionOf> ;
     rdfs:subPropertyOf rdaw:P10346 . 
 
 <#expressionOfWork>
@@ -219,7 +220,7 @@
     rdfs:subPropertyOf rdaw:P10198 ;
     rdfs:seeAlso <#relatedRDAEntityOfRDAEntity> ;
     rdfs:comment "Te gebruiken in de context van een record. Gebruik in een RDF-context waarin entiteiten standaard van een klasse voorzien zijn de generieke property relatedRDAEntityOfRDAEntity."@nl . 
-    # welke subproperties toe te voegen?
+    # welke subproperties nog meer toe te voegen?
 
 # properties A:
 
@@ -380,19 +381,32 @@
 <#translatorAgent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae:P20037 . 
+    rdfs:subPropertyOf rdae:P20037 , <#creatorAgentOfExpression> . 
 
 <#reviserAgent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae:P20327 . 
+    rdfs:subPropertyOf rdae:P20327 , <#creatorAgentOfExpression> . 
 
 <#contributorAgentToAmalgamation>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae:P20328 . 
+    rdfs:subPropertyOf rdae:P20328 , <#creatorAgentOfExpression> . 
 
-    # welke subproperties nog meer?
+    # welke subproperties van <#creatorAgentOfExpression> nog meer?
+
+<#intendedAudienceOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20322 ;
+    rdfs:comment "Gebruik bij voorkeur een gecontroleerde waardenlijst."@nl . 
+
+<#representativeExpressionOf>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    owl:inverseOf <#representativeExpression> ;
+    rdfs:subPropertyOf rdae:P20325 ;
+    rdfs:comment "In een RDF-context hoeft dit kenmerk niet gebruikt te worden als het Work al verwijst naar de representativeExpression."@nl .
 
 # properties M:
 
