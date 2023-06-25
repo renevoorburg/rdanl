@@ -25,7 +25,7 @@
   dc11:title "RDANL, een toepassingsprofiel van RDA."@en;
   dc11:description "RDANL, een toepassingsprofiel van RDA. "@en ;
   ns0:preferredNamespacePrefix "rdanl" ;
-  dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@en ;
+  dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@nl ;
   cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
   owl:versionInfo "v0.0.1" ;
   dc11:modified "2023-06-23" .
@@ -139,10 +139,17 @@
     rdfs:isDefinedBy <#> ;
 	rdfs:subPropertyOf rdaw:P10086 .
 
+<#creatorAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10065 ;
+    rdfs:comment "Gebruik een specifieker rol waar mogelijk."@nl .
+
 <#authorAgent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P10061 .
+    rdfs:subPropertyOf rdaw:P10061 ;
+    rdfs:comment "Te gebruiken ipv creatorAgentOfWork indien het een tekstueel werk betreft."@nl .
 
 <#relatedNomenOfWork>
     a rdf:Property ;
