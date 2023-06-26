@@ -70,7 +70,7 @@ Als we nu de geautoriseerde ingangen vervangen door IRI’s, dan wordt duidelijk
 		rdaa:authorizedAccessPointOfPerson “Carroll, Lewis” .
 
 
-Een linked data-gebaseerde oplossing voor deze gebruikerswens is te vinden in [Introductie van de Persona binnen RDA]().
+Een linked data-gebaseerde oplossing voor deze gebruikerswens is te vinden in [Introductie van de Persona binnen RDA](../Persona_in_RDA.md).
 
 
 [^1]: [`http://rdaregistry.info/Elements/a/contributorCollectiveAgentOfSpeechOf.en`](http://rdaregistry.info/Elements/a/contributorCollectiveAgentOfSpeechOf.en)
