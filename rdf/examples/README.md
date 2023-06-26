@@ -13,4 +13,4 @@ Bij het maken van de voorbeeld-RDF zijn de volgende principes gehanteerd:
 * De RDF volgt de in het toepassingsprofiel voorgestelde Persona-aanpak.
 * Eigenschappen zoals languageOfRepresentativeExpression worden hier op het meest specifieke niveau aangeduid, dus in dit voorbeeld als eigenschap van de representatieveExpression, niet als eigenschap van het Work (wat uiteraard alleen mogelijk is als er ook een representativeExpression aangewezen kan worden).
 
-De voorbeeld-RDF komt in twee varianten: één waarin de officiële RDA-klassen en kenmerken gebruikt worden [example_rda.ttl](example_rda.ttl), en één met klassen en kenmerken uit de afgeleide rdanl-ontologie [example_rdanl.ttl](example_rdanl.ttl).
+De voorbeeld-RDF komt in twee varianten: één waarin de officiële RDA-klassen en kenmerken gebruikt worden ([example_rda.ttl](example_rda.ttl)), en één met klassen en kenmerken uit de afgeleide [rdanl-ontologie](../profile/rdanl.ttl) ([example_rdanl.ttl](example_rdanl.ttl)).
