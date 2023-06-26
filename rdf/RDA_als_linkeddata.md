@@ -69,30 +69,8 @@ Als we nu de geautoriseerde ingangen vervangen door IRI’s, dan wordt duidelijk
 		rdaa:authorizedAccessPointOfPerson “Dodgson, Charles Lutwidge” ;
 		rdaa:authorizedAccessPointOfPerson “Carroll, Lewis” .
 
-Dit verlies aan informatie kan ongedaan gemaakt worden door twee `Nomen`-entiteiten te introduceren:
 
-	<work_1>
-		rdaw:authorPerson <person_1> ;
-		rdaw:relatedNomenOfWork <nomen_1> .
-
-	<work_2>
-		rdaw:authorPerson <person_1> ;
-		rdaw:relatedNomenOfWork <nomen_2> .
-
-	<person_1>
-		rdaa:realIdentityOfPerson <nomen_2> ;
-		rdaa:alternateIdentityOfPerson <nomen_1> .
-
-	<nomen_1>
-		rdan:accesspointForPersonOf <person_1> ;
-		rdan:nomenString “Carroll, Lewis” .
-
-	<nomen_2>
-		rdan:accesspointForPersonOf <person_1> ;
-		rdan:nomenString “Dodgson, Charles Lutwidge” .
-
-
-Een verdergaande uitwerking van deze gebruikerswens is te vinden in [Introductie van de Persona binnen RDA]().
+Een linked data-gebaseerde oplossing voor deze gebruikerswens is te vinden in [Introductie van de Persona binnen RDA]().
 
 
 [^1]: [`http://rdaregistry.info/Elements/a/contributorCollectiveAgentOfSpeechOf.en`](http://rdaregistry.info/Elements/a/contributorCollectiveAgentOfSpeechOf.en)
