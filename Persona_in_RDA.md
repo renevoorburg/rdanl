@@ -58,3 +58,5 @@ Een praktisch eis is niet alleen het kunnen vastlegen van 'Persona'-Nomencluster
 
 Hiertoe wordt, zoals voorgesteld binnen dit toepassingsprofiel, gebouwd op de RDA-kenmerken `rdaa:P50429` ("*has real identity of Person*") en `rdaa:P500428` ("h*as alternate identity of person*"). Deze kenmerken verwijzen bij de voorgesteld aanpak **alleen naar de centrale naam** (Nomen) in de 'Persona'-cluster. Een 'Persona' van een auteur wordt zo gereflecteerd door deze twee kenmerken gecombineerd met de daaraan gekoppelde Nomen-clusters. De volgende afbeelding illustreert deze aanpak.
 
+![persona](https://github.com/renevoorburg/rdanl/assets/465625/fc7d0820-5911-4790-8017-f48072f4c954)
+
