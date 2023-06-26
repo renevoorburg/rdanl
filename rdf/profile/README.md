@@ -10,7 +10,7 @@ Een uitgangspunt hierbij is dat de veelheid van naar *range* en *domain* gediffe
 
 RDF is er niet alleen om gelzen te worden door machines, maar ook door mensen. Daarom is er binnen dit profiel nadrukkelijk gekozen voor door mensen leesbare, begrijpelijke URI's. Hiertoe worden de element-namen van de Engelstalige *lexical aliasses* van RDA gebruikt.
 
-Het profiel is een **extensie van RDA** en kan daarom, waar relevant of zinvol, gecombineerd worden met reguliere RDA als RDF.
+Het profiel is minder uitgebreid dan RDA, zeker als het gaat om kenmerken die rollen aanduiden, maar omdat het een **extensie van RDA** is, kan het gecombineerd worden met reguliere RDA als RDF.
 
 ## Meer in detail
 
