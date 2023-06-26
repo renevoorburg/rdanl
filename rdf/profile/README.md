@@ -8,7 +8,7 @@ Doel van dit toepassingsprofiel is om de hoogdrempeligheid van het gebruik van R
 
 Een uitgangspunt hierbij is dat de veelheid van naar *range* en *domain* gedifferentieerde kenmerken die RDA biedt, geen semantische meerwaarde opleveren in een context waarbij alle entiteiten expliciet van een klasse-aanduiding voorzien zijn. Onder deze voorwaarde wordt een groot deel van de kenmerken van RDA overbodig.
 
-RDF is er niet alleen om gelzen te worden door machines, maar ook door mensen. Daarom is er binnen dit profiel nadrukkelijk gekozen voor door mensen leesbare, begrijpelijke URI's. Hiertoe worden de element-namen van de Engelstalige *lexical aliasses* van RDA gebruikt.
+RDF is er niet alleen om gelezen te worden door machines, maar ook door mensen. Daarom is er binnen dit profiel nadrukkelijk gekozen voor door mensen leesbare, begrijpelijke URI's. Hiertoe worden de element-namen van de Engelstalige *lexical aliasses* van RDA gebruikt.
 
 Het profiel is minder uitgebreid dan RDA, zeker als het gaat om kenmerken die rollen aanduiden, maar omdat het een **extensie van RDA** is, kan het gecombineerd worden met reguliere RDA als RDF.
 
