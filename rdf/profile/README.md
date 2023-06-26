@@ -30,3 +30,6 @@ RDANL is *work in progress*. Aandacht verdient onder andere:
 * Streven is ook alle inverse relaties expliciet op te nemen.
 * Aandacht verdient nog welke rol-definierende relaties opgenomen zouden moeten worden.
 
+## Zie ook
+
+[Voorbeelden in RDF](../examples/).
