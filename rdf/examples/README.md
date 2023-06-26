@@ -15,5 +15,5 @@ Bij het maken van de voorbeeld-RDF zijn de volgende principes gehanteerd:
 
 De voorbeeld-RDF komt in twee varianten:
 
-* [example_rda.ttl](example_rda.ttl): waarin de officiële RDA-klassen en kenmerken gebruikt worden
-* [example_rdanl.ttl](example_rdanl.ttl): met klassen en kenmerken uit de afgeleide [rdanl-ontologie](../profile/rdanl.ttl).
+* [example_rda.ttl](example_rda.ttl): waarin direct gebruik gemaakt wordt van de officiële RDA-klassen en kenmerken,
+* [example_rdanl.ttl](example_rdanl.ttl): waarin klassen en kenmerken gebruikt worden uit de afgeleide [rdanl-ontologie](../profile/rdanl.ttl).
