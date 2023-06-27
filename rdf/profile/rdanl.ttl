@@ -413,12 +413,31 @@
 <#titleProper>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdam:P30156 .   
+    rdfs:subPropertyOf rdam:P30156 . 
+
+<#variantTitleOfManifestation>      
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30128 . 
+
+<#identifierForManifestation>      
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30004 ;
+    rdfs:seeAlso <#identifierForRDAEntity> ;
+    rdfs:comment "Gebruik bij voorkeur het generiekere kenmerk identifierForRDAEntity."@nl .     
 
 <#expressionManifested>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30139 .   
+
+<#workManifested>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30135 ;
+    rdfs:seeAlso <#expressionManifested> ;
+    rdfs:comment "Gebruik bijvoorkeur vooral expressionManifested."@nl .       
 
 <#carrierType>
     a rdf:Property ;
