@@ -1,5 +1,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdanl: <http://data.bibliotheken.nl/rdanl#> .
 @prefix rdami: <http://rdaregistry.info/termList/ModeIssue/> .
 @prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
@@ -60,7 +61,7 @@
         "Kuperjus, Lui", "Couperus, Louis Marie Anne" , " Kouperus, Luis" , "Kuperus, Lui", "Kouperusas, Lui Mari Anė" ,
         "Kūpīris, Lūʾī" , "Couperus, Luigi", "Couperus, L." ;
     rdanl:identifierForRDAEntity 	"ISNI: 0000000110471568" ;
-    rdanl:identifierForRDAEntity "http://data.bibliotheken.nl/id/thes/p068435061" . 
+    rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p068435061> . 
 
 # Expresssion:
 <http://data.bibliotheken.nl/id/e/1> # fictieve Expression-IRI	
