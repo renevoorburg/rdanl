@@ -1,7 +1,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdanl: <http://data.bibliotheken.nl/rdanl#> .
 
-
 <http://data.bibliotheken.nl/id/a/2> # nu een fictieve Agent-IRI
     a rdanl:Person ; 
     rdanl:referredNameOfPerson "Douwes Dekker, Eduard"@nl ;
@@ -17,7 +16,6 @@
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p16766932X> ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p068934041> ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p074683578> .
-
 
 <http://data.bibliotheken.nl/id/n/2> # nu een fictieve IRI
     a rdanl:Nomen ;
@@ -35,7 +33,6 @@
     rdanl:identifierForRDAEntity "ISNI: 0000000110471568" ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p16766932X> . 
      
-
  <http://data.bibliotheken.nl/id/n/3> # nu een fictieve IRI
     a rdanl:Nomen ;
     rdanl:nameOfRDAEntityOf <http://data.bibliotheken.nl/id/a/2> ;
@@ -44,7 +41,6 @@
     rdanl:identifierForRDAEntity "ISNI: 0000000478614774" ;
     rdanl:identifierForRDAEntity "VIAF: 89204476" ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p068934041> . 
-
 
   <http://data.bibliotheken.nl/id/n/4> # nu een fictieve IRI
     a rdanl:Nomen ;
