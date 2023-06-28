@@ -63,6 +63,8 @@ In de voorgaande afbeelding zijn twee 'Personae' te zien rondom de persoon die v
 
 Voor linked data-toepassingen zullen behalve de `Works` en de `Person` ook de centrale `Nomens` van een IRI voorzien te worden. De niet-centrale `Nomens` zouden in RDF als een eenvoudige `rdfs:Literal` toegevoegd kunnen worden, of als een RDF `blank node`, als het wenselijk is om meer kenmerken aan de `Nomen` te hangen.
 
+Een uitwerking in RDF van de `rdanl:Person` "Eduard Douwes Dekker" en bijbehorende *Personae* is te vinden in [`personae_rdanl.ttl`](rdf/examples/personae_rdanl.ttl).
+
 Het [RDANL toepassingsprofiel](./rdf/profile) biedt, aanvullend op RDA, het afgeleide kenmerk `rdanl:relatedPersonaOfWork` [^2] om daarme de relatie tussen het `Work` en de `Nomen` die de 'Persona' representeert meer expliciet te kunnen maken.
  
 
