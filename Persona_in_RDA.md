@@ -72,7 +72,7 @@ Een uitwerking in RDF van de `rdanl:Person` "Eduard Douwes Dekker" en bijbehoren
 
 Het [RDANL toepassingsprofiel](./rdf/profile) biedt, aanvullend op RDA, het afgeleide kenmerk `rdanl:relatedPersonaOfWork` [^2] om daarme de relatie tussen het `Work` en de `Nomen` die de 'Persona' representeert, meer expliciet te kunnen maken.
 
-De aanpak met `Nomen`-clusters als *Personae* buit de mogelijkheden die RDA biedt volledig uit. Voor een gestructueerde en rijkere beschrijving van een *Persona* zal RDA waarschijnlijk niet de benodigde kenmerken bieden. Bijvoorbeeld, bij een *Persona* dat niet slechts een pseudoniem is maar een compleet gefingeerd persoon (een *heteroniem*) zou bijvoorbeeld de wens kunnen bestaan om de gefingeerde geboortedatum toe te voegen. Noodzakelijk lijkt het om hier nieuwe kenmerken voor te definieren, zo mogelijk als afgeleide van een RDA-kenmerk. Ter illustratie een suggestie:
+De aanpak met `Nomen`-clusters als *Personae* buit de mogelijkheden die RDA biedt volledig uit. Voor een gestructueerde en rijkere beschrijving van een *Persona* zal RDA waarschijnlijk niet de benodigde kenmerken bieden. Bijvoorbeeld, bij een *Persona* dat niet slechts een *pseudoniem* is maar een compleet gefingeerd persoon (een *heteroniem*), zou bijvoorbeeld de wens kunnen bestaan om de gefingeerde geboortedatum toe te voegen. Noodzakelijk lijkt het om hier nieuwe kenmerken voor te definieren, zo mogelijk als afgeleide van een RDA-kenmerk. Ter illustratie een suggestie van zo'n definitie:
 
 	@base <http://data.bibliotheken.nl/rdanl> . 
 	@prefix rdan: <http://rdaregistry.info/Elements/n/> .
