@@ -16,7 +16,7 @@
 | Type medium: |	zonder medium (rdamedia/dut) |
 | Type drager: | 🟨band🟨 (rdacarrier/dut) <br> boek (obdrager) 
 | Titel: | 🟦Een vrouw van het noorden🟦/ Louis Couperus |
-| 🟩Auteur:🟩 | Louis Marie Anne Couperus (1863-1923) (ISNI 0000 0001 1047 1568) |
+| 🟩Auteur:🟩 | Louis Marie Anne 🟩Couperus🟩 (1863-1923) (ISNI 0000 0001 1047 1568) |
 | Jaar: | cop. 🟨1999🟨 |
 | Taal: | 🟦ned🟦 |
 | Editie: | 2e dr |
