@@ -1,6 +1,6 @@
 # Van 'legacy'-metadata naar RDA-entiteiten
 
-De introductie van een nieuwe catalogiseerstandaard stelt bibliotheekinstellingen voor de opgave om hun bestaande bibliografische metadata ('legacy' metadata) daarmee in overeenstemming te brengen. In dit hoofdstuk wordt bestaande niet geheel RDA-conforme metadata omschreven als legacy metadata. 
+De introductie van een nieuwe catalogiseerstandaard stelt bibliotheekinstellingen voor de opgave om hun bestaande bibliografische metadata ('legacy'-metadata) daarmee in overeenstemming te brengen. 
 
 In de ideale wereld wordt bibliografische metadata gecreëerd en beheerd in een catalogiseersysteem dat RDA-entiteiten volledig ondersteunt. Weinig instellingen zullen nu of in de nabije toekomst van dergelijke catalogiseersystemen gebruikmaken. Ook kennis van RDA en de bijbehorende beschrijvingsregels zijn niet altijd aanwezig binnen bibliotheekorganisaties. 
 Toch kunnen RDA-entiteiten ook al afgeleid worden van niet volgens RDA- regels ingevoerde (bestaande of nieuwe) metadata. Deze metadata moet dan wel aan een aantal eisen voldoen. Deze minimale data-eisen worden in het volgende toegelicht. 
@@ -12,16 +12,16 @@ Het stappenplan valt uiteen in twee fasen:
 
 1. In de eerste fase wordt de eigen bibliografische metadata geanalyseerd en waar nodig verbeterd. Deze fase is nodig om de basiskwaliteit van de bibliografische metadata op orde te brengen en te toetsen aan het toepassingsprofiel. Deze stappen zullen door de instelling zelf uitgevoerd moeten worden. 
  
-2. In de tweede fase wordt de bibliografische metadata gekoppeld aan gezaghebbende RDA- entiteiten. De KB wil als nationale bibliotheek in de nabije toekomst de entiteiten van de Nederlandse Bibliografie (`Work`, `Expression`, `Manifestation`, `Agent` en ook *Persona*) gezaghebbend publiceren. Als eerste collecties zullen monografische romans en kinderboeken op deze manier gepubliceerd gaan worden.  Hiermee worden voor deze collecties de vervolgstappen van fase 2 mogelijk: het koppelen van de eigen bibliografische metadata aan de `Works`, `Expressions`, `Agents` (en eventueel ook de Manifestations) van de KB. Hoe beter de  kwaliteit van de aangeboden metadata, hoe betrouwbaarder en automatischer deze ‘entiteiten matching’ zal zijn. 
+2. In de tweede fase wordt de bibliografische metadata gekoppeld aan gezaghebbende RDA- entiteiten. De KB wil als nationale bibliotheek in de nabije toekomst de entiteiten van de Nederlandse Bibliografie (`Work`, `Expression`, `Manifestation`, `Agent` en ook [*Persona*](Persona_in_RDA.md)) gezaghebbend publiceren. Als eerste collecties zullen monografische romans en kinderboeken op deze manier gepubliceerd gaan worden. Zo worden de vervolgstappen van fase 2 mogelijk: het koppelen van de eigen bibliografische metadata aan de `Works`, `Expressions`, `Agents` (en eventueel ook de `Manifestations`) van de KB. Hoe beter de kwaliteit van de aangeboden metadata, hoe betrouwbaarder en automatischer deze ‘entiteiten-*matching*’ zal zijn. 
 
 ### Fase 1: stappen voor op orde brengen basiskwaliteit metadata 
 
  
-**Stap 1:** Selecteer de bibliografische metadata van de publicaries die binnen de scope van voorliggend profiel valt vallen,  
-**Stap 2:** Controleer deze dataset aan de hand van de minimale metadata eisen (*zie tabel 1.*),  
+**Stap 1:** Selecteer de bibliografische metadata van de publicaties die binnen de scope van voorliggend profiel valt vallen,  
+**Stap 2:** Controleer deze dataset aan de hand van de minimale metadata-eisen (*zie tabel 1.*),  
 **Stap 3:** Voer waar nodig opschoonacties en normalisaties op de metadata uit,  
 **Stap 4:** Toets de opgeschoonde metadata aan het RDA Toepassingsprofiel Monografieën 
-Controleer per RDA-entiteit of de verplichte gegevens aanwezig zijn in de titelbeschrijvingen. Deze toetsing geeft inzicht in de haalbaarheid van de herkenning van de WEMI-entiteiten op basis van de metadata. 
+Controleer per RDA-entiteit of de verplichte gegevens aanwezig zijn in de titelbeschrijvingen. Deze toetsing geeft inzicht in de haalbaarheid van de herkenning van de entiteiten op basis van de metadata. 
 
  
 ### Fase 2: (toekomstige) vervolgstappen voor het herkennen en vastleggen van RDA-entiteiten 
