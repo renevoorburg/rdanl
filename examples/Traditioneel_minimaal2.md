@@ -26,6 +26,6 @@
 | Collatie / omvang: | 🟨197 pagina's🟨. ; 21 cm | 
 | ISBN: | 🟨90-254-9967-8🟨 | 
 | Nummer: | (Brinkman) 29418453 | 
-| Trefwoord: | ((BTR) romans en novellen ; vertaald |
+| Trefwoord: | (BTR) romans en novellen ; vertaald |
 | Code: | (UNESCO) Proza (romans/novellen) |
 | Signatuur: | 🟥9084 F  13🟥 | 
