@@ -7,4 +7,4 @@ Voorbeelden van 'traditionele' titelbeschrijvingen met gemarkeerd de informatie-
 * [`Traditioneel_minimaal2.md](Traditioneel_minimaal1.md`) : een traditionele titelbeschrijving van een  vertaling. 
 
 ## RDF
-Voor voorbeelden in RDF, zie map [`../rdf`](../rdf).
+Voor voorbeelden in RDF, zie map [`../rdf/examples`](../rdf/examples).
