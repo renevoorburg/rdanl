@@ -13,7 +13,7 @@ Dit profiel richt zich op een **brede groep gebruikers**. Van catalografen in tr
 
 ### De eerste stap naar RDA, vanuit bestaande systemen
 
-* TODO Inleiding op RDA en IFLA LRM
+* [Inleiding op RDA en IFLA LRM](RDA_en_LRM.md): wat is RDA en hoe verhoudt het zich tot IFLA LRM?
 * [Van 'legacy'-metadata naar RDA-entiteiten](Van_legacy-metadata_naar_RDA-entiteiten.md): een **stappenplan** gebaseerd op een lijst met **minimale metadata-eisen**.
 
 ### Verdere integratie van RDA in catalogiseersystemen
