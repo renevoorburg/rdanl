@@ -19,7 +19,7 @@
     rdaw:P10088 "Aan den weg der vreugde" ;                         # titleOfWork - de oorspronkelijke titel
     rdaw:P10086 "Een vrouw van het noorden" ;                       # variantTitleOfWork
 
-    rdaw:P10061    <http://data.bibliotheken.nl/id/a/1> ;           # authorAgent 
+    rdaw:P10061 <http://data.bibliotheken.nl/id/a/1> ;           # authorAgent 
     rdaw:P10318 <http://data.bibliotheken.nl/id/n/1> ;              # relatedNomenOfWork 
     rdaw:P10346 <http://data.bibliotheken.nl/id/e/1> ;              # representativeExpression                                                
     rdaw:P10078 <http://data.bibliotheken.nl/id/e/1> ;              # expressionOfWork
