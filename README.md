@@ -1,7 +1,7 @@
-# RDA-Toepassingsprofiel - voor monografieën
+# RDA-Toepassingsprofiel - monografieën
 
 
-Om bibliografische beschrijvingen van het **tijdperk van de kaartenbak** naar dat van **linked data** te brengen, en zo een **breed scala aan gebruikerswensen** te kunnen ondersteunen, daar is een nieuw fundament voor nodig. De catalogiseerstandaard **RDA** (*Resource Description and Access* [^1]) en daarmee het onderliggende conceptueel model **IFLA LRM** (IFLA Library Reference Model [^2]), biedt dit [^3].
+Om bibliografische beschrijvingen van het **tijdperk van de kaartenbak** naar dat van **linked data** te brengen, en zo een **breed scala aan gebruikerswensen** te kunnen ondersteunen, daar is een nieuw fundament voor nodig. De catalogiseerstandaard **RDA** (*Resource Description and Access* [^1]) en daarmee het onderliggende conceptuele model **IFLA LRM** (IFLA Library Reference Model [^2]), biedt dit [^3].
 
 RDA biedt een grote uitdrukkingskracht, is flexibel, en toepasbaar in traditonele catalogiseersystemen én in linked data-voorzieningen. Een keerzijde hiervan is een hoge complexiteit. Om RDA in te kunnen zetten is daarom doorgaans een **toepassingsprofiel** onmisbaar. Een toepassingsprofiel vereenvoudigt de implementatie binnen een specifiek domein, door het bieden van **een passende selectie van elementen uit de standaard**, voorzien van **implementatie-voorbeelden**, **aanvullende richtlijnen** en **uitleg**.
  
