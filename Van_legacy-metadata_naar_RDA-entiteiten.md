@@ -12,7 +12,7 @@ Het stappenplan valt uiteen in twee fasen:
 
 1. In de eerste fase wordt de eigen bibliografische metadata geanalyseerd en waar nodig verbeterd. Deze fase is nodig om de basiskwaliteit van de bibliografische metadata op orde te brengen en te toetsen aan het toepassingsprofiel. Deze stappen zullen door de instelling zelf uitgevoerd moeten worden. 
  
-2. In de tweede fase wordt de bibliografische metadata gekoppeld aan gezaghebbende RDA- entiteiten. De KB wil als nationale bibliotheek in de nabije toekomst de entiteiten van de Nederlandse Bibliografie (`Work`, `Expression`, `Manifestation`, `Agent` en ook [*Persona*](Persona_in_RDA.md)) gezaghebbend publiceren. Als eerste collecties zullen monografische romans en kinderboeken op deze manier gepubliceerd gaan worden. Zo worden de vervolgstappen van fase 2 mogelijk: het koppelen van de eigen bibliografische metadata aan de `Works`, `Expressions`, `Agents` (en eventueel ook de `Manifestations`) van de KB. Hoe beter de kwaliteit van de aangeboden metadata, hoe betrouwbaarder en automatischer deze ‘entiteiten-*matching*’ zal zijn. 
+2. In de tweede fase wordt de bibliografische metadata gekoppeld aan gezaghebbende RDA- entiteiten. De KB zal als nationale bibliotheek in de nabije toekomst waarschijnlijk de entiteiten van de Nederlandse Bibliografie (`Work`, `Expression`, `Manifestation`, `Agent` en ook [*Persona*](Persona_in_RDA.md)) gezaghebbend publiceren. Als eerste collecties zullen monografische romans en kinderboeken op deze manier gepubliceerd gaan worden. Zo worden de vervolgstappen van fase 2 mogelijk: het koppelen van de eigen bibliografische metadata aan de `Works`, `Expressions`, `Agents` (en eventueel ook de `Manifestations`) van de KB. Hoe beter de kwaliteit van de aangeboden metadata, hoe betrouwbaarder en automatischer deze ‘entiteiten-*matching*’ zal zijn. 
 
 ### Fase 1: stappen voor op orde brengen basiskwaliteit metadata 
 
@@ -26,7 +26,7 @@ Controleer per RDA-entiteit of de verplichte gegevens aanwezig zijn in de titelb
  
 ### Fase 2: (toekomstige) vervolgstappen voor het herkennen en vastleggen van RDA-entiteiten 
  
-**Stap 5:** Toetsing van de eigen opgeschoonde minimale metadata (of de eigen RDA-entiteiten) aan het KB register met gezaghebbende RDA-entiteiten. Daarvoor zal de KB de RDA-entiteiten gezaghebbend moeten publiceren en een "RDA Entity Finder Dienst" ontwikkelen.  
+**Stap 5:** Toetsing van de eigen opgeschoonde minimale metadata (of de eigen RDA-entiteiten) aan het nog te realiseren KB-register met gezaghebbende RDA-entiteiten. Daarvoor zal de KB de RDA-entiteiten gezaghebbend moeten gaan publiceren en een "RDA Entity Finder"-dienst ontwikkelen.  
 **Stap 6:** Evaluatie en half-automatische/handmatige verwerking van de resultaten.  
 **Stap 7:** Opnemen van de URI’s van de (gezaghebbende KB) RDA-entiteiten op in de eigen metadatabron. 
 
@@ -63,7 +63,10 @@ In de kolom 'RDA entiteit' wordt aangegeven bij welke WEMI-entiteit de informati
 | **plaats van uitgave** | | `rdam:P30182` "*place of publication*" | indien bekend | nee | `Manifestation` | "Amsterdam" | 
 | **persistente identifier exemplaar** | moet uniek zijn in combinatie met de instellingsnaam en het land waar de instelling gevestigd is [^6] | `rdai:P40001` "*has identifier for item*"  | ja | nee | `Item` | "2365290" (als signatuur), "urn:nbn:nl:kb-1684989030400" (NBN (National Bibliographic Number), "MMKB18B:060765000" (URN - Uniform Resource Name) |
 
-Zie ook voorbeelden [TODO - link bijlage]().
+Zie ook voorbeelden:
+
+* [`Traditioneel_minimaal1.md`](examples/Traditioneel_minimaal1.md) : een traditionele titelbeschrijving, met minimale metadata voor RDA-entiteiten.
+* [`Traditioneel_minimaal2.md`](examples/Traditioneel_minimaal1.md`) : een traditionele titelbeschrijving van een vertaling, met minimale metadata voor RDA-entiteiten. 
 
 
 [^1]: zie ook de [RDA content types](http://www.rdaregistry.info/termList/RDAContentType/) 
