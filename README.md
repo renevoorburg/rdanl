@@ -7,7 +7,7 @@ RDA biedt een grote uitdrukkingskracht, is flexibel, en toepasbaar in traditonel
  
 Dat is wat ook dit RDA-toepassingsprofiel biedt. De horizon is het gebruik voor het beschrijven van de **Nederlandse bibliografie**, in deze fase nog beperkt tot monografieën [^4].
 
-Het profiel beoogt enerzijds catalografen in tradtionele op *records*-gebaseerde catalogiseersystemen te helpen stappen te zetten om met RDA  ...WIP....
+Dit profiel richt zich op een **brede groep gebruikers**. Van catalografen in tradtionele, op *records*-gebaseerde catalogiseersystemen, die als eerste stap metadata willen verrijken om **RDA-entiteiten herkenbaar** te kunnen maken, via metadata-specialisten, die **systemen op RDA willen aansluiten**, tot aan ontwikkelaars uit de wereld van **linked data-gebaseerde integratievoorzieningen**.
 
 ## Leeswijzer
 
@@ -16,12 +16,12 @@ Het profiel beoogt enerzijds catalografen in tradtionele op *records*-gebaseerde
 * TODO Inleiding op RDA en IFLA LRM
 * [Van 'legacy'-metadata naar RDA-entiteiten](Van_legacy-metadata_naar_RDA-entiteiten.md): een **stappenplan** gebaseerd op een lijst met **minimale metadata-eisen**.
 
-### Verdere integratie van RDA
+### Verdere integratie van RDA in catalogiseersystemen
 
 * TODO spreadsheet
 * [Introductie van de 'Persona' binnen RDA](Persona_in_RDA.md): Modellering van **publieke identiteiten** ('Personae') van schrijvers binnen de kaders van RDA.
 
-#### RDA in linked data-toepassingen 
+### RDA in linked data-toepassingen 
 
 * [RDA als linked data](rdf/RDA_als_linkeddata.md): Wat een informatieprofessional met een achtergrond in RDF moet weten over RDA.
 * [Toepassingsprofiel RDANL in RDF](rdf/profile): Een toepassingsprofiel voor RDA als **ontologie in RDF**, vooral gericht op linked data-toepassingen.
