@@ -29,7 +29,7 @@ De data-elementen van RDA zijn op te delen in:
 * Per klasse toe te passen **kenmerken** (*properties*), voor het beschrijven van relaties tussen entiteiten of het vastleggen van attributen. 
 * Verschillende **gecontroleerde begrippenlijsten** (*controlled vocabulairies*), in RDA ook *Vocabulary Encoding Schemes* (**VES**) genoemd.
 
-De data-elementen van RDA zijn formeel gedefinieerd in RDF (Resource Description Framework), wat RDA ook zeer geschikt maakt voor linked data-toepassingen. De definities van de RDA-elementen, ook in RDF, zijn te vinden in de [RDA Registry](https://www.rdaregistry.info). 
+De data-elementen van RDA zijn formeel gedefinieerd in RDF (Resource Description Framework), wat RDA ook zeer geschikt maakt voor linked data-toepassingen. De definities van de RDA-elementen zijn te vinden in de [RDA Registry](https://www.rdaregistry.info). 
 
  
 [^1]: De zogenaamde *user tasks*, het helpen van gebruikers bij het vinden, identificeren, selecteren, verkrijgen en ontdekken van de gewenste informatie, zie [IFLA LRM](https://www.ifla.org/wp-content/uploads/2019/05/assets/cataloguing/frbr-lrm/ifla-lrm-august-2017_rev201712.pdf) 
