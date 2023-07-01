@@ -1,11 +1,11 @@
-# RDA-Toepassingsprofiel - monografieën
+# RDA-Toepassingsprofiel
 
 
-Om bibliografische beschrijvingen van het **tijdperk van de kaartenbak** naar dat van **linked data** te brengen, en zo een **breed scala aan gebruikerswensen** te kunnen ondersteunen, daar is een nieuw fundament voor nodig. De catalogiseerstandaard **RDA** (*Resource Description and Access* [^1]) en daarmee het onderliggende conceptuele model **IFLA LRM** (IFLA Library Reference Model [^2]), biedt dit [^3].
+Om bibliografische beschrijvingen van het **tijdperk van de kaartenbak** naar dat van **linked data** te brengen, en zo een **breed scala aan gebruikerswensen** te kunnen ondersteunen, daar is een nieuw fundament voor nodig. De catalogiseerstandaard **RDA** (*Resource Description and Access* [^1]) en daarmee het onderliggende conceptuele model **IFLA LRM** (IFLA Library Reference Model [^2]), biedt dit.
 
 RDA biedt een grote uitdrukkingskracht, is flexibel, en toepasbaar in traditonele catalogiseersystemen én in linked data-voorzieningen. Een keerzijde hiervan is een hoge complexiteit. Om RDA in te kunnen zetten is daarom doorgaans een **toepassingsprofiel** onmisbaar. Een toepassingsprofiel vereenvoudigt de implementatie binnen een specifiek domein, door het bieden van **een passende selectie van elementen uit de standaard**, voorzien van **implementatie-voorbeelden**, **aanvullende richtlijnen** en **uitleg**.
  
-Dat is wat ook dit RDA-toepassingsprofiel biedt. De horizon is het gebruik voor het beschrijven van de **Nederlandse bibliografie**, in deze fase nog beperkt tot monografieën [^4].
+Dat is wat ook dit RDA-toepassingsprofiel biedt. De horizon is het gebruik voor het beschrijven van de **Nederlandse bibliografie**, in deze fase nog beperkt tot monografieën, waaronder ook luisterboeken (zie [Scope toepassingsprofiel](Scope_toepassingsprofiel.md)).
 
 Dit profiel richt zich op een **brede groep gebruikers**. Van catalografen in tradtionele, op *records*-gebaseerde catalogiseersystemen, die als eerste stap metadata willen verrijken om **RDA-entiteiten herkenbaar** te kunnen maken, via metadata-specialisten, die **systemen op RDA willen aansluiten**, tot aan ontwikkelaars uit de wereld van **linked data-gebaseerde integratievoorzieningen**.
 
@@ -33,7 +33,6 @@ Dit RDA-toepassinsgprofiel is opgesteld door Sita Bhagwandin, Djoke Dam,  Meta v
 
 
 
-[^1]: RDA TODO
-[^2]: LRM TODO
-[^3]: hier uitspraak IFLA over RDA TODO
-[^4]: wat en waarom monogr. TODO
+[^1]: RDA wordt beheerd door de [RDA Steering Committee](http://www.rda-rsc.org)
+[^2]: Zie [IFLA Library Reference Model: A Conceptual Model for Bibliographic Information](https://repository.ifla.org/handle/123456789/40)
+
