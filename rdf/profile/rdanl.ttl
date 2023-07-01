@@ -28,7 +28,7 @@
   dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@nl ;
   cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
   owl:versionInfo "v0.0.2" ;
-  dc11:modified "2023-07-0  " .
+  dc11:modified "2023-07-01" .
 
 # Classes:
 
