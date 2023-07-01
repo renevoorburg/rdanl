@@ -27,8 +27,8 @@
   ns0:preferredNamespacePrefix "rdanl" ;
   dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@nl ;
   cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
-  owl:versionInfo "v0.0.1" ;
-  dc11:modified "2023-06-23" .
+  owl:versionInfo "v0.0.2" ;
+  dc11:modified "2023-06-28" .
 
 # Classes:
 
@@ -137,21 +137,7 @@
 <#variantTitleOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-	rdfs:subPropertyOf rdaw:P10086 .
-
-<#creatorAgentOfWork>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P10065 ;
-    rdfs:seeAlso <#authorAgent> ;
-    rdfs:comment "Gebruik een specifiekere rol waar mogelijk."@nl .
-
-<#authorAgent>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P10061 , <#creatorAgentOfWork> ;
-    rdfs:comment "Te gebruiken ipv creatorAgentOfWork indien het een tekstueel werk betreft."@nl .
-    # welke subproperties toe te voegen?
+    rdfs:subPropertyOf rdaw:P10086 .
 
 <#relatedNomenOfWork>
     a rdf:Property ;
@@ -221,6 +207,42 @@
     rdfs:seeAlso <#relatedRDAEntityOfRDAEntity> ;
     rdfs:comment "Te gebruiken in de context van een record. Gebruik in een RDF-context waarin entiteiten standaard van een klasse voorzien zijn de generieke property relatedRDAEntityOfRDAEntity."@nl . 
     # welke subproperties nog meer toe te voegen?
+
+ <#relatedAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10311 . 
+
+<#addresseeAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10070, <#relatedAgentOfWork> .
+
+
+<#creatorAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10065 ;
+    rdfs:seeAlso <#authorAgent> ;
+    rdfs:comment "Gebruik een specifiekere rol waar mogelijk."@nl .
+
+<#authorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10061 , <#creatorAgentOfWork> ;
+    rdfs:comment "Te gebruiken ipv creatorAgentOfWork indien het een tekstueel werk betreft."@nl .
+    # welke subproperties toe te voegen?
+
+<#academicSupervisor>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10407 , <#creatorAgentOfWork> .
+
+<#aggregatorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10393, <#creatorAgentOfWork> .
+
 
 # properties A:
 
@@ -364,7 +386,7 @@
 <#summarizationOfContent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae::P20069 . 
+    rdfs:subPropertyOf rdae:P20069 . 
 
 <#dateOfExpression>
     a rdf:Property ;
@@ -372,10 +394,20 @@
     rdfs:subPropertyOf rdae:P20214 ;
     rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl . 
 
+<#translatedAs>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20171 . 
+
+<#translationOf>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20141 . 
+
 <#creatorAgentOfExpression>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae::P20053 ;
+    rdfs:subPropertyOf rdae:P20053 ;
     rdfs:comment "Hanteeer waar mogelijke subproperties met een specifieke rol."@nl .
 
 <#translatorAgent>
