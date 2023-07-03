@@ -18,7 +18,7 @@ Dit profiel richt zich op een **brede groep gebruikers**. Van catalografen in tr
 
 ### Verdere integratie van RDA in catalogiseersystemen
 
-* [Toe te passen RDA-kenmerken](RDA-kenmerken): Overzicht toe te passen RDA-kenmerken, per soort entiteit.
+* [Toe te passen RDA-kenmerken](RDA-kenmerken.md): Overzicht toe te passen RDA-kenmerken, per soort entiteit.
 * [Introductie van de 'Persona' binnen RDA](Persona_in_RDA.md): Modellering van **publieke identiteiten** ('Personae') van schrijvers binnen de kaders van RDA.
 
 ### RDA in linked data-toepassingen 
