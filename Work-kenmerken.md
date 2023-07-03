@@ -12,7 +12,7 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 | [rdaw:P10086](http://rdaregistry.info/Elements/w/P10086) | **variantTitleOfWork** || `Nomen` | U| MA | >1 | 
 ||
 || *Coherence:* | *primaire relaties tussen entiteiten:* ||| M | >1 |
-| [rdaw:P10078](http://rdaregistry.info/Elements/w/P10078) | 	**expressionOfWork**	|| `Expression` |  S / Id / IRI | M | >1 |
+| [rdaw:P10078](http://rdaregistry.info/Elements/w/P10078) | 	**expressionOfWork**	| relateer `Expressions` vooral aan het `Work` via de `Expression` | `Expression` |  S / Id / IRI | O | >1 |
 | [rdaw:P10072](http://rdaregistry.info/Elements/w/P10072) | **manifestationOfWork** || `Manifestation` | S / Id / IRI | O | >1 |
 ||
 || *General description:*	| *algemene beschrijving (basistoepassingsprofiel):* |
