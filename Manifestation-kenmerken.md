@@ -17,13 +17,13 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 | rdam:P30103	|	**exemplarOfManifestation** || `Item` | S / Id / IRI | M | >1 |
 ||
 ||	*General description:*	| *algemene beschrijving (basistoepassingsprofiel):* |
-| rdam:P30002	|	media type	|		|		|	structured/iri	|	M	|	1	|	RDA Media Type http://www.rdaregistry.info/termList/RDAMediaType/?language=nl	|
-|	rdam:P30003	|	mode of issuance	|		|		|	structured/iri	|	M	|	1	|	RDA Mode of Issuance http://www.rdaregistry.info/termList/ModeIssue/?language=nl	|
-|	rdam:P30335	|	category of manifestation	|	Gebruik zoveel mogelijk een gecontroleerde waardelijst.	|		|	unstructured/structured/identifier/iri	|	O	|	1	|	Brinkman Trefwoorden thesaurus, Thema (https://ns.editeur.org/thema/nl)	|
-|	rdam:P30142	|	other title information	|		|		|	unstructured	|	O	|	>1	|	ondertitel	|
-|	rdam:P30105	|	statement of responsibility relating to title proper	|	Overnemen uit de resource.	|		|	unstructured	|	MA	|	1	|		|
-|	rdam:P30280	|	manifestation copyright statement	|	Overnemen uit de resource. Datum en bij wie de copyright berust. Als alleen een datum bekend is, gebruik dan copyright date.	|		|	unstructured	|	MA	|	1	|		|
-|	rdam:P30007	|	copyright date	|	"Overnemen uit de resource. Datum copyright "	|		|	unstructured	|	MA	|	1	|	ISO 8601-1:2019	|
+| rdam:P30002	| **mediaType** |	||	S / IRI | M | 1 | RDA Media Type [^3] |
+| rdam:P30003	| **modeOfIssuance** ||| S / IRI | M | 1 | RDA Mode of Issuance [^4] |
+| rdam:P30335	| **categoryOfManifestation** | TODO: zijn dit de vormtrefwoorden? || U / S / Id / IRI | O | 1 | Brinkman Trefwoorden thesaurus, Thema (https://ns.editeur.org/thema/nl) |
+| rdam:P30142	 | **otherTitleInformation** | gebruik voor ondertitel || U | O | >1 |
+| rdam:P30105	|	**statementOfResponsibilityRelatingToTitleProper** | TODO waarvoor? / overnemen uit de resource  || U | MA | 1 |
+| rdam:P30280 | **manifestationCopyrightStatement** | datum en bij wie de copyright berust, overnemen uit de bron<br>als alleen een datum bekend is, gebruik dan **copyrightDate** || U | MA	| 1 |
+| rdam:P30007 | **copyrightDate**	| datum copyright zoals vermeld in de bron || U | MA | 1 | ISO 8601-1:2019 |
 |	rdam:P30107	|		|	Dit element wordt samengesteld uit de volgende subelementen: rdam:P30133, rdam:P30132, rdam:P30121, rdam:P30118. Als deze elementen apart genoteerd kunnen worden en van toepassing zijn, gebruik deze elementen. Indien de informatie als geheel wordt opgenomen, gebruik dan dit superelement.	|		|		|		|		|		|
 |	rdam:P30133	|	designation of edition	|	Overnemen uit de resource.	|		|	unstructured	|	MA	|	>1	|		|
 |	rdam:P30132	|	designation of named revision of edition	|		|		|	unstructured	|	MA	|	>1	|		|
@@ -59,3 +59,8 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 |	rdam:P30454	|	sound content	|	In 2025 wordt de wet m.b.t. digitale toegankelijkheid van kracht. Uitgevers worden geacht gegevens daarover aan te leveren. Het is van belang deze op te nemen in de metadata.	|		|	unstructured	|	MA	|	>1	|		|
 |	rdam:P30456	|	colour content	|	In 2025 wordt de wet m.b.t. digitale toegankelijkheid van kracht. Uitgevers worden geacht gegevens daarover aan te leveren. Het is van belang deze op te nemen in de metadata.	|		|	unstructured	|	MA	|	>1	|		|
 |	rdam:P30452	|	accessibility content	|	In 2025 wordt de wet m.b.t. digitale toegankelijkheid van kracht. Uitgevers worden geacht gegevens daarover aan te leveren. Het is van belang deze op te nemen in de metadata.	|		|	unstructured	|	MA	|	>1	|		|
+
+[^1]: Vastlegging / *Recording method*, volgens <br>**U**: "unstructured"<br>**S**: "structured"<br>**Id**: "identifier" <br>**IRI**: IRI.
+[^2]: Verplicht veld?, volgens <br>**M**: "*Must* / Verplicht"<br>**MA**: "*Must if applicable* / Verplicht indien van toepassing"<br>**O**: "*Optional* / Optioneel" 
+[^3]: Zie [RDA Media Type](http://www.rdaregistry.info/termList/RDAMediaType/?language=nl)
+[^4]: Zie [RDA Mode of Issuance](http://www.rdaregistry.info/termList/ModeIssue/?language=nl)

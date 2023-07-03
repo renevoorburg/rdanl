@@ -473,6 +473,30 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30128 . 
 
+<#otherTitleInformation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30335	;
+    rdfs:comment "Gebruik voor bijvoorbeeld de ondertitel."@nl .    
+
+<#statementOfResponsibilityRelatingToTitleProper>      
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30105	;
+    rdfs:comment "TODO"@nl .
+
+<#manifestationCopyrightStatement>      
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30280	;
+    rdfs:comment "TODO"@nl .
+
+<#copyrightDate	>      
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30007 ;
+    rdfs:comment "Datum copyright zoals vermeld in de bron."@nl .
+
 <#identifierForManifestation>      
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
@@ -519,7 +543,7 @@
 <#designationOfEdition>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdam:P30133 .   
+    rdfs:subPropertyOf rdam:P30133 . 
 
 <#publisherAgent>
     a rdf:Property ;
