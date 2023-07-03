@@ -1,4 +1,4 @@
-# Work
+# Toe te passen RDA-kenmerken voor `Work`-entiteiten
 
 
 
