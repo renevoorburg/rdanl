@@ -6,21 +6,18 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 | uri | naam | opm. | range | vastlegging [^1] | verpl.? [^2] | max. | waarde |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 || 
-
-
-|	Appellation	|	Elementen die worden gebruikt om de entiteit te identificeren (benoemen).	|		|		|		|	M	|		|		|
-|	rdam:P30156	|	title proper	|	Inhoudelijk overnemen uit de resource zoals het er staat, ook eventuele tikfouten. Titel vastleggen zoals een zin. Hoofdlettergebruik zoals in de taal van de titel gebruikelijk is. Bij tikfouten de gecorrigeerde titel opnemen als variant title of manifestation. 	|	nomen	|	unstructured	|	M	|	1	|		|
-|	rdam:P30128	|	variant title of manifestation	|	Inhoudelijk overnemen uit de resource zoals het er staat, ook eventuele tikfouten. Titel vastleggen zoals een zin. Hoofdlettergebruik zoals in de taal van de titel gebruikelijk is. Bij tikfouten de gecorrigeerde titel opnemen als andere variant title of manifestation.	|	nomen	|	unstructured	|	O	|	>1	|		|
-|	rdam:P30004	|	identifier for manifestation	|	Systeemonafhankelijke identifier, indien mogelijk persistent. Dit is niet de identifier van een metadata record.	|	nomen	|	identifier	|	MA	|	>1	|	ISBN	|
-|		|		|		|		|		|		|		|		|
-|	Coherence	|	Het koppelen van de  resource entiteiten van een enkele informatie resource met behulp van "primaire" relaties	|		|		|		|		|		|		|
-|	rdam:P30139	|	expression manifested	|		|	expression	|	structured/identifier/iri	|	M	|	>1	|		|
-|	rdam:P30135	|	work manifested	|		|	work	|	structured/identifier/iri	|	O	|	1	|		|
-|	rdam:P30103	|	exemplar of manifestation	|		|	Item	|	structured/identifier/iri	|	M	|	>1	|		|
-|		|		|		|		|		|		|		|		|
-|	General description	|	Algemene elementen die worden gebruikt om de entiteit te beschrijven [basistoepassingsprofiel]	|		|		|		|		|		|		|
-|		|		|		|		|		|		|		|		|
-|	rdam:P30002	|	media type	|		|		|	structured/iri	|	M	|	1	|	RDA Media Type http://www.rdaregistry.info/termList/RDAMediaType/?language=nl	|
+|| *Appellation:* | *elementen om de entiteit te benoemen:* ||| M | >1 |
+| rdam:P30156 |	**titleProper** | letterijk overnemen uit de bron zoals het er staat, ook eventuele tikfouten<br>vastleggen als een zin<br>hoofdlettergebruik zoals in de taal van de titel gebruikelijk is<br>bij fouten de gecorrigeerde titel opnemen als **variantTitleOfManifestation** | `Nomen` | U | M | 1 |
+| rdam:P30128	 | **variantTitleOfManifestation** | zie bij **titleProper** | `Nomen` |	U | O | >1	|
+| rdam:P30004 | **identifierForManifestation** | systeemonafhankelijke identifier, indien mogelijk persistent, dit is niet de identifier van het metadata record | `Nomen` | identifier	|	MA	|	>1	| "ISBN: 9025499678" |
+||
+|| *Coherence:* | *primaire relaties tussen entiteiten:* ||| M | >1 |
+| rdam:P30139 | **expressionManifested** || `Expression` | S / Id / IRI | M | >1 |
+| rdam:P30135 | **workManifested** || `Work` | S / Id / IRI | O | 1 |
+| rdam:P30103	|	**exemplarOfManifestation** || `Item` | S / Id / IRI | M | >1 |
+||
+||	*General description:*	| *algemene beschrijving (basistoepassingsprofiel):* |
+| rdam:P30002	|	media type	|		|		|	structured/iri	|	M	|	1	|	RDA Media Type http://www.rdaregistry.info/termList/RDAMediaType/?language=nl	|
 |	rdam:P30003	|	mode of issuance	|		|		|	structured/iri	|	M	|	1	|	RDA Mode of Issuance http://www.rdaregistry.info/termList/ModeIssue/?language=nl	|
 |	rdam:P30335	|	category of manifestation	|	Gebruik zoveel mogelijk een gecontroleerde waardelijst.	|		|	unstructured/structured/identifier/iri	|	O	|	1	|	Brinkman Trefwoorden thesaurus, Thema (https://ns.editeur.org/thema/nl)	|
 |	rdam:P30142	|	other title information	|		|		|	unstructured	|	O	|	>1	|	ondertitel	|

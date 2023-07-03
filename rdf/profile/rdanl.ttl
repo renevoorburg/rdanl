@@ -27,7 +27,7 @@
   ns0:preferredNamespacePrefix "rdanl" ;
   dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@nl ;
   cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
-  owl:versionInfo "v0.1.0" ;
+  owl:versionInfo "v0.1.1" ;
   dc11:modified "2023-07-03" .
 
 # Classes:
@@ -490,7 +490,13 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30135 ;
     rdfs:seeAlso <#expressionManifested> ;
-    rdfs:comment "Gebruik bijvoorkeur vooral expressionManifested."@nl .       
+    rdfs:comment "Gebruik bijvoorkeur vooral expressionManifested."@nl .    
+
+<#exemplarOfManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30103	;
+    rdfs:comment "Leg de koppeling bij voorkeur vanaf het Item."@nl .         
 
 <#carrierType>
     a rdf:Property ;
