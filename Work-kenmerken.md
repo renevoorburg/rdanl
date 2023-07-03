@@ -1,5 +1,6 @@
 # Toe te passen RDA-kenmerken voor `Work`-entiteiten
 
+Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 
 
 | uri | naam | opm. | range | vastlegging [^1] | verpl.? [^2] | max. | waarde |
