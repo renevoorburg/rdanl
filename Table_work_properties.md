@@ -5,7 +5,7 @@
 | uri | label | opm. | range | vastlegging [^1] | verpl.? [^2] | max. | waarde |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |
-| **Appellation:** | **elementen die worden gebruikt om de entiteit te benoemen** |||| M | >1 |
+| **Appellation:** | **elementen die worden gebruikt om de entiteit te benoemen** |||| M | >1 ||
 | rdaw:P10088	 | 	"*title of work*" | oorspronkelijke titel | `Nomen` | U | M | 1 |
 | rdaw:P10223	 | 	"*preferred title of work*" | meest bekende titel, alleenindien anders dan "*title of work*" | `Nomen` | U | MA | 1 |
 | rdaw:P10086 | "*variant title of work*" || `Nomen` | U| MA | >1 | 
