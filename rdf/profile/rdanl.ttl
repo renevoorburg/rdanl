@@ -27,7 +27,7 @@
   ns0:preferredNamespacePrefix "rdanl" ;
   dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@nl ;
   cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
-  owl:versionInfo "v0.1.1" ;
+  owl:versionInfo "v0.1.2" ;
   dc11:modified "2023-07-03" .
 
 # Classes:
@@ -491,11 +491,36 @@
     rdfs:subPropertyOf rdam:P30280	;
     rdfs:comment "TODO"@nl .
 
-<#copyrightDate	>      
+<#copyrightDate>      
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30007 ;
     rdfs:comment "Datum copyright zoals vermeld in de bron."@nl .
+
+<#editionStatement>      
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30107 .
+
+<#designationOfEdition>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30133 .
+
+<#designationOfNamedRevisionOfEdition>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30132 .  
+
+<#statementOfResponsibilityRelatingToEdition>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30121 .  
+
+<#statementOfResponsibilityRelatingToNamedRevisionOfEdition> 
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30118 .   
 
 <#identifierForManifestation>      
     a rdf:Property ;
@@ -533,6 +558,16 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30002 ;
     rdfs:comment "Hanteer waarden volgens <http://rdaregistry.info/termList/RDAMediaType/>  . Een voorbeeldwaarde is \"unmediated\"."@nl .    
+
+<#extentOfManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30182 . 
+
+<#dimensions>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30169 . 
 
 <#modeOfIssuance>
     a rdf:Property ;

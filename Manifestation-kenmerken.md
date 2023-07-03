@@ -24,16 +24,15 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 | rdam:P30105	|	**statementOfResponsibilityRelatingToTitleProper** | TODO waarvoor? / overnemen uit de resource  || U | MA | 1 |
 | rdam:P30280 | **manifestationCopyrightStatement** | datum en bij wie de copyright berust, overnemen uit de bron<br>als alleen een datum bekend is, gebruik dan **copyrightDate** || U | MA	| 1 |
 | rdam:P30007 | **copyrightDate**	| datum copyright zoals vermeld in de bron || U | MA | 1 | ISO 8601-1:2019 |
-|	rdam:P30107	|		|	Dit element wordt samengesteld uit de volgende subelementen: rdam:P30133, rdam:P30132, rdam:P30121, rdam:P30118. Als deze elementen apart genoteerd kunnen worden en van toepassing zijn, gebruik deze elementen. Indien de informatie als geheel wordt opgenomen, gebruik dan dit superelement.	|		|		|		|		|		|
-|	rdam:P30133	|	designation of edition	|	Overnemen uit de resource.	|		|	unstructured	|	MA	|	>1	|		|
-|	rdam:P30132	|	designation of named revision of edition	|		|		|	unstructured	|	MA	|	>1	|		|
-|	rdam:P30121	|	statement of responsibility relating to edition	|		|		|	unstructured	|	MA	|	1	|		|
-|	rdam:P30118	|	statement of responsibility relating to named revision of edition	|		|		|	unstructured	|	MA	|	1	|		|
-|		|		|		|		|		|		|		|		|
-|	rdam:P30001	|	carrier type	|		|		|	structured/iri	|	M	|	1	|	RDA Carrier Type http://www.rdaregistry.info/termList/RDACarrierType/	|
-|	rdam:P30182	|	extent of manifestation	|	o.a. aantal pagina's	|		|	structured	|	M	|		|		|
-|	rdam:P30169	|	dimensions	|	Neem in dit element wat nodig is voor het magazijn van fysieke resources. Noteer de maten in cm. Indien de hoogte kleiner is dan 10 centimeter, gebruik dan mm om de maten aan te geven.	|		|	unstructured	|	MA	|	>1	|		|
-|	rdam:P30137	|	note on manifestation	|		|		|	unstructured	|	O	|	>1	|		|
+| rdam:P30107 | **editionStatement** |	een vermelding die een editie identificeert waartoe een manifestatie behoort<br>wordt samengesteld uit de volgende subelementen: **designationOfEdition**, **designationOfNamedRevisionOfEdition**, **statementOfResponsibilityRelatingToEdition**, rdam:P30118, als deze elementen apart genoteerd kunnen worden en van toepassing zijn, gebruik deze elementen, indien de informatie als geheel wordt opgenomen, gebruik dan dit superelement |
+| rdam:P30133 | **designationOfEdition** | overnemen uit de bron || U | MA | >1 |
+| rdam:P30132 | **designationOfNamedRevisionOfEdition** ||| U | MA | >1 |
+| rdam:P30121 | **statementOfResponsibilityRelatingToEdition** ||| U | MA | 1 |
+| rdam:P30118 | **statementOfResponsibilityRelatingToNamedRevisionOfEdition** ||| U | MA | 1 |
+| rdam:P30001 | **carrierType** |	||	S / Id / IRI | M | 1 | RDA Carrier Type [^5] |
+| rdam:P30182 | **extentOfManifestation** | o.a. aantal pagina's ||S| M | 1 |
+| rdam:P30169	 | dimensions |	Neem in dit element wat nodig is voor het magazijn van fysieke resources. Noteer de maten in cm. Indien de hoogte kleiner is dan 10 centimeter, gebruik dan mm om de maten aan te geven ||	unstructured (?) | MA | >1 |
+| rdam:P30137 | note on manifestation	|		|		|	unstructured	|	O	|	>1	|		|
 |	rdam:P30453	|	illustrative content	|		|		|	structured/iri	|	MA	|	>1	|	RDA Illustrative Content http://www.rdaregistry.info/termList/IllusContent/?language=nl	|
 |	rdam:P30309	|	type of binding	|		|		|	structured/iri	|	O	|	>1	|	RDA Type of Binding http://www.rdaregistry.info/termList/RDATypeOfBinding/?language=nl	|
 |	rdam:P30160	|	term of availability	|	o.a. prijs	|		|	unstructured	|	O	|	>1	|		|
@@ -62,5 +61,6 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 
 [^1]: Vastlegging / *Recording method*, volgens <br>**U**: "unstructured"<br>**S**: "structured"<br>**Id**: "identifier" <br>**IRI**: IRI.
 [^2]: Verplicht veld?, volgens <br>**M**: "*Must* / Verplicht"<br>**MA**: "*Must if applicable* / Verplicht indien van toepassing"<br>**O**: "*Optional* / Optioneel" 
-[^3]: Zie [RDA Media Type](http://www.rdaregistry.info/termList/RDAMediaType/?language=nl)
-[^4]: Zie [RDA Mode of Issuance](http://www.rdaregistry.info/termList/ModeIssue/?language=nl)
+[^3]: Zie [RDA Media Type](http://www.rdaregistry.info/termList/RDAMediaType/).
+[^4]: Zie [RDA Mode of Issuance](http://www.rdaregistry.info/termList/ModeIssue/).
+[^5]: Zie [RDA Carrier Type](http://www.rdaregistry.info/termList/RDACarrierType/).
