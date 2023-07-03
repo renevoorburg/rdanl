@@ -7,9 +7,9 @@
 ||||||||| 
 || **Appellation:** | elementen om de entiteit te benoemen ||| M | >1 ||
 | [rdaw:P10088](http://rdaregistry.info/Elements/w/P10088) | 	**titleOfWork** | oorspronkelijke titel | `Nomen` | U | M | 1 |
-| [rdaw:P10223](http://rdaregistry.info/Elements/w/P10223)	 | 	**preferredTitleOfWork** | meest bekende titel, alleen indien anders dan "*title of work*" | `Nomen` | U | MA | 1 |
+| [rdaw:P10223](http://rdaregistry.info/Elements/w/P10223)	 | 	**preferredTitleOfWork** | meest bekende titel, alleen indien anders dan **titleOfWork** | `Nomen` | U | MA | 1 |
 | [rdaw:P10086](http://rdaregistry.info/Elements/w/P10086) | **variantTitleOfWork** || `Nomen` | U| MA | >1 | 
-|
+||
 | **Coherence:** | **primaire relaties tussen entiteiten** |||| M | >1 |
 | [rdaw:P10078](http://rdaregistry.info/Elements/w/P10078) | 	**expressionOfWork**	|| `Expression` |  S / Id / IRI | M | >1 |
 | [rdaw:P10072](http://rdaregistry.info/Elements/w/P10072) | **manifestationOfWork** || `Manifestation` | S / Id / IRI | O | >1 |
