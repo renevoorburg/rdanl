@@ -39,7 +39,8 @@
         rdanl:languageOfNomen "nl" ;
         rdanl:equivalentTo [
             a rdanl:Nomen ;	
-            rdanl:nomenString "Луис"
+            rdanl:nomenString "Луис" ;
+            rdanl:scriptOfNomen "sr"
         ]
     ] ;
     rdanl:dateOfBirth "1863" ;
@@ -50,7 +51,8 @@
     ] ;
     rdanl:biographicalInformation "Med. NLMD/C 383" ; 
     rdanl:biographicalInformation "literator en feuilletonnist (m.n. in dagblad \"Het Vaderland\", te Den Haag)"	;
-    rdanl:biographicalInformation "http://dbnl-srv-p200.dmz.kb.nl/auteurs/auteur.php?id=coup002" .
+    rdanl:biographicalInformation "http://dbnl-srv-p200.dmz.kb.nl/auteurs/auteur.php?id=coup002" ;
+    rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p068435061> . 
 
 ### Nomen(-cluster) als persona "Couperus": 
 <http://data.bibliotheken.nl/id/n/1> # fictieve IRI

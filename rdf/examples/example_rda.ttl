@@ -1,5 +1,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdac: <http://rdaregistry.info/Elements/c/> .
 @prefix rdaw: <http://rdaregistry.info/Elements/w/> .
 @prefix rdae: <http://rdaregistry.info/Elements/e/> .
@@ -16,8 +17,8 @@
 ### Werk "Aan den weg der vreugde":
 <http://data.bibliotheken.nl/id/w/1>                                # fictieve Werk-IRI
     a rdac:C10001 ;                                                 # dit is een Work 
-    rdaw:P10088 "Aan den weg der vreugde" ;                         # titleOfWork - de oorspronkelijke titel
-    rdaw:P10086 "Een vrouw van het noorden" ;                       # variantTitleOfWork
+    rdaw:P10088 "Aan den weg der vreugde"@nl ;                      # titleOfWork - de oorspronkelijke titel
+    rdaw:P10086 "Een vrouw van het noorden"@nl ;                     # variantTitleOfWork
 
     rdaw:P10061 <http://data.bibliotheken.nl/id/a/1> ;           # authorAgent 
     rdaw:P10318 <http://data.bibliotheken.nl/id/n/1> ;              # relatedNomenOfWork 
@@ -34,8 +35,8 @@
 <http://data.bibliotheken.nl/id/a/1>                                # fictieve Agent-IRI
     a rdac:C10004 ;                                                 # a Person
     rdaa:P50429 <http://data.bibliotheken.nl/id/n/1> ;              # "real identity of person"
-    rdaa:P50104 "letterkundige" ;                                   # "profession or occupation"
-    rdaa:P50117 "Louis Couperus" ;                                  # "has preferred name of person" 
+    rdaa:P50104 "letterkundige"@nl ;                                # "profession or occupation"
+    rdaa:P50117 "Louis Couperus"@nl ;                               # "has preferred name of person" 
     rdaa:P50291    [                                                # "surname" ; als Nomen-entiteit
         a rdac:C10012 ;                                                 # a Nomen
         rdan:P80068 "Couperus" ;                                        # "has nomen string"
@@ -49,7 +50,8 @@
         rdan:P80066 "nl" ;                                           # "language of Nomen" ; IETF BCP 47
         rdan:P80113 [                                                # "equivalent to"
             a rdac:C10012 ;                                             # a Nomen
-            rdan:P80068 "Луис"                                          # "has nomen string"
+            rdan:P80068 "Луис"  ;                                       # "has nomen string"
+            rdan:P80070 "sr"                                            # "script of nomen"
         ]
     ] ;
     rdaa:P50121 "1863" ;                                        # "date of birth"
@@ -59,19 +61,20 @@
         rdax:P00016 "NL"                                            # "has identifier for RDA Entity" ; ISO 3166-1 alpha-2 
     ] ;
     rdaa:P50113 "Med. NLMD/C 383" ;                             # "biographical information"
-    rdaa:P50113 "literator en feuilletonnist (m.n. in dagblad \"Het Vaderland\", te Den Haag)"    ;
-    rdaa:P50113 "http://dbnl-srv-p200.dmz.kb.nl/auteurs/auteur.php?id=coup002" .
+    rdaa:P50113 "literator en feuilletonnist (m.n. in dagblad \"Het Vaderland\", te Den Haag)"@nl   ;
+    rdaa:P50113 "http://dbnl-srv-p200.dmz.kb.nl/auteurs/auteur.php?id=coup002" ;
+    rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p068435061> . 
 
 ### Nomen(-cluster) als persona "Couperus": 
 <http://data.bibliotheken.nl/id/n/1>                            # fictieve IRI
     a rdac:C10012 ;                                             # a Nomen
     rdan:P80057 <http://data.bibliotheken.nl/id/a/1> ;          # "is name of RDA entity of" ;  relatie
-    rdan:P80068    "Couperus, Louis (1863 - 1923)" ;            # "has nomen string"
-    rdan:P80113    "Couperus, Louis", "Kūpīras, Lūʾī" ,         # "equivalent to" ; eventueel ook als Nomen-entiteiten.
+    rdan:P80068    "Couperus, Louis" ;            # "has nomen string"
+    rdan:P80113    "Kūpīras, Lūʾī" ,         # "equivalent to" ; eventueel ook als Nomen-entiteiten.
         "Kuperjus, Lui", "Couperus, Louis Marie Anne" , " Kouperus, Luis" , "Kuperus, Lui", "Kouperusas, Lui Mari Anė" ,
         "Kūpīris, Lūʾī" , "Couperus, Luigi", "Couperus, L." ;
     rdax:P00018     "ISNI: 0000000110471568" ;                  # "identifier for RDA Entity"
-    rdax:P00018 "http://data.bibliotheken.nl/id/thes/p068435061" . 
+    rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p068435061> . 
 
 # Expresssion    
 <http://data.bibliotheken.nl/id/e/1>                            # fictieve Expression-IRI    
