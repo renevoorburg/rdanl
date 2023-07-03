@@ -31,14 +31,17 @@
     a rdanl:Nomen ;
     rdanl:nameOfRDAEntityOf <http://data.bibliotheken.nl/id/a/2> ;
     rdanl:nomenString "Multatuli" ;
-    rdanl:equivalentTo "Multatuli" , [
+    rdanl:equivalentTo [
         a rdanl:Nomen ;
-        rdanl:nomenString "穆尔塔图里";
-        rdanl:languageOfNomen "zh-CN"
+        rdanl:nomenString "穆尔塔图里"@zh ;
+        rdanl:languageOfNomen "zh" ;
+        rdanl:scriptOfNomen "Hani" 
     ] , [
         a rdanl:Nomen ;
-        rdanl:nomenString "Mu'ertatuli";
-        rdanl:languageOfNomen "zh-Latn-pinyin"
+        rdanl:nomenString "Mu'ertatuli"@zh ;
+        rdanl:languageOfNomen "zh" ;
+        rdanl:scriptOfNomen "Latn" 
+        rdanl:
     ] ;
     rdanl:identifierForRDAEntity "VIAF: 89204476" ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p16766932X> . 

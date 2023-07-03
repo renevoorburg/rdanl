@@ -27,8 +27,8 @@
   ns0:preferredNamespacePrefix "rdanl" ;
   dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@nl ;
   cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
-  owl:versionInfo "v0.0.2" ;
-  dc11:modified "2023-07-01" .
+  owl:versionInfo "v0.1.0" ;
+  dc11:modified "2023-07-03" .
 
 # Classes:
 
@@ -198,7 +198,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10353 ;
     rdfs:seeAlso <#representativeExpression> ;
-    rdfs:comment "Doorgaans zal de voorkeur verdien een representative expression te koppelen en daar de taal aan te geven. Als dat geen nogelijkheid is dan is dit kenmerk een goede keuze. Waardes conform IETF BCP 47 zijn een goede keuze."@nl .           
+    rdfs:comment "Doorgaans zal de voorkeur verdien een representative expression te koppelen en daar de taal aan te geven. Als dat geen nogelijkheid is dan is dit kenmerk een goede keuze. Een taalcode met twee tekens volgens ISO 639-1 (2002) of drie tekens volgens ISO 639-2 (1998), ISO 639-3 (2007) of ISO 639-5 (2008) is een geschikte waarde."@nl .           
 
  <#relatedWorkOfWork>
     a rdf:Property ;
@@ -217,7 +217,6 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10070, <#relatedAgentOfWork> .
-
 
 <#creatorAgentOfWork>
     a rdf:Property ;
@@ -333,7 +332,13 @@
     a rdf:Property ;
     rdfs:subPropertyOf rdan:P80066 ;
     rdfs:isDefinedBy <#> ;
-    rdfs:comment "Een taalcode volgens IETF BCP 47 is een geschikte waarde."@nl .      
+    rdfs:comment "Een taalcode met twee tekens volgens ISO 639-1 (2002) of drie tekens volgens ISO 639-2 (1998), ISO 639-3 (2007) of ISO 639-5 (2008) is een geschikte waarde."@nl .  
+
+ <#sciptOfNomen>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdan:P80070 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Gebruik een waarde volgens ISO 15924."@nl .  
 
 # properties X:
 
@@ -366,7 +371,7 @@
     a rdf:Property ;
     rdfs:subPropertyOf rdae:P20006 ;
     rdfs:isDefinedBy <#> ;
-    rdfs:comment "Een taalcode volgens IETF BCP 47 is een geschikte waarde."@nl .   
+    rdfs:comment "Een taalcode met twee tekens volgens ISO 639-1 (2002) of drie tekens volgens ISO 639-2 (1998), ISO 639-3 (2007) of ISO 639-5 (2008) is een geschikte waarde."@nl .   
 
 <#workExpressed>
     a rdf:Property ;

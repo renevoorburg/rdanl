@@ -70,7 +70,7 @@ Zie ook voorbeelden:
 
 
 [^1]: zie ook de [RDA content types](http://www.rdaregistry.info/termList/RDAContentType/) 
-[^2]: gebruik bijvoorbeeld [IETF BCP 47](https://www.rfc-editor.org/info/bcp47)
+[^2]: gebruik een taalcode met twee tekens volgens ISO 639-1 (2002) of drie tekens volgens ISO 639-2 (1998), ISO 639-3 (2007) of ISO 639-5 (2008)
 [^3]: zie ook de [RDA carrier types](http://www.rdaregistry.info/termList/RDACarrierType/)
 [^4]: zie ook de [RDA media types](http://www.rdaregistry.info/termList/RDAMediaType/)
 [^5]: zinvol is de context of bron van de identifier aan te duiden met een prefix, zoals "ISBN: "
