@@ -5,7 +5,7 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 
 | uri | naam | opm. | range | vastlegging [^1] | verpl.? [^2] | max. | waarde |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-||||||||| 
+||
 || *Appellation:* | *elementen om de entiteit te benoemen:* ||| M | >1 ||
 | [rdaw:P10088](http://rdaregistry.info/Elements/w/P10088) | 	**titleOfWork** | oorspronkelijke titel | `Nomen` | U | M | 1 |
 | [rdaw:P10223](http://rdaregistry.info/Elements/w/P10223)	 | 	**preferredTitleOfWork** | meest bekende titel, alleen indien anders dan **titleOfWork** | `Nomen` | U | MA | 1 |
