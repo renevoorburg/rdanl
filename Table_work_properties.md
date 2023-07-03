@@ -15,10 +15,10 @@
 | [rdaw:P10072](http://rdaregistry.info/Elements/w/P10072) | **manifestationOfWork** || `Manifestation` | S / Id / IRI | O | >1 |
 ||
 || *General description:*	| *algemene beschrijving (basistoepassingsprofiel):* |
-| [rdaw:P10004](http://rdaregistry.info/Elements/w/P10004) | **categoryOfWork**	| voor o.a. genre | - | U / S / Id / IRI | M | >1 | Brinkman Trefwoorden thesaurus, Thema [^1] |
-| [rdaw:P10365](http://rdaregistry.info/Elements/w/P10365)	| **extensionPlan** || - | S / Id / IRI | M | 1 | RDA Extension Plan http://www.rdaregistry.info/termList/RDAExtensionPlan/?language=nl | 
+| [rdaw:P10004](http://rdaregistry.info/Elements/w/P10004) | **categoryOfWork**	| voor o.a. genre | - | U / S / Id / IRI | M | >1 | Bijvoorbeeld:<br>Brinkman Trefwoorden thesaurus [^3] <br>Thema [^4] |
+| [rdaw:P10365](http://rdaregistry.info/Elements/w/P10365)	| **extensionPlan** || - | S / Id / IRI | M | 1 | RDA Extension Plan [^5] | 
 | [rdaw:P10330](http://rdaregistry.info/Elements/w/P10330)	 | 	**noteOnWork**	|| 	- | U | O | >1 |
-| [rdaw:P10256](http://rdaregistry.info/Elements/w/P10256)	 | **subject**	 | 	gebruik waar nodig subproperties met een specifieke range, als Person en Place ||| O	| >1 | 
+| [rdaw:P10256](http://rdaregistry.info/Elements/w/P10256)	 | **subject**	 | 	gebruik waar nodig subproperties met een specifieke range, als Person en Place ||| O	| >1 | Bijvoorbeeld <br>Brinkman Trefwoorden Thesaurus [^3] |
 | [rdaw:P10353](http://rdaregistry.info/Elements/w/10353)	 | 	**languageOfRepresentativeExpression** | oorspronkelijke taal (bij vertalingen), gebruik als representatieve expressie niet aanwijsbaar || S | O | >1 | ISO 639-2 |
 ||
 | | *General relationships:* | *algemene elementen om relaties van de entiteit te beschrijven (basistoepassingsprofiel):* |
@@ -30,4 +30,7 @@
 
 [^1]: Vastlegging / *Recording method* volgens **U**: "unstructured", **S**: "structured", **Id**: "identifier", **IRI**: IRI.
 [^2]: **M**: "*Must* / Verplicht", **MA**: "*Must if applicable* / Verplicht indien van toepassing", **O**: "*Optional* / Optioneel" 
-[^3]: [Thema](https://ns.editeur.org/thema/nl)
+oneel" 
+[^3]: Zie [Brinkman Trefwoorden Thesaurus](http://data.bibliotheken.nl/id/dataset/brinkman).
+[^4]: Zie [Thema](https://ns.editeur.org/thema/nl).
+[^5]: Zie [RDA Extension Plan](http://www.rdaregistry.info/termList/RDAExtensionPlan/). 
