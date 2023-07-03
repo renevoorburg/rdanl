@@ -161,6 +161,11 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10078 . 
 
+<#manifestationOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10072 . 
+
 <#categoryOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
