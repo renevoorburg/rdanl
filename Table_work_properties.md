@@ -4,7 +4,7 @@
 
 | uri | label | opm. | range | vastlegging [^1] | verpl.? [^2] | max. | waarde |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|
+||||||||| 
 | **Appellation:** | **elementen die worden gebruikt om de entiteit te benoemen** |||| M | >1 ||
 
 
