@@ -4,7 +4,7 @@
 
 | uri | naam | opm. | range | vastlegging [^1] | verpl.? [^2] | max. | waarde |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|
+|||||||||
 | [rdae:P20312](http://rdaregistry.info/Elements/e/P20312) | **titleOfExpression** || `Nomen` | U | MA | 1 |
 | [rdae:P20002](http://rdaregistry.info/Elements/e/P20002) | **identifierForExpression** | niet bedoeld voor de IRI van de entiteit zelf | `Nomen`	| identifier/iri	| MA | >1 ||
 |
