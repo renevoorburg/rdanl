@@ -2,7 +2,7 @@
 
 Toe te passen RDA-kenmerken.
 
-* [Kenmerken voor `Works`](Work_properties.md)
-* Expressions TODO
+* [Kenmerken voor `Works`](Work-kenmerken.md)
+* [Kenmerken voor `Expressions`](Expression-kenmerken.md)
 * Manidestations TODO
 * TODO

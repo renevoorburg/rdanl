@@ -366,6 +366,12 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:P20312 .
 
+<#identifierForExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20002 ;
+    rdfs:comment "Niet bedoeld voor de IRI van de beschreven entiteit."@nl .
+
 <#contentType>
     a rdf:Property ;
     rdfs:subPropertyOf rdae:P20001 ;
@@ -403,6 +409,11 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:P20214 ;
     rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl . 
+
+<#relatedExpressionOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20205 . 
 
 <#translatedAs>
     a rdf:Property ;
