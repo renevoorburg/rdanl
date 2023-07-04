@@ -12,6 +12,7 @@
 @prefix rdae: <http://rdaregistry.info/Elements/e/> .
 @prefix rdax: <http://rdaregistry.info/Elements/x/> .
 @prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
 @prefix rdaa: <http://rdaregistry.info/Elements/a/> .
 @prefix rdan: <http://rdaregistry.info/Elements/n/> .
 @prefix rdap: <http://rdaregistry.info/Elements/p/> .
@@ -683,3 +684,46 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdap:P70032 .  
+
+# properties I:
+
+<#identifierForItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40001 .  
+
+<#manifestationExemplified>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40049 .  
+
+<#noteOnItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40028 . 
+
+<#restrictionOnUseOfItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40048 . 
+
+<#categoryOfItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40096 .
+
+ <#locationOfItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40162 .
+
+<#ownerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40136 .
+
+<#relatedItemOfItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40046 .
+    
