@@ -2,7 +2,6 @@
 
 Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 
-
 | uri | naam | opm. | range | vastlegging [^1] | verpl.? [^2] | max. | waarde |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 ||
@@ -51,7 +50,7 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 ||
 ||	*Special description:* | *Gespecialiseerde elementen om de entiteit te beschrijven:* |
 | rdam:P30096 | **encodingFormat** | wijze waarop digitale inhoud gecodeerd is || U / S / IRI | MA | >1 | "html" |
-| rdam:P30018 | **fileType** ||| U / S / IRI  | O | 1 | RDA File Type [^11] |
+| rdam:P30018 | **fileType** ||| U / S / IRI  | O | 1 | RDA File Type [^13] |
 | rdam:P30183 | **fileSize** |||	U | O | 1 |
 | rdam:P30165 | **numberingOfSequence**	| overnemen uit de bron || U | MA | 1 |
 | rdam:P30454	 | **soundContent** | indicatie van de aanwezigheid of afwezigheid van geluid [^14] || U | MA | >1 |
