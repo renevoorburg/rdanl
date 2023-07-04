@@ -22,7 +22,7 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 | [rdaw:P10256](http://rdaregistry.info/Elements/w/P10256)	 | **subject**	 | 	gebruik waar zinvol [^6] een subkenmerk met een specifieke *range* | - || O	| >1 | bijvoorbeeld: <br>Brinkman Trefwoorden Thesaurus [^3] |
 | [rdaw:P10353](http://rdaregistry.info/Elements/w/10353)	 | 	**languageOfRepresentativeExpression** | oorspronkelijke taal (bij vertalingen), gebruik indien geen **representativeExpression** aanwijsbaar | - | S | O | >1 | ISO 639-2 |
 ||
-| | *General relationships:* | *algemene elementen om relaties van de entiteit te beschrijven (basistoepassingsprofiel):* |
+|| *General relationships:* | *algemene elementen om relaties van de entiteit te beschrijven (basistoepassingsprofiel):* |
 | [rdaw:P10219](http://rdaregistry.info/Elements/w/P10219)	 | 	**dateOfWork** || `Timespan` |  U / S / Id / IRI | O | 1 | ISO 8601-1:2019 | 
 | [rdaw:P10065](http://rdaregistry.info/Elements/w/P10065)	 | 	**creatorAgentOfWork** | gebruik wat betreft de rol een zo specifiek mogelijk subelement [^7] [^6] | `Agent` | S / Id / IRI | M | >1 || NTA, NACO, Corporatiethesaurus | 
 | [rdaw:P10198](http://rdaregistry.info/Elements/w/P10198)	 | 	**relatedWorkOfWork**	| gebruik een zo specifiek mogelijke subelement | `Work` | S / Id / IRI	 | O | >1 |

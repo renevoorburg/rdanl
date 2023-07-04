@@ -569,6 +569,26 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30169 . 
 
+<#noteOnManifestation>    
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30137 . 
+
+<#illustrativeContent>  
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30453 .    
+
+<#typeOfBinding>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30309 .
+
+<#termOfAvailability>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30160 .
+
 <#modeOfIssuance>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
