@@ -479,6 +479,11 @@
     rdfs:subPropertyOf rdam:P30335	;
     rdfs:comment "Gebruik voor bijvoorbeeld de ondertitel."@nl .    
 
+<#titleOfSeries>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30328 .  
+
 <#statementOfResponsibilityRelatingToTitleProper>      
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
@@ -614,7 +619,38 @@
 <#placeOfPublication>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdam:30088 .      
+    rdfs:subPropertyOf rdam:30088 .     
+
+<#contributorAgentOfStillImage>     
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30321 .
+
+<#contributorAgentOfText>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30328 . 
+
+<#relatedManifestationOfManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:PP30048	;
+    rdfs:comment "TODO: waar specifiek voor gebruiken? Welke subproperties?"@nl . 
+
+<#encodingFormat>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30096 . 
+
+<#fileType>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30018 .   
+
+<#fileSize>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30183 .   
 
 # properties P:
 

@@ -33,27 +33,27 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 ||
 | rdam:P30001 | **carrierType** |	||	S / Id / IRI | M | 1 | RDA Carrier Type [^5] |
 | rdam:P30182 | **extentOfManifestation** | o.a. aantal pagina's ||S| M | 1 |
-| rdam:P30169	 | **dimensions** |	neem op wat nodig is voor het magazijn van fysieke bronnen,  Nmaten in cm., tenzij hoogte < 10 cm, dan in mm. ||	U / S (?) | MA | >1 |
+| rdam:P30169	 | **dimensions** |	neem op wat nodig is voor het magazijn van fysieke bronnen,  maten in cm., tenzij hoogte < 10 cm, dan in mm. ||	U / S (?) | MA | >1 |
 | rdam:P30137 | **noteOnManifestation** |||| U | O | >1 |
-| rdam:P30453 |	**illustrativeContent**	 | een indicatie van de soorten expressies van beeldcontent die de hoofd-expressies aanvullen || S / IRI | MA	| >1 | RDA Illustrative Content [^6] |
+| rdam:P30453 | **illustrativeContent**	 | een indicatie van de soorten expressies van beeldcontent die de hoofd-expressies aanvullen || S / IRI | MA	| >1 | RDA Illustrative Content [^6] |
 | rdam:P30309 | **typeOfBinding** ||| S / IRI | O | >1 | RDA Type of Binding [^7] |
 | rdam:P30160 | **termOfAvailability** | o.a. prijs || U | O | >1 |
-| rdam:P30111 | **publicationStatement** | wordt samengesteld uit de volgende subelementen: place of publication, name of publisher, date of publication. Als deze elementen apart genoteerd kunnen worden en van toepassing zijn, gebruik deze elementen. Indien de informatie als geheel wordt opgenomen, gebruik dan dit superelement || S | O | 1 | "Spijkenisse : Hageboek, 1998" |
+| rdam:P30111 | **publicationStatement** | wordt samengesteld uit de volgende subelementen: **placeOfPublication**, name of publisher, date of publication. Als deze elementen apart genoteerd kunnen worden en van toepassing zijn, gebruik deze elementen. Indien de informatie als geheel wordt opgenomen, gebruik dan dit superelement || S | O | 1 | "Spijkenisse : Hageboek, 1998" |
 ||
 || *General relationships:* | *algemene elementen om relaties van de entiteit te beschrijven (basistoepassingsprofiel):* |	|		|	
-|	rdam:P30088	|	place of publication	|	Neem over zoals opgenomen in de resource. Indien niet bekend, geef het volgende aan: "Plaats van uitgave niet vastgesteld" in een element 'note of manifestation'. Zet een plaats tussen vierkante haken als de bron van de informatie niet de Manifestation zelf is. Indien mogelijk herhaal dit element om een identifier of iri van een plaats te geven. Herhaal dit element om een land van uitgave te vermelden, het liefst gestructureerd, met identifier of iri. Indien de identifier van een plaats het land duidelijk aangeeft, dan is een land van uitgave niet nodig.	|	place	|	unstructured/identifier/iri	|	MA	|	>1	|		|
-|	rdam:P30083	|	publisher agent	|	Overnemen uit de resource.	|	nomen	|	unstructured	|	MA	|	>1	|		|
-|	rdam:P30011	|	date of publication	|	Indien onbekend, geef een datum of jaar range wanneer het werk kan zijn ontstaan.	|	timespan	|	unstructured/structured/identifier/iri	|	M	|	1	|	ISO 8601-1:2019	|
-|	rdam:P30321	|	contributorAgentOfStillImage	|	Gebruik zoveel mogelijk de ingang van een authority record.	|	agent	|	unstructured/structured/identifier/iri	|	O	|	>1	|	NTA, NACO, Corporatiethesaurus	|
-|	rdam:P30328	|	contributorAgentOfText	|	Gebruik zoveel mogelijk de ingang van een authority record.	|	agent	|	unstructured/structured/identifier/iri	|	O	|	>1	|	NTA, NACO, Corporatiethesaurus	|
-|	rdam:P30157	|	title of series	|	Inhoudelijk overnemen uit de resource zoals het er staat. Titel vastleggen zoals een zin. Hoofdlettergebruik zoals in de taal van de titel gebruikelijk is. De relatie 	|	nomen	|	unstructured	|	MA	|	>1	|		|
-|	rdam:P30048	|	related manifestation of manifestation	|		|	manifestation	|	unstructured/structured/identifier/iri	|	O	|	>1	|		|
-|		|		|		|		|		|		|		|		|
-|	Special description	|		|		|		|		|		|		|		|
-|	rdam:P30096	|	encodingFormat	|		|		|	structured	|	M	|	>1	|		|
-|	rdam:P30018	|	fileType	|		|		|	structured	|	O	|	1	|		|
-|	rdam:P30183	|	file size	|		|		|	unstructured	|	O	|	1	|		|
-|	rdam:P30165	|	numbering of sequence	|	Overnemen uit de resource.	|		|	unstructured	|	MA	|	1	|		|
+| rdam:P30088 | **placeOfPublication**	| zoals vermeld in de bron. Indien niet bekend, geef aan: "Plaats van uitgave niet vastgesteld" in element **noteOnManifestation**.<br>Zet een plaats tussen vierkante haken als de bron van de informatie niet de `Manifestation` zelf is. [ TODO: willen we dit wel? -> Indien mogelijk herhaal dit element om een identifier of iri van een plaats te geven. Herhaal dit element om een land van uitgave te vermelden, het liefst gestructureerd, met identifier of iri. Indien de identifier van een plaats het land duidelijk aangeeft, dan is een land van uitgave niet nodig] | `Place` | U / Id / IRI | MA | >1 |
+| rdam:P30083 | **publisherAgent** | overnemen uit de bron | `Agent` | U / Id / IRI | MA | >1 |
+| rdam:P30011 | **dateOfPublication** | indien onbekend, geen datum, jaar of periode wanneer publicatie kan hebben plaatsgevonden | `Timespan` |	U / S / Id / IRI | M | 1 | ISO 8601-1:2019 |
+| rdam:P30321 | **contributorAgentOfStillImage** ||| `Agent` | U / S / Id / IRI | O | >1 | NTA [^8], NACO [^9], Corporatiethesaurus [^10] |
+| rdam:P30328 | **contributorAgentOfText** ||| `Agent` | U / S / Id / IRI | O | >1 | NTA [^8], NACO [^9], Corporatiethesaurus [^10] |
+| rdam:P30157 |	**titleOfSeries** | letterlijk overnemen uit de bron, vastleggen als een zin<br> Hoofdlettergebruik zoals in de taal van de titel gebruikelijk is. ||`Nomen` | U | MA | >1 |
+| rdam:P30048	 | **relatedManifestationOfManifestation** || `Manifestation` | U / S / Id / IRI | O | >1 |
+||
+||	*Special description:* | *Gespecialiseerde elementen om de entiteit te beschrijven:* |
+| rdam:P30096 | **encodingFormat** | wijze waarop digitale inhoud gecodeerd is || U / S / IRI | MA | >1 | "html" |
+| rdam:P30018 | **fileType** ||| U / S / IRI  | O | 1 | RDA File Type [^11] |
+| rdam:P30183 | **fileSize** |||	U | O | 1 |
+| rdam:P30165 | numbering of sequence	|	Overnemen uit de resource.	|		|	unstructured	|	MA	|	1	|		|
 |	rdam:P30454	|	sound content	|	In 2025 wordt de wet m.b.t. digitale toegankelijkheid van kracht. Uitgevers worden geacht gegevens daarover aan te leveren. Het is van belang deze op te nemen in de metadata.	|		|	unstructured	|	MA	|	>1	|		|
 |	rdam:P30456	|	colour content	|	In 2025 wordt de wet m.b.t. digitale toegankelijkheid van kracht. Uitgevers worden geacht gegevens daarover aan te leveren. Het is van belang deze op te nemen in de metadata.	|		|	unstructured	|	MA	|	>1	|		|
 |	rdam:P30452	|	accessibility content	|	In 2025 wordt de wet m.b.t. digitale toegankelijkheid van kracht. Uitgevers worden geacht gegevens daarover aan te leveren. Het is van belang deze op te nemen in de metadata.	|		|	unstructured	|	MA	|	>1	|		|
@@ -65,3 +65,7 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 [^5]: Zie [RDA Carrier Type](http://www.rdaregistry.info/termList/RDACarrierType/).
 [^6]: Zie [RDA Illustrative Content](http://www.rdaregistry.info/termList/IllusContent/).
 [^7]: Zie [RDA Type of Binding](http://www.rdaregistry.info/termList/RDATypeOfBinding/).
+[^8]: Zie [Nederlandse Thesaurus van Auteursnamen (NTA)](http://data.bibliotheken.nl/id/dataset/persons).
+[^9]: Zie [NACO - Name Authority Cooperative Program](https://www.loc.gov/aba/pcc/naco/). 
+[^10]: Zie [Corporatiethesaurus](http://data.bibliotheken.nl/id/dataset/corps).
+[^11]: Zie [RDA File Type](http://rdaregistry.info/termList/fileType).
