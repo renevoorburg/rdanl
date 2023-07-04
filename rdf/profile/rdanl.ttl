@@ -652,6 +652,26 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30183 .   
 
+<#numberingOfSequence>    
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30165 .   
+
+<#soundContent>	   
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30454 .
+
+<#colourContent>	   
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30456 .
+
+ <#accessibilityContent>
+     a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30452 .       
+
 # properties P:
 
 <#nameOfPlace>
