@@ -70,4 +70,4 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 [^9]: Zie [NACO - Name Authority Cooperative Program](https://www.loc.gov/aba/pcc/naco/). 
 [^10]: Zie [Corporatiethesaurus](http://data.bibliotheken.nl/id/dataset/corps).
 [^11]: Zie [RDA File Type](http://rdaregistry.info/termList/fileType).
-[^12: In 2025 wordt de wet m.b.t. digitale toegankelijkheid van kracht. Uitgevers worden geacht gegevens daarover aan te leveren. Het is van belang deze op te nemen in de metadata.
+[^12]: In 2025 wordt de wet m.b.t. digitale toegankelijkheid van kracht. Uitgevers worden geacht gegevens daarover aan te leveren. Het is van belang deze op te nemen in de metadata.
