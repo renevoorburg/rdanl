@@ -19,7 +19,7 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 || *General relationships:* | *algemene elementen om relaties van de entiteit te beschrijven (basistoepassingsprofiel):* |
 | [rdai:P40162](http://rdaregistry.info/Elements/i/P40162) | **locationOfItem** || `Place` | S | M | 1 |
 | [rdai:P40136](http://rdaregistry.info/Elements/i/P40136) | **ownerCorporateBody** || `CorporateBody` | S / Id / IRI | M | 1 |
-| [rdai:P40046](http://rdaregistry.info/Elements/i/P40046) | related item of item || `Item` | U / S / Id / IRI | O | >1 |
+| [rdai:P40046](http://rdaregistry.info/Elements/i/P40046) | **related item of item** || `Item` | U / S / Id / IRI | O | >1 |
 
 [^1]: Vastlegging / *Recording method*, volgens <br>**U**: "unstructured"<br>**S**: "structured"<br>**Id**: "identifier" <br>**IRI**: IRI.
 [^2]: Verplicht veld?, volgens <br>**M**: "*Must* / Verplicht"<br>**MA**: "*Must if applicable* / Verplicht indien van toepassing"<br>**O**: "*Optional* / Optioneel" 
