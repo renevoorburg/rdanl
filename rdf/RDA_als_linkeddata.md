@@ -37,6 +37,14 @@ RDA biedt overigens ook twee andere sets met kenmerken waarin de `rdfs:range` *w
 Een keerzijde van de voorgaand beschreven insteek van RDA, die efficiënt en noodzakelijk kan zijn voor het catalogiseren in een *records*-gebaseerd systeem, is dat er een veelheid aan kenmerken, ontstaat terwijl dat binnen een strikt RDF-perspectief semantisch niet noodzakelijk is. Dit speelt des te meer, aangezien RDA niet alleen een onderscheidende *range* als criterium voor het instellen van een kenmerk hanteert, maar ook een onderscheidend *domain*. Daar waar voor een strikte linked data-benadering met één kenmerk als bijvoorbeeld`related` zou kunnen worden volstaan, biedt RDA nu 169 varianten[^6] van `related`-kennmerken, zoals bijvoorbeeld `rdaa:relatedCorporateBodyOfAgent`, `rdaa:relatedAgenOfPerson`, `rdaa:relatedFamilyOfPerson` of `rdaa:relatedCollectiveAgentOfAgent`,  *etcetera*. Bedenk daarbij dat ieder canonieke kenmerk ook een 'data type'- en een 'object type'-kenmerk heeft[^7] én dat van al die properties ook *lexical aliases* gedefinieerd zijn, in een veelheid aan talen.
 Deze complexiteit van RDA is een reden waarom RDA als standaard niet zomaar ‘direct’ toe te passen is, maar waarom er vanuit een kaderend toepassingsprofiel gewerkt moet worden.
  
+## Superelementen?
+Binnen RDA wordt in de context van een kenmerk soms gesproken over een *superelement*. Dit schept het beeld van twee kenmerken die in relatie tot elkaar staan als:
+
+	:superelement rdfs:subPropertyOf :element .
+	
+Dat is een **onjuiste aanname**. RDA doelt hier niet op een hiërarchische relatie. Een superelement is in RDA een kenmerk dat op *aggregerende* wijze gevens uit andere kenmerken overneemt.
+ 
+ 
 ## Wel RDF, nog geen linked data
 Beschrijvingen in RDA kunnen één-op-één weggeschreven worden als RDF *triples*. Maakt dit RDA ook tot linked data? Niet per se! Een basisprincipe achter linked data is dat de onderscheiden entiteiten van een IRI[^8] te voorzien en die IRI dan in verwijzingen als **representatie** voor die entiteit te gebruiken. In RDA worden echter nadrukkelijk ook andere methoden toegestaan om naar entiteiten te verwijzen. RDA spreekt daarbij van **implementatie-scenario’s**. Een gangbaar implementatie-scenario uit de wereld van *records*-gebaseerd catalogiseren is het gebruik van *geautoriseerde ingangen* (‘*authorized access points*’). Een geautoriseerde ingang is een binnen het betreffende domein unieke *identifier* voor een entiteit in een gestructureerde, en voor mensen leesbare en begrijpelijke vorm. Voor bijvoorbeeld de schrijver “*Harry Mulisch*” zou zo’n ingang  “*Mulisch, Harry (1927 – 2010)*” kunnen zijn.
 
