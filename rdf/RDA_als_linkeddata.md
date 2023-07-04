@@ -40,7 +40,7 @@ Deze complexiteit van RDA is een reden waarom RDA als standaard niet zomaar ‘d
 ## Superelementen?
 Binnen RDA wordt in de context van een kenmerk soms gesproken over een *superelement*. Dit schept het beeld van twee kenmerken die in relatie tot elkaar staan als:
 
-	:superelement rdfs:subPropertyOf :element .
+	:element rdfs:subPropertyOf :superelement .
 	
 Dat is een **onjuiste aanname**. RDA doelt hier niet op een hiërarchische relatie. Een superelement is in RDA een kenmerk dat op *aggregerende* wijze gevens uit andere kenmerken overneemt.
  
