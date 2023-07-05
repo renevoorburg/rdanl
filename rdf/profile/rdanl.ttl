@@ -213,7 +213,6 @@
     rdfs:subPropertyOf rdaw:P10198 ;
     rdfs:seeAlso <#relatedRDAEntityOfRDAEntity> ;
     rdfs:comment "Te gebruiken in de context van een record. Gebruik in een RDF-context waarin entiteiten standaard van een klasse voorzien zijn de generieke property relatedRDAEntityOfRDAEntity."@nl . 
-    # welke subproperties nog meer toe te voegen?
 
 # - Roles :
 
@@ -447,7 +446,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10297 , <#creatorAgentOfWork> . 
 
- <#photographerAgentOfWork>
+<#photographerAgentOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10056 , <#creatorAgentOfWork> .    
@@ -477,7 +476,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10437 , <#relatedPersonOfWork> . 
 
- <#academicSupervisor>
+<#academicSupervisor>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10407 , <#creatorPersonOfWork> .    
@@ -497,7 +496,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10436 , <#creatorPersonOfWork> . 
 
- <#cartographerPersonOfWork>
+<#cartographerPersonOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10435 , <#creatorPersonOfWork> . 
@@ -727,6 +726,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10516 , <#producerCorporateBody> . 
 
+
 # Domain Expression:
 
 <#titleOfExpression>
@@ -815,6 +815,8 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:P20297 .
+
+# - Roles :
 
 <#reviserPerson>
     a rdf:Property ;
@@ -1281,6 +1283,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:P20384 , <#actorPerson> .
 
+
 # Domain Manifestation:
 
 <#titleProper>
@@ -1481,6 +1484,8 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30264 .
+
+# - Roles :
 
 <#relatedCollectiveAgentOfManifestation>
     a rdf:Property ;
@@ -1752,6 +1757,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30312 , <#contributorAgentOfCartography> . 
 
+
 # Domain Item:
 
 <#identifierForItem>
@@ -1784,15 +1790,159 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdai:P40162 .
 
-<#ownerCorporateBody>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdai:P40136 .
-
 <#relatedItemOfItem>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdai:P40046 .
+
+
+# - Roles:
+
+<#relatedRDAEntityOfItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40068 .
+
+<#modifierPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40112 .
+
+<#curatorCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40131 .
+
+<#relatedCorporateBodyOfItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40075 .
+
+<#binderAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40013 , <#modifierAgent> . 
+
+<#illuminatorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40012 , <#modifierAgent> . 
+
+<#restorationistAgentOfItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40024 , <#modifierAgent> . 
+
+<#inscriber>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40014 , <#modifierPerson> .     
+
+<#binderPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40098 , <#modifierPerson> . 
+
+<#annotator>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40015 , <#modifierPerson> .     
+
+<#collectionRegistrarAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40005 , <#curatorAgent> . 
+
+<#collectorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40004 , <#curatorAgent> . 
+
+<#collectorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40105 , <#curatorPerson> .     
+
+<#collectorCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40137 , <#curatorCorporateBody> . 
+
+<#curatorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40017 , <#relatedAgentOfItem> . 
+
+<#custodianAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40020 , <#relatedAgentOfItem> . 
+
+<#dedicateeAgentOfItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40025 , <#relatedAgentOfItem> .     
+
+<#curatorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40099 , <#relatedPersonOfItem> . 
+
+<#currentOwnerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40018 , <#ownerAgent> . 
+
+<#formerOwnerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40019 , <#ownerAgent> .
+
+<#formerOwnerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40102 , <#ownerPerson> .      
+
+<#depositorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40006 , <#currentOwnerAgent> . 
+
+<#donorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40007 , <#formerOwnerAgent> . 
+
+<#sellerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40008 , <#formerOwnerAgent> .     
+
+<#honoureeAgentOfItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40022 , <#relatedAgentOfItem> . 
+
+<#modifierAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40093 , <#relatedAgentOfItem> . 
+
+<#ownerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40021 , <#relatedAgentOfItem> . 
+
+<#ownerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40136 , <#relatedCorporateBodyOfItem> . 
+
+<#relatedAgentOfItem>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdai:P40072 , <#relatedRDAEntityOfItem> . 
+
 
 # Domain Agent:
 
@@ -1855,6 +2005,7 @@
     rdfs:subPropertyOf rdaa:P50113  ;
     rdfs:comment "Dit is een restcategorie voor kenmerken, gestructureerd of ongestructureerd. Overweeg het aanmaken van een subproperty van een passende property om te kunnen selecteren op specifieke kenmerken,"@nl .    
 
+
 # Domain Nomen:
 
 <#nomenString>
@@ -1891,7 +2042,8 @@
     rdfs:isDefinedBy <#> ;
     rdfs:comment "Gebruik een waarde volgens ISO 15924."@nl .  
 
-# Domain X:
+
+# Domain RDAEntity:
 
 <#relatedRDAEntityOfRDAEntity>
     a rdf:Property ;
@@ -1905,7 +2057,8 @@
     rdfs:isDefinedBy <#> ;
     rdfs:comment "Het is wenselijk om identifiers van een prefix te voorzoen zodat context of domein helder wordt, bijvoorbeeld met ISBN: of PPN: "@nl .
 
-# properties Place:
+
+# Domain Place:
 
 <#nameOfPlace>
     a rdf:Property ;
