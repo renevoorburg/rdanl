@@ -128,7 +128,8 @@
     rdfs:label "work"@en, "œuvre"@fr, "Obra"@es, "werk"@nl, "opera"@it, "Verk"@sv, "έργο"@el, "værk"@da, "tác phẩm"@vi, "Werk"@de, "obra"@ca, "mű"@hu, "teos"@fi, "verk"@no, "عمل"@ar, "teos"@et, "darbs"@lv ;
     skos:definition "A distinct intellectual or artistic creation, that is, the intellectual or artistic content."@en, "Création intellectuelle ou artistique déterminée, c’est-à-dire le contenu intellectuel ou artistique."@fr, "Una creación intelectual o artística distintiva, i.e., el contenido intelectual o artístico."@es, "Een onderscheidbare intellectuele of artistieke creatie, dit wil zeggen, de intellectuele of artistieke content."@nl, "Creazione intellettuale o artistica distinta, cioè il contenuto artistico o intellettuale."@it, "Μια διακριτή διανοητική/πνευματική ή καλλιτεχνική δημιουργία, δηλαδή το πνευματικό ή καλλιτεχνικό περιεχόμενο."@el, "Itsenäinen tiedollinen tai taiteellinen luomus eli tiedollinen tai taiteellinen sisältö."@fi, "Selvstændig intellektuel eller kunstnerisk frembringelse, fx det intellektuelle eller kunstneriske indhold."@da, "Một sáng tạo nghệ thuật hoặc trí tuệ riêng biệt, nghĩa là, nội dung nghệ thuật hoặc trí tuệ."@vi, "Eine individuelle intellektuelle oder künstlerische Schöpfung, das heißt der intellektuelle oder künstlerische Inhalt."@de, "Creació intel·lectual o artística distinta, és a dir, el contingut intel·lectual o artístic."@ca, "Önálló szellemi vagy művészi alkotás, azaz a szellemi vagy művészi tartalom."@hu, "Et distinkt intellektuell eller kunstnerisk arbeid (dvs. det intellektuelle eller kunstneriske innholdet)."@no, "ابداع فكري أو فني متميز، وما يمثل محتوى فكري أو فني ."@ar, "Piiritletud intellektuaalne või kunstilooming, s.o intellektuaalne või kunstiline sisu."@et, "Atšķirīgs intelektuālas vai mākslinieciskas jaunrades veikums (FRBR)."@lv .
 
-# properties W:
+
+# Properties Work :
 
 <#titleOfWork>
     a rdf:Property ;
@@ -214,42 +215,521 @@
     rdfs:comment "Te gebruiken in de context van een record. Gebruik in een RDF-context waarin entiteiten standaard van een klasse voorzien zijn de generieke property relatedRDAEntityOfRDAEntity."@nl . 
     # welke subproperties nog meer toe te voegen?
 
- <#relatedAgentOfWork>
+# Roles :
+
+<#relatedRDAEntityOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P10311 . 
+    rdfs:subPropertyOf rdaw:P10307 .
+
+<#relatedAgentOfWork> 
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10311 , <#relatedRDAEntityOfWork> .
+
+<#dedicateeAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10069, <#relatedAgentOfWork> .
+
+<#relatedCollectiveAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10315 , <#relatedAgentOfWork> .
+
+<#dedicateeCollectiveAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10459 , <#relatedCollectiveAgentOfWork> .
+
+<#relatedCorporateBodyOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10314 , <#relatedCollectiveAgentOfWork> .
+
+<#honoureeCorporateBodyOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10527 , <#relatedCorporateBodyOfWork> . 
+
+<#hostingInstitution>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10007 , <#relatedCorporateBodyOfWork> .     
+
+<#issuingCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10550 , <#relatedCorporateBodyOfWork> . 
+
+<#dedicateeCorporateBodyOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10506 , <#relatedCorporateBodyOfWork> , <#dedicateeCollectiveAgentOfWork>. 
+
+<#relatedPersonOfWork> 
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10312 ,  <#relatedAgentOfWork> .
+
+<#dedicateePersonOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10412 , <#relatedPersonOfWork> . 
+
+<#honoureePersonOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10433 , <#relatedPersonOfWork> . 
+
+<#issuingPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10456 , <#relatedPersonOfWork> .     
+
+<#descriptionOfAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10338 , <#subjectAgent> . 
+
+<#relatedAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10311 , <#relatedRDAEntityOfWork> . 
 
 <#addresseeAgent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P10070, <#relatedAgentOfWork> .
+    rdfs:subPropertyOf rdaw:P10070 , <#relatedAgentOfWork> . 
+
+<#commissioningAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10287 , <#relatedAgentOfWork> .     
 
 <#creatorAgentOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P10065 ;
-    rdfs:seeAlso <#authorAgent> ;
-    rdfs:comment "Gebruik een specifiekere rol waar mogelijk."@nl .
+    rdfs:subPropertyOf rdaw:P10065 , <#relatedAgentOfWork> . 
 
-<#authorAgent>
+<#dedicateeAgentOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P10061 , <#creatorAgentOfWork> ;
-    rdfs:comment "Te gebruiken ipv creatorAgentOfWork indien het een tekstueel werk betreft."@nl .
-    # welke subproperties toe te voegen?
+    rdfs:subPropertyOf rdaw:P10069 , <#relatedAgentOfWork> .     
 
-<#academicSupervisor>
+<#honoureeAgentOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P10407 , <#creatorAgentOfWork> .
+    rdfs:subPropertyOf rdaw:P10049 , <#relatedAgentOfWork> .   
+
+<#issuingAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10046 , <#relatedAgentOfWork> . 
+
+<#sponsoringAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10067 , <#relatedAgentOfWork> . 
+
+<#subjectAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10319 , <#relatedAgentOfWork> .     
 
 <#aggregatorAgent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P10393, <#creatorAgentOfWork> .
+    rdfs:subPropertyOf rdaw:P10393 , <#creatorAgentOfWork> . 
+
+<#architectAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10062 , <#creatorAgentOfWork> . 
+
+<#artistAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10058 , <#creatorAgentOfWork> . 
+
+<#authorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10061 , <#creatorAgentOfWork> .     
+
+<#cartographerAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10052 , <#creatorAgentOfWork> . 
+
+<#castingDirectorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10305 , <#creatorAgentOfWork> . 
+
+<#choreographerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10060 , <#creatorAgentOfWork> . 
+
+<#compilerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10055 , <#creatorAgentOfWork> .     
+
+<#composerAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10053 , <#creatorAgentOfWork> .     
+
+<#consultantAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10071 , <#creatorAgentOfWork> . 
+
+ <#creatorCollectiveAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10484 , <#creatorAgentOfWork> .    
+
+<#dedicatorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10048 , <#creatorAgentOfWork> . 
+
+<#designerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10051 , <#creatorAgentOfWork> .    
+ 
+<#directorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10066 , <#creatorAgentOfWork> . 
+
+<#directorAgentOfPhotography>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10068 , <#creatorAgentOfWork> . 
+
+<#editorialDirectorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10298 , <#creatorAgentOfWork> .     
+
+<#filmmakerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10063 , <#creatorAgentOfWork> . 
+ 
+<#founderAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10299 , <#creatorAgentOfWork> . 
+
+<#intervieweeAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10059 , <#creatorAgentOfWork> . 
+
+<#interviewerAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10057 , <#creatorAgentOfWork> .   
+
+<#inventorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10054 , <#creatorAgentOfWork> .       
+
+<#organizerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10297 , <#creatorAgentOfWork> . 
+
+ <#photographerAgentOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10056 , <#creatorAgentOfWork> .    
+
+<#producerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10064 , <#creatorAgentOfWork> .     
+
+<#programmerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10050 , <#creatorAgentOfWork> . 
+
+<#remixArtistAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10306 , <#creatorAgentOfWork> . 
+
+<#researcherAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10293 , <#creatorAgentOfWork> . 
+
+<#creatorPersonOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10437 , <#relatedPersonOfWork> . 
+
+ <#academicSupervisor>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10407 , <#creatorPersonOfWork> .    
+
+<#architectPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10438 , <#creatorPersonOfWork> . 
+
+<#artistPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10451 , <#creatorPersonOfWork> . 
+       
+<#authorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10436 , <#creatorPersonOfWork> . 
+
+ <#cartographerPersonOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10435 , <#creatorPersonOfWork> . 
+
+<#compilerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10444 , <#creatorPersonOfWork> .   
+
+<#consultantPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10458 , <#creatorPersonOfWork> .           
+
+<#composerPersonOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10442 , <#creatorPersonOfWork> .     
+
+<#designerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10441 , <#creatorPersonOfWork> . 
+
+<#directorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10455 , <#creatorPersonOfWork> .    
+
+<#intervieweePersonOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10447 , <#creatorPersonOfWork> . 
+
+<#interviewerPersonOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10446 , <#creatorPersonOfWork> . 
+
+<#inventorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10443 , <#creatorPersonOfWork> .      
+
+<#photographerPersonOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10445 , <#creatorPersonOfWork> . 
+
+<#producerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10454 , <#creatorPersonOfWork> . 
+
+<#researcherPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10416 , <#creatorPersonOfWork> .     
+
+<#creatorCorporateBodyOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10531 , <#creatorCollectiveAgentOfWork> .
+ 
+<#artistCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10545 , <#creatorCorporateBodyOfWork> . 
+
+<#authorCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10530 , <#creatorCorporateBodyOfWork> . 
+
+<#cartographerCorporateBodyOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10529 , <#creatorCorporateBodyOfWork> . 
+
+<#compilerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10538 , <#creatorCorporateBodyOfWork> .   
+
+<#composerCorporateBodyOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10536 , <#creatorCorporateBodyOfWork> .   
+
+<#designerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10535 , <#creatorCorporateBodyOfWork> .    
+
+<#interviewerCorporateBodyOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10540 , <#creatorCorporateBodyOfWork> .       
+
+<#organizerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10551 , <#creatorCorporateBodyOfWork> . 
+
+<#photographerCorporateBodyOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10539 , <#creatorCorporateBodyOfWork> . 
+
+<#productionCompany>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10008 , <#creatorCorporateBodyOfWork> . 
+
+<#producerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10548 , <#creatorCorporateBodyOfWork> . 
+
+<#audioProducerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10304 , <#producerAgent> . 
+
+<#filmProducerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10073 , <#producerAgent> . 
+
+<#radioProducerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10074 , <#producerAgent> . 
+
+<#televisionProducerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10075 , <#producerAgent> . 
+
+<#artistAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10058 ,  <#creatorAgentOfWork> .
+
+<#bookArtistAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10254 , <#artistAgent> . 
+
+<#calligrapherAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10253 , <#artistAgent> . 
+
+<#sculptorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10202 , <#artistAgent> . 
+
+<#degreeSupervisor>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10041 , <#academicSupervisor> . 
+
+<#radioDirectorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10014 , <#directorAgent> . 
+
+<#televisionDirectorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10015 , <#directorAgent> .   
+
+<#filmDirectorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10013 , <#directorAgent> .  
+
+<#filmDirectorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10418 , <#directorPerson> . 
 
 
-# properties A:
+<#landscapeArchitectAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10200 , <#architectAgent> . 
+
+<#librettistAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10205 , <#authorAgent> . 
+
+<#lyricistAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10204 , <#authorAgent> . 
+
+<#rapporteurAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10255 , <#authorAgent> . 
+
+<#screenwriterAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10203 , <#authorAgent> .     
+
+<#lyricistPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10430 , <#authorPerson> . 
+
+<#librettistPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10431 , <#authorPerson> .  
+
+<#screenwriterPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10429 , <#authorPerson> .      
+
+<#filmProducerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10516 , <#producerCorporateBody> . 
+
+
+# properties Agent:
 
 <#realIdentityOfPerson>
     a rdf:Property ;
@@ -726,4 +1206,3 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdai:P40046 .
-    
