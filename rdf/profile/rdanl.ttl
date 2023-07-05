@@ -23,13 +23,13 @@
 
 <#>
   a owl:Ontology ;
-  dc11:title "RDANL, een toepassingsprofiel van RDA."@en;
-  dc11:description "RDANL, een toepassingsprofiel van RDA. "@en ;
+  dc11:title "RDANL, een toepassingsprofiel van RDA."@nl ;
+  dc11:description "RDANL, een toepassingsprofiel van RDA."@nl ;
   ns0:preferredNamespacePrefix "rdanl" ;
   dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@nl ;
   cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
-  owl:versionInfo "v0.1.2" ;
-  dc11:modified "2023-07-03" .
+  owl:versionInfo "v0.9.2" ;
+  dc11:modified "2023-07-05" .
 
 # Classes:
 
@@ -2069,4 +2069,3 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdap:P70032 .  
-    
