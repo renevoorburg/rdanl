@@ -727,117 +727,6 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10516 , <#producerCorporateBody> . 
 
-# Domain Agent:
-
-<#realIdentityOfPerson>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50429 . 
-
-<#alternateIdentityOfPerson>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50428 . 
-
-<#professionOrOccupation>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50104 . 
-
-<#preferredNameOfPerson>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50117 .     
-
- <#nameOfAgent>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50385 .     
-   
-<#surname>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50291 .  
-
-<#givenName>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50292  .  
-
-<#dateOfBirth>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50121  ;
-    rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl . 
-
-<#dateOfDeath>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50120  ;
-    rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl .
-
-<#countryAssociatedWithPerson>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50097  ;
-    rdfs:comment "Een waarde volgens ISO 3166-1 alpha-2 is een geschikte keuze."@nl .
-
-<#biographicalInformation>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaa:P50113  ;
-    rdfs:comment "Dit is een restcategorie voor kenmerken, gestructureerd of ongestructureerd. Overweeg het aanmaken van een subproperty van een passende property om te kunnen selecteren op specifieke kenmerken,"@nl .    
-
-# Domain Nomen:
-
-<#nomenString>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdan:P80068 .   
-
-<#appelationOfRDAEntityOf>
-    a rdf:Property ;
-    rdfs:subPropertyOf rdan:P80112 ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:comment "Als er een Nomen entiteit aangemaakt is dan zal het type van de bijbehorende entiteit ook vastgelegd zijn. Hier kan daarom met de meest generieke relatie volstaan worden."@nl .       
-
-<#nameOfRDAEntityOf>
-    a  rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdan:P80161 .
-
-<#equivalentTo>
-    a rdf:Property ;
-    rdfs:subPropertyOf rdan:P80113 ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:comment "Let op, anders dan naam suggereert, enkel om Nomens aan elkaar te verbinden."@nl .       
-
-<#languageOfNomen>
-    a rdf:Property ;
-    rdfs:subPropertyOf rdan:P80066 ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:comment "Een taalcode met twee tekens volgens ISO 639-1 (2002) of drie tekens volgens ISO 639-2 (1998), ISO 639-3 (2007) of ISO 639-5 (2008) is een geschikte waarde."@nl .  
-
- <#sciptOfNomen>
-    a rdf:Property ;
-    rdfs:subPropertyOf rdan:P80070 ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:comment "Gebruik een waarde volgens ISO 15924."@nl .  
-
-# Domain X:
-
-<#relatedRDAEntityOfRDAEntity>
-    a rdf:Property ;
-    rdfs:subPropertyOf rdax:P00001 ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:comment "Gebruik een zo specifiek mogelijke related-property tenzij in een RDF-content waarin alle entiteiten van een type aanduding voorzien zijn."@nl .
-
-<#identifierForRDAEntity>
-    a rdf:Property ;
-    rdfs:subPropertyOf rdax:P00018 ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:comment "Het is wenselijk om identifiers van een prefix te voorzoen zodat context of domein helder wordt, bijvoorbeeld met ISBN: of PPN: "@nl .
-
 # Domain Expression:
 
 <#titleOfExpression>
@@ -1392,7 +1281,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:P20384 , <#actorPerson> .
 
-# Domain Nomen:
+# Domain Manifestation:
 
 <#titleProper>
     a rdf:Property ;
@@ -1536,11 +1425,6 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30133 . 
 
-<#publisherAgent>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdam:P30083 .
-
 <#dateOfPublication>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
@@ -1551,16 +1435,6 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:30088 .     
-
-<#contributorAgentOfStillImage>     
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdam:P30321 .
-
-<#contributorAgentOfText>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdam:P30328 . 
 
 <#relatedManifestationOfManifestation>
     a rdf:Property ;
@@ -1598,24 +1472,287 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30456 .
 
- <#accessibilityContent>
+<#accessibilityContent>
      a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdam:P30452 .       
+    rdfs:subPropertyOf rdam:P30452 .     
 
-# properties P:
-
-<#nameOfPlace>
+<#relatedRDAEntityOfManifestation>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdap:P70001 .  
+    rdfs:subPropertyOf rdam:P30264 .
 
-<#partOfPlace>
+<#relatedCollectiveAgentOfManifestation>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdap:P70032 .  
+    rdfs:subPropertyOf rdam:P30271 .
 
-# properties I:
+<#manufacturerPerson> 
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30361 .
+
+<#manufacturerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30419 .
+
+<#contributorPersonToAggregate>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30336 .
+
+<#contributorCorporateBodyToAggregate>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30394 .
+
+<#creatorPersonOfManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30363 .
+
+<#creatorCorporateBodyOfManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30421 .
+
+<#bookDesignerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30069 , <#manufacturerAgent> . 
+
+<#brailleEmbosserAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30071 , <#manufacturerAgent> .  
+
+<#engraverAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30070 , <#manufacturerAgent> . 
+
+<#etcherAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30076 , <#manufacturerAgent> .    
+
+<#casterAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30073 , <#manufacturerAgent> . 
+
+<#collotyperAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30077 , <#manufacturerAgent> .    
+
+<#lithographerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30074 , <#manufacturerAgent> . 
+
+<#papermakerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30215 , <#manufacturerAgent> . 
+
+<#platemakerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30075 , <#manufacturerAgent> . 
+
+<#printerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30078 , <#manufacturerAgent> . 
+
+<#printmakerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30072 , <#manufacturerAgent> . 
+
+<#printerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30358 , <#manufacturerPerson> . 
+
+<#lithographerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30354 , <#manufacturerPerson> .         
+
+<#bookDesignerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30349 , <#manufacturerPerson> .  
+
+ <#collotyperPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30357 , <#manufacturerPerson> .   
+
+<#engraverPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30350 , <#manufacturerPerson> . 
+
+<#etcherPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30356 , <#manufacturerPerson> .         
+
+<#bookDesignerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30407 , <#manufacturerCorporateBody> . 
+
+<#lithographerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30412 , <#manufacturerCorporateBody> .  
+
+<#printerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30416 , <#manufacturerCorporateBody> .     
+
+<#broadcasterAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30067 , <#publisherAgent> . 
+
+<#broadcasterCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30405 , <#publisherCorporateBody> . 
+
+<#contributorAgentOfCartography>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30315 , <#contributorAgentToAggregate> . 
+
+<#contributorAgentOfChoreography>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30316 , <#contributorAgentToAggregate> . 
+
+<#contributorAgentOfComputerContent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30333 , <#contributorAgentToAggregate> . 
+
+<#contributorAgentOfMovingImage>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30326 , <#contributorAgentToAggregate> . 
+
+<#contributorAgentOfMusic>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30311 , <#contributorAgentToAggregate> . 
+
+<#contributorAgentOfObject>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30332 , <#contributorAgentToAggregate> . 
+
+<#contributorAgentOfSpeech>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30331 , <#contributorAgentToAggregate> . 
+
+<#contributorAgentOfStillImage>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30321 , <#contributorAgentToAggregate> . 
+
+<#contributorAgentOfText>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30328 , <#contributorAgentToAggregate> . 
+
+<#contributorPersonOfStillImage>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30343 , <#contributorPersonToAggregate> . 
+
+<#contributorPersonOfText>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30344 , <#contributorPersonToAggregate> .     
+
+<#contributorCorporateBodyOfStillImage>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30401 , <#contributorCorporateBodyToAggregate> . 
+
+<#contributorCorporateBodyOfText>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30402 , <#contributorCorporateBodyToAggregate> .     
+
+<#contributorAgentToAggregate>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30327 , <#relatedAgentOfManifestation> . 
+
+<#creatorAgentOfManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30329 , <#relatedAgentOfManifestation> . 
+
+<#distributorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30080 , <#relatedAgentOfManifestation> . 
+
+<#filmDistributorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30068 , <#distributorAgent> . 
+
+<#manufacturerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30082 , <#creatorAgentOfManifestation> . 
+
+<#producerAgentOfUnpublishedManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30081 , <#creatorAgentOfManifestation> . 
+
+<#publisherAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30083 , <#creatorAgentOfManifestation> . 
+
+<#publisherPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30362 , <#creatorPersonOfManifestation> .     
+
+<#publisherCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30420 , <#creatorCorporateBodyOfManifestation> . 
+
+<#relatedAgentOfManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30267 , <#relatedRDAEntityOfManifestation> . 
+
+<#relatedCorporateBodyOfManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30270 , <#relatedCollectiveAgentOfManifestation> . 
+
+<#surveyorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30312 , <#contributorAgentOfCartography> . 
+
+# Domain Item:
 
 <#identifierForItem>
     a rdf:Property ;
@@ -1656,3 +1793,126 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdai:P40046 .
+
+# Domain Agent:
+
+<#realIdentityOfPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50429 . 
+
+<#alternateIdentityOfPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50428 . 
+
+<#professionOrOccupation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50104 . 
+
+<#preferredNameOfPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50117 .     
+
+ <#nameOfAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50385 .     
+   
+<#surname>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50291 .  
+
+<#givenName>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50292  .  
+
+<#dateOfBirth>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50121  ;
+    rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl . 
+
+<#dateOfDeath>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50120  ;
+    rdfs:comment "Een waarde volgens ISO 8601 is een geschikte waarde."@nl .
+
+<#countryAssociatedWithPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50097  ;
+    rdfs:comment "Een waarde volgens ISO 3166-1 alpha-2 is een geschikte keuze."@nl .
+
+<#biographicalInformation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50113  ;
+    rdfs:comment "Dit is een restcategorie voor kenmerken, gestructureerd of ongestructureerd. Overweeg het aanmaken van een subproperty van een passende property om te kunnen selecteren op specifieke kenmerken,"@nl .    
+
+# Domain Nomen:
+
+<#nomenString>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdan:P80068 .   
+
+<#appelationOfRDAEntityOf>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdan:P80112 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Als er een Nomen entiteit aangemaakt is dan zal het type van de bijbehorende entiteit ook vastgelegd zijn. Hier kan daarom met de meest generieke relatie volstaan worden."@nl .       
+
+<#nameOfRDAEntityOf>
+    a  rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdan:P80161 .
+
+<#equivalentTo>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdan:P80113 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Let op, anders dan naam suggereert, enkel om Nomens aan elkaar te verbinden."@nl .       
+
+<#languageOfNomen>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdan:P80066 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Een taalcode met twee tekens volgens ISO 639-1 (2002) of drie tekens volgens ISO 639-2 (1998), ISO 639-3 (2007) of ISO 639-5 (2008) is een geschikte waarde."@nl .  
+
+ <#sciptOfNomen>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdan:P80070 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Gebruik een waarde volgens ISO 15924."@nl .  
+
+# Domain X:
+
+<#relatedRDAEntityOfRDAEntity>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdax:P00001 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Gebruik een zo specifiek mogelijke related-property tenzij in een RDF-content waarin alle entiteiten van een type aanduding voorzien zijn."@nl .
+
+<#identifierForRDAEntity>
+    a rdf:Property ;
+    rdfs:subPropertyOf rdax:P00018 ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:comment "Het is wenselijk om identifiers van een prefix te voorzoen zodat context of domein helder wordt, bijvoorbeeld met ISBN: of PPN: "@nl .
+
+# properties Place:
+
+<#nameOfPlace>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdap:P70001 .  
+
+<#partOfPlace>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdap:P70032 .  
