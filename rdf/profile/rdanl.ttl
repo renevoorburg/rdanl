@@ -2069,3 +2069,4 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdap:P70032 .  
+    
