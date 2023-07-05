@@ -129,7 +129,7 @@
     skos:definition "A distinct intellectual or artistic creation, that is, the intellectual or artistic content."@en, "Création intellectuelle ou artistique déterminée, c’est-à-dire le contenu intellectuel ou artistique."@fr, "Una creación intelectual o artística distintiva, i.e., el contenido intelectual o artístico."@es, "Een onderscheidbare intellectuele of artistieke creatie, dit wil zeggen, de intellectuele of artistieke content."@nl, "Creazione intellettuale o artistica distinta, cioè il contenuto artistico o intellettuale."@it, "Μια διακριτή διανοητική/πνευματική ή καλλιτεχνική δημιουργία, δηλαδή το πνευματικό ή καλλιτεχνικό περιεχόμενο."@el, "Itsenäinen tiedollinen tai taiteellinen luomus eli tiedollinen tai taiteellinen sisältö."@fi, "Selvstændig intellektuel eller kunstnerisk frembringelse, fx det intellektuelle eller kunstneriske indhold."@da, "Một sáng tạo nghệ thuật hoặc trí tuệ riêng biệt, nghĩa là, nội dung nghệ thuật hoặc trí tuệ."@vi, "Eine individuelle intellektuelle oder künstlerische Schöpfung, das heißt der intellektuelle oder künstlerische Inhalt."@de, "Creació intel·lectual o artística distinta, és a dir, el contingut intel·lectual o artístic."@ca, "Önálló szellemi vagy művészi alkotás, azaz a szellemi vagy művészi tartalom."@hu, "Et distinkt intellektuell eller kunstnerisk arbeid (dvs. det intellektuelle eller kunstneriske innholdet)."@no, "ابداع فكري أو فني متميز، وما يمثل محتوى فكري أو فني ."@ar, "Piiritletud intellektuaalne või kunstilooming, s.o intellektuaalne või kunstiline sisu."@et, "Atšķirīgs intelektuālas vai mākslinieciskas jaunrades veikums (FRBR)."@lv .
 
 
-# Properties Work :
+# Domain Work :
 
 <#titleOfWork>
     a rdf:Property ;
@@ -215,7 +215,7 @@
     rdfs:comment "Te gebruiken in de context van een record. Gebruik in een RDF-context waarin entiteiten standaard van een klasse voorzien zijn de generieke property relatedRDAEntityOfRDAEntity."@nl . 
     # welke subproperties nog meer toe te voegen?
 
-# Roles :
+# - Roles :
 
 <#relatedRDAEntityOfWork>
     a rdf:Property ;
@@ -682,7 +682,6 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10418 , <#directorPerson> . 
 
-
 <#landscapeArchitectAgent>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
@@ -728,8 +727,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10516 , <#producerCorporateBody> . 
 
-
-# properties Agent:
+# Domain Agent:
 
 <#realIdentityOfPerson>
     a rdf:Property ;
@@ -790,7 +788,7 @@
     rdfs:subPropertyOf rdaa:P50113  ;
     rdfs:comment "Dit is een restcategorie voor kenmerken, gestructureerd of ongestructureerd. Overweeg het aanmaken van een subproperty van een passende property om te kunnen selecteren op specifieke kenmerken,"@nl .    
 
-# properties N:
+# Domain Nomen:
 
 <#nomenString>
     a rdf:Property ;
@@ -826,7 +824,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:comment "Gebruik een waarde volgens ISO 15924."@nl .  
 
-# properties X:
+# Domain X:
 
 <#relatedRDAEntityOfRDAEntity>
     a rdf:Property ;
@@ -840,7 +838,7 @@
     rdfs:isDefinedBy <#> ;
     rdfs:comment "Het is wenselijk om identifiers van een prefix te voorzoen zodat context of domein helder wordt, bijvoorbeeld met ISBN: of PPN: "@nl .
 
-# properties E:
+# Domain Expression:
 
 <#titleOfExpression>
     a rdf:Property ;
@@ -869,6 +867,11 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:20231 . 
+
+<#categoryOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20331 .     
 
 <#manifestationOfExpression>
     a rdf:Property ;
@@ -906,29 +909,6 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:P20141 . 
 
-<#creatorAgentOfExpression>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae:P20053 ;
-    rdfs:comment "Hanteeer waar mogelijke subproperties met een specifieke rol."@nl .
-
-<#translatorAgent>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae:P20037 , <#creatorAgentOfExpression> . 
-
-<#reviserAgent>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae:P20327 , <#creatorAgentOfExpression> . 
-
-<#contributorAgentToAmalgamation>
-    a rdf:Property ;
-    rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae:P20328 , <#creatorAgentOfExpression> . 
-
-    # welke subproperties van <#creatorAgentOfExpression> nog meer?
-
 <#intendedAudienceOfExpression>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
@@ -942,7 +922,477 @@
     rdfs:subPropertyOf rdae:P20325 ;
     rdfs:comment "In een RDF-context hoeft dit kenmerk niet gebruikt te worden als het Work al verwijst naar de representativeExpression."@nl .
 
-# properties M:
+<#relatedRDAEntityOfExpression> 
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20297 .
+
+<#reviserPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20347 .
+
+<#contributorPersonToPerformance>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20366 .
+
+<#contributorPersonToAmalgamation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20367 .
+
+<#contributorCorporateBodyToAmalgamation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20485 .
+
+<#contributorCorporateBodyToPerformance>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20484 .
+
+<#creatorCorporateBodyOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20507 .
+
+<#creatorPersonOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20389 .
+
+<#relatedAgentOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20301 , <#relatedRDAEntityOfExpression> . 
+
+<#creatorAgentOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20053 , <#relatedAgentOfExpression> . 
+
+<#reviserAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20327 , <#creatorAgentOfExpression> .  
+
+<#translatorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20037 , <#creatorAgentOfExpression> .  
+
+<#contributorAgentToAmalgamation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20328 , <#creatorAgentOfExpression> . 
+
+<#abridgerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20049 , <#reviserAgent> . 
+
+<#arrangerAgentOfMusic>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20029 , <#reviserAgent> .    
+
+<#censorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20287 , <#reviserAgent> . 
+
+<#transcriberAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20034 , <#reviserAgent> . 
+
+<#restorationistAgentOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20289 , <#reviserAgent> . 
+
+<#arrangerPersonOfMusic>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20365 , <#reviserPerson> .     
+
+<#censorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20356 , <#reviserPerson> .  
+
+<#contributorAgentToPerformance>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20329 , <#contributorAgentToAmalgamation> .   
+
+<#colouristAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20283 , <#contributorAgentToAmalgamation> .    
+
+<#draftsmanAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20033 , <#contributorAgentToAmalgamation> . 
+
+ <#courtReporterAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20040 , <#contributorAgentToAmalgamation> .    
+
+<#editorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20330 , <#contributorAgentToAmalgamation> .  
+
+<#lettererAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20259 , <#contributorAgentToAmalgamation> . 
+
+<#minuteTakerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20058 , <#contributorAgentToAmalgamation> .  
+
+<#softwareDeveloperAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20280 , <#contributorAgentToAmalgamation> .            
+
+<#animatorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20028 , <#contributorAgentToPerformance> . 
+
+<#artDirectorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20038 , <#contributorAgentToPerformance> . 
+
+<#audioEngineerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20292 , <#contributorAgentToPerformance> .         
+
+<#intervieweeAgentOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20047 , <#contributorAgentToPerformance> . 
+
+<#interviewerAgentOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20032 , <#contributorAgentToPerformance> . 
+
+<#lightingDesignerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20277 , <#contributorAgentToPerformance> . 
+
+<#makeupArtistAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20284 , <#contributorAgentToPerformance> . 
+
+<#musicalDirectorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20035 , <#contributorAgentToPerformance> . 
+
+<#costumeDesignerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20036 , <#contributorAgentToPerformance> . 
+
+<#djAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20296 , <#contributorAgentToPerformance> . 
+
+<#dubbingDirectorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20295 , <#contributorAgentToPerformance> . 
+
+<#editorAgentOfMovingImageWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20055 , <#contributorAgentToPerformance> .     
+
+<#productionDesignerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20056 , <#contributorAgentToPerformance> . 
+
+<#onscreenParticipantAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20279 , <#contributorAgentToPerformance> . 
+
+<#musicProgrammerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20294 , <#contributorAgentToPerformance> .     
+
+<#performerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20039 , <#contributorAgentToPerformance> .     
+
+<#recordistAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20052 , <#contributorAgentToPerformance> . 
+
+<#soundDesignerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20276 , <#contributorAgentToPerformance> . 
+
+<#specialEffectsProviderAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20258 , <#contributorAgentToPerformance> . 
+
+<#stageDirectorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20031 , <#contributorAgentToPerformance> .   
+
+<#visualEffectsProviderAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20257 , <#contributorAgentToPerformance> . 
+
+<#animatorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20394 , <#contributorPersonToPerformance> . 
+
+<#artDirectorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20350 , <#contributorPersonToPerformance> . 
+
+<#soundDesignerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20343 , <#contributorPersonToPerformance> . 
+
+<#performerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20351 , <#contributorPersonToPerformance> . 
+
+<#musicalDirectorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20342 , <#contributorPersonToPerformance> .     
+
+<#choralConductorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20285 , <#conductorAgent> . 
+
+<#instrumentalConductorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20286 , <#conductorAgent> .     
+
+<#colouristPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20340 , <#contributorPersonToAmalgamation> . 
+
+<#courtReporterPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20352 , <#contributorPersonToAmalgamation> .   
+
+<#editorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20338 , <#contributorPersonToAmalgamation> .           
+
+<#commentatorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20021 , <#performerAgent> . 
+
+<#conductorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20011 , <#performerAgent> .    
+
+<#presenterAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20054 , <#performerAgent> . 
+
+<#puppeteerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20018 , <#performerAgent> .   
+
+<#singerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20025 , <#performerAgent> .        
+
+<#speakerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20024 , <#performerAgent> . 
+
+<#storytellerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20023 , <#performerAgent> .  
+
+<#actorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20012 , <#performerAgent> .   
+
+<#narratorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20022 , <#performerAgent> . 
+
+<#dancerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20014 , <#performerAgent> .    
+
+<#onscreenPresenterAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20013 , <#performerAgent> . 
+
+<#panelistAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20019 , <#performerAgent> .   
+
+<#instructorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20015 , <#performerAgent> . 
+
+<#hostAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20016 , <#performerAgent> . 
+
+<#instrumentalistAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20020 , <#performerAgent> .  
+
+<#moderatorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20017 , <#performerAgent> .                  
+
+<#commentatorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20377 , <#performerPerson> . 
+
+<#conductorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20383 , <#performerPerson> . 
+
+<#singerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20382 , <#performerPerson> . 
+
+<#speakerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20380 , <#performerPerson> .    
+
+<#instrumentalistPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20376 , <#performerPerson> .   
+
+<#narratorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20378 , <#performerPerson> . 
+
+<#storytellerPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20379 , <#performerPerson> .     
+
+<#actorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20369 , <#performerPerson> .  
+
+<#editorCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20456 , <#contributorCorporateBodyToAmalgamation> . 
+
+<#colouristCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20458 , <#contributorCorporateBodyToAmalgamation> .     
+
+<#hostCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20490 , <#performerCorporateBody> . 
+
+<#singerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20500 , <#performerCorporateBody> . 
+
+<#mixingEngineerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20293 , <#audioEngineerAgent> . 
+
+<#recordingEngineerAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20050 , <#audioEngineerAgent> . 
+
+<#performerCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20469 , <#contributorCorporateBodyToPerformance> . 
+
+<#translatorCorporateBody>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20464 , <#creatorCorporateBodyOfExpression> . 
+
+<#translatorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20346 , <#creatorPersonOfExpression> . 
+
+<#voiceActorAgent>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20070 , <#actorAgent> . 
+
+<#voiceActorPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20384 , <#actorPerson> .
+
+# Domain Nomen:
 
 <#titleProper>
     a rdf:Property ;
