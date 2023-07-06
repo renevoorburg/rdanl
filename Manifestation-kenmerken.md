@@ -8,7 +8,7 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 || *Appellation:* | *elementen om de entiteit te benoemen:* ||| M | >1 |
 | [rdam:P30156](http://rdaregistry.info/Elements/m/P30156) | **titleProper** | letterijk overnemen uit de bron zoals het er staat, ook eventuele tikfouten<br>vastleggen als een zin<br>hoofdlettergebruik zoals in de taal van de titel gebruikelijk is<br>bij fouten de gecorrigeerde titel opnemen als **variantTitleOfManifestation** | `Nomen` | U | M | 1 |
 | [rdam:P30128](http://rdaregistry.info/Elements/m/P30128) | **variantTitleOfManifestation** | zie bij **titleProper** | `Nomen` | U | O | >1 |
-| [rdam:P30004](http://rdaregistry.info/Elements/m/P30004) | **identifierForManifestation** | systeemonafhankelijke identifier, indien mogelijk persistent, dit is niet de identifier van het metadata record | `Nomen` | Id |MA | >1 | "ISBN: 9025499678" |
+| [rdam:P30004](http://rdaregistry.info/Elements/m/P30004) | **identifierForManifestation** | systeemonafhankelijke identifier, indien mogelijk persistent, dit is niet de identifier van het metadata record | `Nomen` | Id |MA | >1 | "urn:isbn:9025499678" |
 ||
 || *Coherence:* | *primaire relaties tussen entiteiten:* ||| M | >1 |
 | [rdam:P30139](http://rdaregistry.info/Elements/m/P30139) | **expressionManifested** || `Expression` | S / Id / IRI | M | >1 |
