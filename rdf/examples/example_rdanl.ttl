@@ -79,7 +79,7 @@
 <http://data.bibliotheken.nl/id/m/1> # fictieve Manifestation-IRI
     a rdanl:Manifestation ;
     rdanl:titleProper "Een vrouw van het noorden" ;
-    rdanl:identifierForRDAEntity "ISBN: 9025499678" ;
+    rdanl:identifierForRDAEntity "urn:isbn:9025499678" ;
     rdanl:expressionManifested <http://data.bibliotheken.nl/id/e/1> ; 
     rdanl:carrierType rdact:1049 ;
     rdanl:mediaType rdamt:1007 ;

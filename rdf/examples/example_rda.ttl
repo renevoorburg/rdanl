@@ -91,7 +91,7 @@
 <http://data.bibliotheken.nl/id/m/1>                            # fictieve Manifestation-IRI
     a rdac:C10007 ;                                             # a Manifestation
     rdam:P30156 "Een vrouw van het noorden" ;                   # "title proper"
-    rdax:P00018 "ISBN: 9025499678" ;                            # "identifier for entity" - prefix-constructie
+    rdax:P00018 "urn:isbn:9025499678" ;                          # "identifier for entity" - als urn
         
     rdam:P30139 <http://data.bibliotheken.nl/id/e/1> ;          # "expression manifested" 
 
