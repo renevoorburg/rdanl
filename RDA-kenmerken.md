@@ -39,9 +39,12 @@ De overzichten van de toe te passen kenmerken zijn gebaseerd op de richtlijnen v
 * Andere elementen kunnen toegevoegd worden aan de beschrijving van één of meer entiteiten die nuttig worden geacht voor de identificatie of toegang. 
 * Beschrijving van andere entiteiten kunnen toegevoegd worden aan de coherente beschrijving van een resource die nuttig geacht worden voor de identificatie of toegang. 
 
-## Zie ook
+## Uitgewerkte voorbeelden
 
-TODO: oa. voorbeeld Sita
+Er zijn twee uitwerkingen gemaakt van een [beschrijving in RDF](rdf/examples), zowel met RDA-elementen als met elementen uit de afgeleide [`rdanl`-ontologie](rdf/profile).
+
+Bovendien is er een voorbeeld van een uitgebreide beschrijving gemaakt met RIMMF [^5]. [TODO]().
+
 
 
 [^1]: Zie [Nederlandse Thesaurus van Auteurnamen](http://data.bibliotheken.nl/id/dataset/persons). Hoewel deze nu nog niet naar RDA klassen omgezet is kan deze gebruikt voor `Persons` (op indirecte wijze) of (direct) voor de centrale `Nomen` van een [Persona](Persona_in_RDA.md).
