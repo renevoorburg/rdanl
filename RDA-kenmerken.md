@@ -1,6 +1,6 @@
 # Toe te passen RDA-kenmerken
 
-Toe te passen RDA-kenmerken:
+Toe te passen RDA-kenmerken voor monografieën:
 
 * [voor `Works`](Work-kenmerken.md)
 * [voor `Expressions`](Expression-kenmerken.md)
@@ -22,7 +22,12 @@ De tabellen met kenmerken zijn opgebouwd uit de volgende kolommen:
 
 ## Achtergrond
 
-TODO: uit Word-file
+De overzichten van de toe te passen kenmerken zijn gebaseerd op de richtlijnen van RDA ten aanzien van de e**isen van effectieve beschrijving** [^3].
+
+* Het voldoet aan de eisen van een **coherente beschrijving**[^4] van een bron 
+* En ten minste één van zijn entiteiten voldoet aan de **minimumbeschrijving** gesteld binnen RDA 
+* Andere elementen kunnen toegevoegd worden aan de beschrijving van één of meer entiteiten die nuttig worden geacht voor de identificatie of toegang. 
+* Beschrijving van andere entiteiten kunnen toegevoegd worden aan de coherente beschrijving van een resource die nuttig geacht worden voor de identificatie of toegang. 
 
 ## Zie ook
 
@@ -31,3 +36,5 @@ TODO: oa. voorbeeld Sita
 
 [^1]: Zie [Nederlandse Thesaurus van Auteurnamen](http://data.bibliotheken.nl/id/dataset/persons). Hoewel deze nu nog niet naar RDA klassen omgezet is kan deze gebruikt voor `Persons` (op indirecte wijze) of (direct) voor de centrale `Nomen` van een [Persona](Persona_in_RDA.md).
 [^2]: Zie [Brinkman-thesaurus](http://data.bibliotheken.nl/id/dataset/brinkman).
+[^3]: Zie [RDA Toolkit - Effective description](https://access.rdatoolkit.org/Guidance/Index).
+[^4]: {coherente bescvhrijving}
