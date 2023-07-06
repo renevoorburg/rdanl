@@ -41,13 +41,14 @@ De overzichten van de toe te passen kenmerken zijn gebaseerd op de richtlijnen v
 
 ## Uitgewerkte voorbeelden
 
-Er zijn twee uitwerkingen gemaakt van een [beschrijving in RDF](rdf/examples), zowel met RDA-elementen als met elementen uit de afgeleide [`rdanl`-ontologie](rdf/profile).
+Er zijn twee uitwerkingen gemaakt van een [beschrijving in RDF](rdf/examples), volgens een linked data-implementatiescenario, zowel met RDA-elementen als met elementen uit de afgeleide [`rdanl`-ontologie](rdf/profile).
 
-Bovendien is er een voorbeeld van een uitgebreide beschrijving gemaakt met RIMMF [^5]. [TODO]().
+Bovendien is er een voorbeeld van een uitgebreide beschrijving gemaakt met RIMMF [^5]. [TODO bestanden Sita]().
 
 
 
 [^1]: Zie [Nederlandse Thesaurus van Auteurnamen](http://data.bibliotheken.nl/id/dataset/persons). Hoewel deze nu nog niet naar RDA klassen omgezet is kan deze gebruikt voor `Persons` (op indirecte wijze) of (direct) voor de centrale `Nomen` van een [Persona](Persona_in_RDA.md).
 [^2]: Zie [Brinkman-thesaurus](http://data.bibliotheken.nl/id/dataset/brinkman).
 [^3]: Zie [RDA Toolkit - Effective description](https://access.rdatoolkit.org/Guidance/Index).
-[^4]: {coherente bescvhrijving}
+[^4]: "*Een set van entiteiten die de resource beschrijven en gerelateerd zijn gebruikmakend van basis structurele elementen.*", zie [RDA Toolkit - Glossary](https://access.rdatoolkit.org/Glossary).
+[^5]: [RIMMF](https://www.rimmf.com/) - RDA in Many Metadata Formats" - is een hulpmiddel voor MS Windows voor het (leren) werken met RDA.
