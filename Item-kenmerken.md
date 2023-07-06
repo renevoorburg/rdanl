@@ -5,7 +5,7 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 | uri | naam | opm. | range | vastlegging [^1] | verpl.? [^2] | max. | waarde |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 ||
-|| *Appellation:* | *elementen om de entiteit te benoemen:* || M | >1 |
+|| *Appellation:* | *elementen om de entiteit te benoemen:* ||| M | >1 |
 | [rdai:P40001](http://rdaregistry.info/Elements/i/P40001) | **identifierForItem** || `Nomen` | Id | M | 1 | barcode, URN |
 ||
 || *Coherence:* | *primaire relaties tussen entiteiten:* ||| M | >1 |
