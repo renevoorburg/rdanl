@@ -20,6 +20,16 @@ De tabellen met kenmerken zijn opgebouwd uit de volgende kolommen:
 * **max.**: Is het element herhaalbaar?
 * **waarde**: Richtlijnen ten aanzien van de waarde van het element. Verwijst naar een gecontroleerde waardelijst ('VES', zoals de [RDA Carrier Type](http://www.rdaregistry.info/termList/RDACarrierType/)), een standaard voor structurering van tekenreeksen ('SES', zoals de ISO 639.2-taalcodes) of geeft (tussen " " ) een voorbeeld van een geschikte waarde.
 
+De elementen zijn ingedeeld in de volgende categorieën (waar van toepassing): 
+
+* **Appellation**: Elementen die worden gebruikt om de entiteit te identificeren (te benoemen). 
+* **Coherence**: Het koppelen van de entiteiten van een enkele bron met behulp van "primaire" relaties. 
+* **General description**: Algemene elementen die worden gebruikt om de entiteit te beschrijven (basistoepassingsprofiel). 
+* **General relationships**: Algemene elementen die worden gebruikt om relaties van de entiteit te beschrijven (basistoepassingsprofiel). 
+* **Special description**: Gespecialiseerde elementen die worden gebruikt om de entiteit te beschrijven. 
+* **Special relationships**: Gespecialiseerde elementen die worden gebruikt  om de relaties van de entiteit te beschrijven. 
+
+
 ## Achtergrond
 
 De overzichten van de toe te passen kenmerken zijn gebaseerd op de richtlijnen van RDA ten aanzien van de e**isen van effectieve beschrijving** [^3].
