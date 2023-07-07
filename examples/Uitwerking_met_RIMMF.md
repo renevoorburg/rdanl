@@ -46,7 +46,7 @@ In dit voorbeeld van RIMMF wordt niet de voorgestelde [Persona-aanpak](Persona_i
 | rdanl:authorizedAccessPointForExpression | "Couperus, Louis (1863-1923) \| Een vrouw van het noorden \| text \| Dutch" |
 | rdanl:workExpressed | "Couperus, Louis (1863-1923 \| Aan den weg der vreugde" |
 | rdanl:preferredTitleOfExpression | "Een vrouw van het noorden" |
-| rdanl:manifestationOfExpression | "Een vrouw van het noorden \| Pandorra | [1999] \| volume \| 2e dr" |
+| rdanl:manifestationOfExpression | "Een vrouw van het noorden \| Pandorra \| [1999] \| volume \| 2e dr" |
 | rdanl:languageOfExpression | "Dutch" |
 | rdanl:contentType | "text" |
 
@@ -89,7 +89,7 @@ In dit voorbeeld van RIMMF wordt niet de voorgestelde [Persona-aanpak](Persona_i
 | a	| rdanl:Manifestation |
 | rdanl:identifierForManifestation | "kob108" |
 | rdanl:expressionManifested | "Couperus, Louis (1863-1923) \| Een vrouw van het noorden \| text \| Dutch" |
-| rdanl:authorizedAccessPointForManifestation | "Een vrouw van het noorden \| Pandora \| [1999] | volume | 2e dr" |
+| rdanl:authorizedAccessPointForManifestation | "Een vrouw van het noorden \| Pandora \| [1999] \| volume \| 2e dr" |
 | rdanl:titleProper | "Een vrouw van het noorden" |
 | rdanl:variantTitleOfManifestation | "Aan den weg der vreugde" |
 | rdanl:statementOfResponsibilityRelatingToTitleProper | "Louis Couperus" | rdanl:manufactureStatement | "Nijmegen : G.J. Thieme" |
@@ -112,7 +112,7 @@ In dit voorbeeld van RIMMF wordt niet de voorgestelde [Persona-aanpak](Persona_i
 | a	| rdanl:Manifestation |
 | rdanl:identifierForManifestation | "kob08" |
 | rdanl:expressionManifested | "Am Wegen der Freude \| Ullstein \| [1920] \| volume" |
-| rdanl:authorizedAccessPointForManifestation | "Aan den weg der vreugde \| L.J. Veen \| [1908] | volume" |
+| rdanl:authorizedAccessPointForManifestation | "Aan den weg der vreugde \| L.J. Veen \| [1908] \| volume" |
 | rdanl:titleProper | "Am Wege der Freude" |
 | rdanl:titleOfSeries | "Ullstein-Bücher" |
 | rdanl:statementOfResponsibilityRelatingToTitleProper | "von Louis Couperus" |
