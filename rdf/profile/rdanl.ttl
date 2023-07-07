@@ -28,7 +28,7 @@
   ns0:preferredNamespacePrefix "rdanl" ;
   dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@nl ;
   cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
-  owl:versionInfo "v0.9.4" ;
+  owl:versionInfo "v0.9.5" ;
   dc11:modified "2023-07-07" .
 
 # Classes:
@@ -201,7 +201,7 @@
 <#dateOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdaw:P010219 . 
+    rdfs:subPropertyOf rdaw:P10219 . 
 
 <#identifierForWork>
     a rdf:Property ;
@@ -795,7 +795,7 @@
 <#workExpressed>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdae:20231 . 
+    rdfs:subPropertyOf rdae:P20231 . 
 
 <#categoryOfExpression>
     a rdf:Property ;
@@ -1522,12 +1522,12 @@
 <#placeOfPublication>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdam:30088 .     
+    rdfs:subPropertyOf rdam:P30088 .     
 
 <#relatedManifestationOfManifestation>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdam:PP30048	;
+    rdfs:subPropertyOf rdam:P30048	;
     rdfs:comment "TODO: waar specifiek voor gebruiken? Welke subproperties?"@nl . 
 
 <#encodingFormat>
