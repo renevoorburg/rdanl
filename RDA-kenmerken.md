@@ -43,7 +43,7 @@ De overzichten van de toe te passen kenmerken zijn gebaseerd op de richtlijnen v
 
 Er zijn twee uitwerkingen gemaakt van een [beschrijving in RDF](rdf/examples), volgens een linked data-implementatiescenario, zowel met RDA-elementen als met elementen uit de afgeleide [`rdanl`-ontologie](rdf/profile).
 
-Bovendien is er een voorbeeld van een uitgebreide beschrijving gemaakt met RIMMF [^5]. [TODO bestanden Sita]().
+Bovendien is er een voorbeeld van een uitgebreide [beschrijving gemaakt met RIMMF](examples/Uitwerking_met_RIMMF.md). [^5]
 
 
 

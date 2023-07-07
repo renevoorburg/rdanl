@@ -35,4 +35,4 @@ Zie ook overzicht [RDA-kenmerken](RDA-kenmerken.md).
 [^4]: Zie [Thema](https://ns.editeur.org/thema/nl).
 [^5]: Zie [RDA Extension Plan](http://www.rdaregistry.info/termList/RDAExtensionPlan/). 
 [^6]: Gebruik van subkenmerken met een specifiekere *range* helpt om in *records*-gebaseerde systemen de klasse van het object expliciet te maken. In een linked data-omgeving wordt juist aangeraden om zo algemeen mogelijke kenmerken te gebruiken én de RDF-entiteiten expliciet van een klasse te voorzien.
-[^7]: Zie (TODO rollen Agents).
+[^7]: Relevante rollen zijn te vinden in de [`rdanl`-ontologie](rdf/profile).
