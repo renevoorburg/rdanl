@@ -3,7 +3,7 @@
 
 *Ter illustratie* de volgende beschrijving van een `Work` met bijbehorende `Expressions` en `Manifestations` zoals gegeneerd door RIMMF [^1]. Hierbij wordt een traditioneel implementatiescenario gevolgd, gebaseerd op (geautoriseerde) ingangen. De identifiers zijn door RIMMF gegeneerd. 
 
-In dit voorbeeld van RIMMF wordt niet de voorgestelde [Persona-aanpak](Persona_in_RDA.md) gevolgd.  Zie de [uitwerking in RDF](rdf/examples) voor een beschrijving in lijn met de voorgestelde aanpak.
+In dit voorbeeld van RIMMF wordt niet de voorgestelde [Persona-aanpak](Persona_in_RDA.md) gevolgd.  Zie de [uitwerking in RDF](../rdf/examples) voor een beschrijving in lijn met de voorgestelde aanpak.
 
 
 
