@@ -28,7 +28,7 @@
   ns0:preferredNamespacePrefix "rdanl" ;
   dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@nl ;
   cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
-  owl:versionInfo "v0.9.3" ;
+  owl:versionInfo "v0.9.4" ;
   dc11:modified "2023-07-07" .
 
 # Classes:
@@ -1330,6 +1330,11 @@
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30156 . 
+
+<#titleOfManifestation>      
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30134 .     
 
 <#variantTitleOfManifestation>      
     a rdf:Property ;
