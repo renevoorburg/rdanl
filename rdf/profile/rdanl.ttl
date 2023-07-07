@@ -28,8 +28,8 @@
   ns0:preferredNamespacePrefix "rdanl" ;
   dc11:rights "Gebaseerd op werk onder copyright van de American Library Association, Canadian Federation of Library Associations, en CILIP: Chartered Institute of Library and Information Professionals"@nl ;
   cc:licence <https://creativecommons.org/licenses/by/4.0/deed.en_US> ;
-  owl:versionInfo "v0.9.2" ;
-  dc11:modified "2023-07-05" .
+  owl:versionInfo "v0.9.3" ;
+  dc11:modified "2023-07-07" .
 
 # Classes:
 
@@ -136,10 +136,30 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10088 .
 
+<#preferredTitleOfWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10223 .    
+
 <#variantTitleOfWork>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdaw:P10086 .
+
+<#accessPointForWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10328 .
+
+<#authorizedAccessPointForWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10331 .
+
+<#variantAccessPointForWork>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaw:P10332 .
 
 <#relatedNomenOfWork>
     a rdf:Property ;
@@ -734,11 +754,31 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:P20312 .
 
+<#preferredTitleOfExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20315 .    
+
 <#identifierForExpression>
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdae:P20002 ;
     rdfs:comment "Niet bedoeld voor de IRI van de beschreven entiteit."@nl .
+
+<#accessPointForExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20310 .
+
+<#authorizedAccessPointForExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20313 .
+
+<#variantAccessPointForExpression>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdae:P20314 .
 
 <#contentType>
     a rdf:Property ;
@@ -1307,11 +1347,51 @@
     rdfs:isDefinedBy <#> ;
     rdfs:subPropertyOf rdam:P30328 .  
 
+<#accessPointForManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30276 .
+
+<#authorizedAccessPointForManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30294 .
+
+<#variantAccessPointForManifestation>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30295 .
+
+
 <#statementOfResponsibilityRelatingToTitleProper>      
     a rdf:Property ;
     rdfs:isDefinedBy <#> ;
-    rdfs:subPropertyOf rdam:P30105	;
-    rdfs:comment "TODO"@nl .
+    rdfs:subPropertyOf rdam:P30105 .
+
+<#manufactureStatement>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30109 .
+
+<#placeOfManufacture>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30087 .
+
+<#nameOfManufacturer>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30175 .
+
+<#nameOfPublisher>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30176 .
+
+<#publicationStatement>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdam:P30111 .
 
 <#manifestationCopyrightStatement>      
     a rdf:Property ;
@@ -2005,6 +2085,40 @@
     rdfs:subPropertyOf rdaa:P50113  ;
     rdfs:comment "Dit is een restcategorie voor kenmerken, gestructureerd of ongestructureerd. Overweeg het aanmaken van een subproperty van een passende property om te kunnen selecteren op specifieke kenmerken,"@nl .    
 
+<#identifierForPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50094 .
+
+<#variantNameOfPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50103 .      
+
+<#fullerFormOfName>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50115 .  
+
+<#accessPointForPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50377 .  
+
+<#variantAccessPointForPerson>
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50412 . 
+
+<#authorizedAccessPointForPerson>    
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50411 . 
+
+<#authorPersonOf>    
+    a rdf:Property ;
+    rdfs:isDefinedBy <#> ;
+    rdfs:subPropertyOf rdaa:P50541 . 
 
 # Domain Nomen:
 
