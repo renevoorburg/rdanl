@@ -6,6 +6,7 @@
 @prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
 @prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> . 
 @prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> . 
+@prefix rdaep: <http://rdaregistry.info/termList//RDAExtensionPlan/> . 
 
 ### Agent "Couperus":
 <http://data.bibliotheken.nl/id/a/1> # fictieve Agent-IRI
@@ -33,8 +34,8 @@
     rdanl:dateOfBirth "1863" ;
     rdanl:dateOfDeath "1923" ;
     rdanl:countryAssociatedWithPerson [
-    a rdanl:Place ;	
-    rdanl:identifierForRDAEntity "NL" 
+        a rdanl:Place ;	
+        rdanl:identifierForRDAEntity "NL" 
     ] ;
     rdanl:biographicalInformation "Med. NLMD/C 383" ; 
     rdanl:biographicalInformation "literator en feuilletonnist (m.n. in dagblad \"Het Vaderland\", te Den Haag)"	;
@@ -62,14 +63,14 @@
     rdanl:representativeExpression <http://data.bibliotheken.nl/id/e/1> ; 											
     rdanl:expressionOfWork <http://data.bibliotheken.nl/id/e/1> ; 
     rdanl:categoryOfWork <http://data.bibliotheken.nl/id/thes/p31866285X> ; 
-    rdanl:extensionPlan "static plan" ; 
+    rdanl:extensionPlan rdaep:1001 ;    # "static plan"@en , "statisch plan"@nl ; 
     rdanl:dateOfWork "1908"	.
 
 # Expresssion:
 <http://data.bibliotheken.nl/id/e/1> # fictieve Expression-IRI	
     a rdanl:Expression ;
     rdanl:titleOfExpression "Een vrouw van het noorden" ;
-    rdanl:contentType "text" ;
+    rdanl:contentType rdaco:1020 ;      # "text"@en, "tekst@nl" ;
     rdanl:languageOfExpression "nl" ;
     rdanl:dateOfExpression "1908" ; 
     rdanl:workExpressed <http://data.bibliotheken.nl/id/w/1> ;
@@ -81,9 +82,9 @@
     rdanl:titleProper "Een vrouw van het noorden" ;
     rdanl:identifierForRDAEntity "urn:isbn:9025499678" ;
     rdanl:expressionManifested <http://data.bibliotheken.nl/id/e/1> ; 
-    rdanl:carrierType rdact:1049 ;
-    rdanl:mediaType rdamt:1007 ;
-    rdanl:modeOfIssuance rdami:1001 ;
+    rdanl:carrierType rdact:1049 ;      # "volume"@en , "band"@nl 
+    rdanl:mediaType rdamt:1007 ;        # "unmediated"@en, "zonder medium"@nl
+    rdanl:modeOfIssuance rdami:1001 ;   # "single unit"@en,  "enkele eenheid"@nl
     rdanl:designationOfEdition "2e dr"@nl ;
     rdanl:dateOfPublication "1999" ;
     rdanl:publisherAgent [ 

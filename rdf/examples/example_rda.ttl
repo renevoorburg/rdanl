@@ -13,6 +13,7 @@
 @prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
 @prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> . 
 @prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> . 
+@prefix rdaep: <http://rdaregistry.info/termList//RDAExtensionPlan/> . 
 
 ### Agent "Couperus" :
 <http://data.bibliotheken.nl/id/a/1>                                # fictieve Agent-IRI
@@ -52,8 +53,8 @@
 <http://data.bibliotheken.nl/id/n/1>                            # fictieve IRI
     a rdac:C10012 ;                                             # a Nomen
     rdan:P80057 <http://data.bibliotheken.nl/id/a/1> ;          # "is name of RDA entity of" ;  relatie
-    rdan:P80068    "Couperus, Louis" ;            # "has nomen string"
-    rdan:P80113    "Kūpīras, Lūʾī" ,         # "equivalent to" ; eventueel ook als Nomen-entiteiten.
+    rdan:P80068    "Couperus, Louis" ;                          # "has nomen string"
+    rdan:P80113    "Kūpīras, Lūʾī" ,                            # "equivalent to" ; eventueel ook als Nomen-entiteiten.
         "Kuperjus, Lui", "Couperus, Louis Marie Anne" , " Kouperus, Luis" , "Kuperus, Lui", "Kouperusas, Lui Mari Anė" ,
         "Kūpīris, Lūʾī" , "Couperus, Luigi", "Couperus, L." ;
     rdax:P00018     "ISNI: 0000000110471568" ;                  # "identifier for RDA Entity"
@@ -65,7 +66,7 @@
     rdaw:P10088 "Aan den weg der vreugde"@nl ;                      # titleOfWork - de oorspronkelijke titel
     rdaw:P10086 "Een vrouw van het noorden"@nl ;                     # variantTitleOfWork
 
-    rdaw:P10061 <http://data.bibliotheken.nl/id/a/1> ;           # authorAgent 
+    rdaw:P10061 <http://data.bibliotheken.nl/id/a/1> ;              # authorAgent 
     rdaw:P10318 <http://data.bibliotheken.nl/id/n/1> ;              # relatedNomenOfWork 
     rdaw:P10346 <http://data.bibliotheken.nl/id/e/1> ;              # representativeExpression                                                
     rdaw:P10078 <http://data.bibliotheken.nl/id/e/1> ;              # expressionOfWork
@@ -73,14 +74,14 @@
     ### De Brinkman-categorie "romans en novellen ; oorspr. - Nederlands" past niet in de RDA benadering, dit is wel zuiver:
     rdaw:P10004 <http://data.bibliotheken.nl/id/thes/p31866285X> ;  # categoryOfWork Brinkman:"Romans en novellen"
 
-    rdaw:P10365 "static plan" ;  # extensionPlan rdae, een monografie
+    rdaw:P10365 rdaep:1001 ;  # "static plan"@en , "statisch plan"@nl ;  # extensionPlan rdae, monografie
     rdaw:P010219 "1908"    .                                        # dateOfWork 1908 eenvoudige literal
 
 # Expresssion    
 <http://data.bibliotheken.nl/id/e/1>                            # fictieve Expression-IRI    
     a rdac:C10006 ;                                             # dit is een Expression- maken we altijd expliciet
     rdae:P20312 "Een vrouw van het noorden" ;                   # "has title of expression"
-    rdae:P20001 "text"    ;                                     # contentType , hier praktisch gekozen voor literal, volgens rdaco
+    rdae:P20001 rdaco:1020 ;                                     # "contentType" "text"@en, "tekst@nl" 
     rdae:P20006 "nl" ;                                          # languageOfExpression "nl" ; taalcode volgens IETF BPC 47
     rdae:P20214 "1908" ;                                        # dateOfExpression
     rdae:P20231 <http://data.bibliotheken.nl/id/w/1> ;          # "has work expressed"
@@ -94,9 +95,9 @@
         
     rdam:P30139 <http://data.bibliotheken.nl/id/e/1> ;          # "expression manifested" 
 
-    rdam:P30001 rdact:1049 ;                                    # "carrierType" "volume"
-    rdam:P30002 rdamt:1007 ;                                    # "mediaType" "unmediated"
-    rdam:P30003 rdami:1001 ;                                    # "modeOfIssuance" "single unit"
+    rdam:P30001 rdact:1049 ;                                    # "carrierType" "volume"@en, "band"@nl
+    rdam:P30002 rdamt:1007 ;                                    # "mediaType" "unmediated"@en, "zonder medium"@nl
+    rdam:P30003 rdami:1001 ;                                    # "modeOfIssuance" "single unit"@en.  "enkele eenheid"@nl
     
     rdam:P30133 "2e dr"@nl ;                                    # "designationOfEdition"
     rdam:P30011 "1999" ;                                        # "dateOfPublication"
