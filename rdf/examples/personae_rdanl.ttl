@@ -41,7 +41,6 @@
         rdanl:nomenString "Mu'ertatuli"@zh ;
         rdanl:languageOfNomen "zh" ;
         rdanl:scriptOfNomen "Latn" 
-        rdanl:
     ] ;
     rdanl:identifierForRDAEntity "VIAF: 89204476" ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p16766932X> . 
