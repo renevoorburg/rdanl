@@ -7,19 +7,6 @@
 @prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> . 
 @prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> . 
 
-### Werk "Aan den weg der vreugde":
-<http://data.bibliotheken.nl/id/w/1> # fictieve Werk-IRI
-    a rdanl:Work ;
-    rdanl:titleOfWork "Aan den weg der vreugde" ;
-    rdanl:variantTitleOfWork "Een vrouw van het noorden" ; 
-    rdanl:authorAgent <http://data.bibliotheken.nl/id/a/1> ;
-    rdanl:relatedPersonaOfWork <http://data.bibliotheken.nl/id/n/1> ;	
-    rdanl:representativeExpression <http://data.bibliotheken.nl/id/e/1> ; 											
-    rdanl:expressionOfWork <http://data.bibliotheken.nl/id/e/1> ; 
-    rdanl:categoryOfWork <http://data.bibliotheken.nl/id/thes/p31866285X> ; 
-    rdanl:extensionPlan "static plan" ; 
-    rdanl:dateOfWork "1908"	.
-
 ### Agent "Couperus":
 <http://data.bibliotheken.nl/id/a/1> # fictieve Agent-IRI
     a rdanl:Person ; 
@@ -64,6 +51,19 @@
         "Kūpīris, Lūʾī" , "Couperus, Luigi", "Couperus, L." ;
     rdanl:identifierForRDAEntity 	"ISNI: 0000000110471568" ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p068435061> . 
+
+### Work "Aan den weg der vreugde":
+<http://data.bibliotheken.nl/id/w/1> # fictieve Werk-IRI
+    a rdanl:Work ;
+    rdanl:titleOfWork "Aan den weg der vreugde" ;
+    rdanl:variantTitleOfWork "Een vrouw van het noorden" ; 
+    rdanl:authorAgent <http://data.bibliotheken.nl/id/a/1> ;
+    rdanl:relatedPersonaOfWork <http://data.bibliotheken.nl/id/n/1> ;	
+    rdanl:representativeExpression <http://data.bibliotheken.nl/id/e/1> ; 											
+    rdanl:expressionOfWork <http://data.bibliotheken.nl/id/e/1> ; 
+    rdanl:categoryOfWork <http://data.bibliotheken.nl/id/thes/p31866285X> ; 
+    rdanl:extensionPlan "static plan" ; 
+    rdanl:dateOfWork "1908"	.
 
 # Expresssion:
 <http://data.bibliotheken.nl/id/e/1> # fictieve Expression-IRI	

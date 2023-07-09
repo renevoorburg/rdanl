@@ -14,23 +14,6 @@
 @prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> . 
 @prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> . 
 
-### Werk "Aan den weg der vreugde":
-<http://data.bibliotheken.nl/id/w/1>                                # fictieve Werk-IRI
-    a rdac:C10001 ;                                                 # dit is een Work 
-    rdaw:P10088 "Aan den weg der vreugde"@nl ;                      # titleOfWork - de oorspronkelijke titel
-    rdaw:P10086 "Een vrouw van het noorden"@nl ;                     # variantTitleOfWork
-
-    rdaw:P10061 <http://data.bibliotheken.nl/id/a/1> ;           # authorAgent 
-    rdaw:P10318 <http://data.bibliotheken.nl/id/n/1> ;              # relatedNomenOfWork 
-    rdaw:P10346 <http://data.bibliotheken.nl/id/e/1> ;              # representativeExpression                                                
-    rdaw:P10078 <http://data.bibliotheken.nl/id/e/1> ;              # expressionOfWork
-
-    ### De Brinkman-categorie "romans en novellen ; oorspr. - Nederlands" past niet in de RDA benadering, dit is wel zuiver:
-    rdaw:P10004 <http://data.bibliotheken.nl/id/thes/p31866285X> ;  # categoryOfWork Brinkman:"Romans en novellen"
-
-    rdaw:P10365 "static plan" ;  # extensionPlan rdae, een monografie
-    rdaw:P010219 "1908"    .                                        # dateOfWork 1908 eenvoudige literal
-
 ### Agent "Couperus" :
 <http://data.bibliotheken.nl/id/a/1>                                # fictieve Agent-IRI
     a rdac:C10004 ;                                                 # a Person
@@ -76,6 +59,23 @@
     rdax:P00018     "ISNI: 0000000110471568" ;                  # "identifier for RDA Entity"
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p068435061> . 
 
+### Work "Aan den weg der vreugde":
+<http://data.bibliotheken.nl/id/w/1>                                # fictieve Werk-IRI
+    a rdac:C10001 ;                                                 # dit is een Work 
+    rdaw:P10088 "Aan den weg der vreugde"@nl ;                      # titleOfWork - de oorspronkelijke titel
+    rdaw:P10086 "Een vrouw van het noorden"@nl ;                     # variantTitleOfWork
+
+    rdaw:P10061 <http://data.bibliotheken.nl/id/a/1> ;           # authorAgent 
+    rdaw:P10318 <http://data.bibliotheken.nl/id/n/1> ;              # relatedNomenOfWork 
+    rdaw:P10346 <http://data.bibliotheken.nl/id/e/1> ;              # representativeExpression                                                
+    rdaw:P10078 <http://data.bibliotheken.nl/id/e/1> ;              # expressionOfWork
+
+    ### De Brinkman-categorie "romans en novellen ; oorspr. - Nederlands" past niet in de RDA benadering, dit is wel zuiver:
+    rdaw:P10004 <http://data.bibliotheken.nl/id/thes/p31866285X> ;  # categoryOfWork Brinkman:"Romans en novellen"
+
+    rdaw:P10365 "static plan" ;  # extensionPlan rdae, een monografie
+    rdaw:P010219 "1908"    .                                        # dateOfWork 1908 eenvoudige literal
+
 # Expresssion    
 <http://data.bibliotheken.nl/id/e/1>                            # fictieve Expression-IRI    
     a rdac:C10006 ;                                             # dit is een Expression- maken we altijd expliciet
@@ -85,7 +85,6 @@
     rdae:P20214 "1908" ;                                        # dateOfExpression
     rdae:P20231 <http://data.bibliotheken.nl/id/w/1> ;          # "has work expressed"
     rdae:P20059 <http://data.bibliotheken.nl/id/m/1> .          # "manifestion of Expression"
-
 
 # Manifestation        
 <http://data.bibliotheken.nl/id/m/1>                            # fictieve Manifestation-IRI
