@@ -1,0 +1,76 @@
+
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+#@prefix rdanl: <http://data.bibliotheken.nl/rdanl#> .
+#@prefix rdami: <http://rdaregistry.info/termList/ModeIssue/> .
+#@prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
+#@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> . 
+#@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> . 
+
+
+<http://data.bibliotheken.nl/id/thes/p068435061> 
+    a schema:Person ;   # feitelijk een Persoma
+    rdfs:label "Couperus, Louis (1863-1923)";
+    schema:name "Louis Couperus"@nl , "Луис Ку́пейрус" , "Луис Куперус" ;
+    schema:alternateName "Куперус, Луис Мари Ан", "Kūpīris, Lūʾī", "Kuperus, Lui", "Kouperus, Luis", "Куперус, Луи", "Kuperjus, Lui", "Couperus, Louis Marie Anne", "Куперус, Луис Мери Ана", "Couperus, Luigi", "Couperus, L.", "Ку́пейрус, Луис Мари Анне", "Couperus, ...", "Kūpīras, Lūʾī", "Kouperusas, Lui Mari Anė" ;
+    schema:familyName "Couperus"@nl,  "Ку́пейрус", "Куперус"  ;
+    schema:givenName "Louis"@nl, "Луис"   ;
+    schema:nationality "NL" ;
+    schema:birthDate "1863"^^xsd:gYear ;
+    schema:deathDate "1923"^^xsd:gYear ;
+    schema:description "Med. NLMD/C 383" ; 
+    schema:description "literator en feuilletonnist (m.n. in dagblad \"Het Vaderland\", te Den Haag)"	;
+    schema:description "http://dbnl-srv-p200.dmz.kb.nl/auteurs/auteur.php?id=coup002" .
+
+### Work "Aan den weg der vreugde":
+<http://data.bibliotheken.nl/id/w/1> # fictieve Werk-IRI
+    a schema:CreativeWork, schema:Book ; 
+    schema:name "Aan den weg der vreugde" ;
+    schema:alternateName "Een vrouw van het noorden" ; 
+    schema:author <http://data.bibliotheken.nl/id/thes/p068435061> ;
+#    rdanl:relatedPersonaOfWork <http://data.bibliotheken.nl/id/n/1> ;	
+#    rdanl:representativeExpression <http://data.bibliotheken.nl/id/e/1> ; 											
+    schema:workExample <http://data.bibliotheken.nl/id/e/1> ; 
+    schema:genre <http://data.bibliotheken.nl/id/thes/p31866285X> ; 
+#    rdanl:extensionPlan "static plan" ; # a schema:Book gives a hint
+    schema:dateCreated "1908"	.
+
+# Expresssion:
+<http://data.bibliotheken.nl/id/e/1> # fictieve Expression-IRI	
+     a schema:CreativeWork, schema:ProductGroup, schema:Book ; 
+    schema:name "Een vrouw van het noorden" ;
+    schema:accessMode "text" ;  # ? check TODO 
+    schema:inLanguageOfExpression "nl" ;
+    schema:dateCreated "1908" ; 
+    schema:exampleOfWork <http://data.bibliotheken.nl/id/w/1> ;
+    schema:workExample <http://data.bibliotheken.nl/id/m/1> .
+
+# Manifestation:	
+<http://data.bibliotheken.nl/id/m/1> # fictieve Manifestation-IRI
+    a schema:CreativeWork, schema:ProductModel, schema:Book ; 
+    schema:name "Een vrouw van het noorden" ;
+    schema:isbn "9025499678" ;
+    schema:exampleOfWork <http://data.bibliotheken.nl/id/e/1> ; 
+    # rdanl:carrierType rdact:1049 ; # "band"@nl / "volume"@en
+    # rdanl:mediaType rdamt:1007 ;
+    # rdanl:modeOfIssuance rdami:1001 ;
+    schema:bookEdition "2e dr"@nl ;
+    schema:publication [
+        a schema:PublicationEvent ;
+        schema:startDate  "1999" ;
+        schema:organizer [
+            a schema:Organization ;
+            schema:name "Pandora"
+        ] ;
+        schema:location [
+            a schema:Place ;
+            schema:name "Amsterdam" ;
+            schema:containedInPlace [
+                a schema:Country ;
+                schema:identifier "NL"
+            ]
+        ]
+    ] .
+	
