@@ -13,7 +13,7 @@
     rdanl:dateOfDeath "1887" ;
     rdanl:professionOrOccupation "bestuursambtenaar (m.n. assistent-resident) in Nederlands-Indië en literator"@nl ;
     rdanl:biographicalInformation "Was 5e kind van koopvaardij-kapitein Engel Douwes Dekker (1787-1850) én Sietske Eeltjes Klein (1781-1846), die woonachtig waren op Ameland (later in Amsterdam) "@nl ;
-    rdanl:identifierForRDAEntity "ISNI: 0000000120303306" ;
+    rdanl:identifierForRDAEntity "urn:isni:0000000120303306" ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p16766932X> ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p068934041> ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p074683578> .
@@ -23,7 +23,7 @@
     rdanl:nameOfRDAEntityOf <http://data.bibliotheken.nl/id/a/2> ;
     rdanl:nomenString "Douwes Dekker, Eduard" ;
     rdanl:equivalentTo "Douwes Dekker, Eduard" , "Eduard Douwes Dekker", "Dekker, E. Douwes", "Dekker, Eduard Douwes" ; 
-    rdanl:identifierForRDAEntity "ISNI: 0000000478614774" ;
+    rdanl:identifierForRDAEntity "urn:isni:0000000478614774" ;
     rdanl:identifierForRDAEntity "VIAF: 89204476" ;
     rdfs:isDefinedBy <http://data.bibliotheken.nl/id/thes/p068934041> . 
 

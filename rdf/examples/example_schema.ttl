@@ -39,7 +39,7 @@
 
 # Expresssion:
 <http://data.bibliotheken.nl/id/e/1> # fictieve Expression-IRI	
-     a schema:CreativeWork, schema:ProductGroup, schema:Book ; 
+    a schema:CreativeWork, schema:ProductGroup, schema:Book ; 
     schema:name "Een vrouw van het noorden" ;
     schema:accessMode "text" ;  # ? check TODO 
     schema:inLanguageOfExpression "nl" ;
