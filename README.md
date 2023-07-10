@@ -1,4 +1,4 @@
-**Deze repository is gearchiveerd en leeft verder op [http://github.com/netwerk-digitaal-erfgoed/rdanl]().**
+**Deze repository is gearchiveerd en leeft verder op [http://github.com/netwerk-digitaal-erfgoed/rdanl](http://github.com/netwerk-digitaal-erfgoed/rdanl).**
 
 # RDA-Toepassingsprofiel
 
